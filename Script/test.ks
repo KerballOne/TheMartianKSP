@@ -1,37 +1,19 @@
-clearScreen.
+//clearScreen.
 
-function convertSeconds {
-    parameter seconds.
-    return FLOOR(seconds / 60) + " min  " + Round(Mod(seconds,60), 0) + " sec".
-}
-
-IF ADDONS:available("RT") {
-    print "Control delay:      " + ROUND(ADDONS:RT:KSCDELAY(SHIP)) + " sec".
-    IF shipName = "Pathfinder Demo"
-    {
-        CORE:DOEVENT("Open Terminal"). // TESTING
-        SET RemoteVessel TO VESSEL("Pathfinder Probe").
-    } ELSE IF shipName = "Pathfinder Probe" {
-        SET RemoteVessel TO VESSEL("Pathfinder Demo").
+function loadFirmware {
+    IF EXISTS("0:firmware_rover_v0.1.42.bin") {
+        SET bin TO OPEN("0:firmware_rover_v0.1.42.bin").
+        SET firmware TO bin:READALL:string.
+        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255") 
+        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600") {
+            print "NEW".
+        }
+        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105") 
+        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005") {
+            print "OLD".
+        }
     }
-    IF NOT Addons:RT:HASLOCALCONTROL(SHIP) {
-        SET COMMDELAY TO convertSeconds(ROUND(Addons:RT:Delay(RemoteVessel))).
-    } ELSE {
-        SET COMMDELAY TO convertSeconds(ROUND(Addons:RT:Delay(SHIP))).
-    }
-    print "Transmission delay: " + COMMDELAY.
 }
 
-print Addons:RT:HASLOCALCONTROL(SHIP).
-print "SHIP " + convertSeconds(ROUND(Addons:RT:Delay(SHIP))).
-print "REMT " + convertSeconds(ROUND(Addons:RT:Delay(RemoteVessel))).
-
-SET C TO RemoteVessel:CONNECTION.
-print C:delay().
-SET MESSAGE TO "Test".
-print "Sending message.... ".
-print "   > " + MESSAGE.
-IF C:SENDMESSAGE(MESSAGE) {
-    Wait 1.
-    print "Message sent!".
-}
+loadFirmware().
+//EDIT "0:firmware_rover_v0.1.42.bin".

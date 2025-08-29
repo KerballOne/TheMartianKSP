@@ -1,73 +1,43 @@
+Wait Until SHIP:connection:isconnected.
 clearScreen.
-SET RemoteVessel TO VESSEL("Pathfinder Probe").
-
+CORE:DOEVENT("Open Terminal"). 
 function convertSeconds {
     parameter seconds.
-    return FLOOR(seconds / 60) + "min " + Mod(seconds,60) + "sec".
+    return FLOOR(seconds / 60) + " min  " + Round(Mod(seconds,60), 0) + " sec".
 }
 
-function getSol {
-    SET sol TO TIME:year * 365 + TIME:day.
-    return sol - 31356.
+
+IF shipName = "Pathfinder Demo"
+{
+    SET RemoteVessel TO VESSEL("Mars Rover").
+} ELSE IF shipName = "Mars Rover" {
+    SET RemoteVessel TO VESSEL("Pathfinder Demo").
+}
+IF ADDONS:available("RT") {
+    print "Control delay:         " + ROUND(ADDONS:RT:KSCDELAY(SHIP)) + " sec".
+    print "HasConnection SHIP = " + ADDONS:RT:HASKSCCONNECTION(SHIP).
+    print "HasConnection Remote = " + ADDONS:RT:HASKSCCONNECTION(RemoteVessel).
 }
 
-function sendMessage {
-    parameter MESSAGE. 
-    SET C TO RemoteVessel:CONNECTION.
-    IF C:SENDMESSAGE(MESSAGE) {
-        Wait 1. 
-        return "Message sent!  Delay is " + convertSeconds(ROUND(C:DELAY)).
-    }
-    return "[ERROR] - Message not sent ".
+print TIME:clock.
+SET C TO RemoteVessel:CONNECTION.
+SET COMMDELAY TO convertSeconds(ROUND(C:delay())).
+print "Transmission delay:    " + COMMDELAY.
+
+print "RT Remote Vessel delay:    " + RemoteVessel + " --> " + ROUND(ADDONS:RT:Delay(RemoteVessel)) + " sec".
+print "RT SELF delay:    " + SHIP + " --> " + ROUND(ADDONS:RT:Delay(SHIP)) + " sec".
+
+print "Delay is " + COMMDELAY.
+print "Sending message.... ".
+IF C:SENDMESSAGE("I am " + SHIP:shipname + " " + TIME:clock) {
+    Wait 1.
+    print "Message sent!".
+}
+Wait until NOT SHIP:messages:empty.
+Until SHIP:messages:empty {
+    SET RECEIVED TO SHIP:MESSAGES:POP.
+    print "Sent by " + RECEIVED:SENDER + " at " + RECEIVED:SENTAT + " >>> ".
+    print RECEIVED:CONTENT.
 }
 
-function radioChat {
-    SET chatGUI TO GUI(800,400).
-    SET title TO chatGUI:addlabel("<b><color=red><size=30>Pathfinder Communications Subsystem</size></color></b>"). title.
-    SET title:style:align TO "CENTER".
-    SET hbox1 TO chatGUI:addhbox().
-    SET labelLogo TO hbox1:addlabel(). SET labelLogo:image to "pathfinder". labelLogo.
-    SET receivedBox TO hbox1:addscrollbox().
-    SET receivedBox:style:width TO 500.
-    receivedBox:addlabel("Ready to receive...").
-
-    //SET labelSignal TO hbox1:addlabel("Signal Delay: " + ROUND(ADDONS:RT:DELAY(RemoteVessel)) + " sec"). labelSignal.
-    //SET labelDataFormat TO hbox1:addlabel("Data format: "). labelDataFormat.
-    //SET popup1 TO hbox1:addpopupmenu(). popup1.
-    //popup1:addoption("Send as ASCII Text").
-    //popup1:addoption("Convert to Base64").
-    //popup1:addoption("Convert to Decimal").
-    //popup1:addoption("Convert to Hexadecimal").
-
-    SET inputField TO chatGUI:addtextfield("").
-    SET tooltip TO "Enter Text to Send".
-    SET inputField:tooltip TO "   " + tooltip.
-    SET inputField:style:fontsize TO 20.
-    SET sendButton TO chatGUI:ADDBUTTON("SEND").
-
-    chatGUI:SHOW(). 
-    SET chatGUI:Y To 200.
-
-    UNTIL False {
-        Wait until sendButton:TAKEPRESS.
-        WAIT(1.1).
-        IF inputField:text:length > 0 {
-            receivedBox:addlabel("Sol " + getSol() + " - " + TIME:clock + " - Sending message to " + RemoteVessel).
-            receivedBox:addlabel(">>> " + inputField:text).
-            receivedBox:addlabel(sendMessage(inputField:text)).
-        }
-        SET inputField:text TO "".
-        SET receivedBox:position TO V(0,999999,0).
-    }
-}
-
-SET P TO SHIP:PARTSNAMED("IR.Camera")[0].
-SET M TO P:GETMODULE("ModuleScienceExperiment").
-print M.
-WAIT UNTIL M:HASDATA.
-print "Bingo!!".
-//radioChat().
-
-//Wait 0.
-//chatGUI:HIDE().
-//SET TextInput TO inputField:text. TextInput.
+print TIME:clock.

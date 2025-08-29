@@ -1,21 +1,27 @@
 print "Welcome Pathfinder".
 print "Initializing RemoteTech communications module...".
+Wait Until SHIP:connection:isconnected. Wait 2.
 
+CORE:DOEVENT("Open Terminal"). // TESTING
 CLEARVECDRAWS().
-Wait Until SHIP:connection:isconnected.
+
 IF shipName = "Pathfinder Demo"
 {
-    CORE:DOEVENT("Open Terminal"). // TESTING
-    SET RemoteVessel TO VESSEL("Pathfinder Probe").
-} ELSE IF shipName = "Pathfinder Probe" {
+    SET RemoteVessel TO VESSEL("Mars Rover").
+} ELSE IF shipName = "Mars Rover" {
     SET RemoteVessel TO VESSEL("Pathfinder Demo").
 }
 IF ADDONS:available("RT") {
     print "Control delay:         " + ROUND(ADDONS:RT:KSCDELAY(SHIP)) + " sec".
 }
 
+print "Waiting for connection to remote...". Wait 2.
+Wait Until RemoteVessel:connection:isconnected.
+print "SIGNAL ACQUIRED!". print " ".
+
 SET C TO RemoteVessel:CONNECTION.
 SET COMMDELAY TO convertSeconds(ROUND(C:delay())).
+print RemoteVessel.
 print "Transmission delay:    " + COMMDELAY.
 
 IF EXISTS("CommLog") {
@@ -43,45 +49,6 @@ function powerCycle {
     }
 }
 
-function drawPointer {
-    CLEARVECDRAWS().
-    SET CamPart TO SHIP:partsnamed("IR.Camera")[0].
-    SET RotatePart TO SHIP:partsdubbed("CamRotate")[0].
-    SET PitchPart TO SHIP:partsdubbed("CamPitch")[0].
-    SET getRotation TO RotatePart:getmodule("ModuleIRServo_v3"):getfield("current position").
-    SET getPitch TO PitchPart:getmodule("ModuleIRServo_v3"):getfield("current position").
-    SET direction to HEADING(getRotation-46,-getPitch).
-    VECDRAW(CamPart:position, direction:vector, green, "Camera",2.0,TRUE,0.01,TRUE,TRUE).
-    return True.
-}
-
-function rotateCam {
-    parameter msg.
-    CLEARVECDRAWS().
-    SET module TO SHIP:partsdubbed("CamRotate")[0]:getmodule("ModuleIRServo_v3").
-    module:setfield("target position", 0).
-    FOR s IN msg {
-        SET tp TO unchar(s).
-        print s + "=" + tp.  // TESTING
-        module:setfield("target position", tp).
-        LOCK cp TO module:getfield("current position").
-        wait until drawPointer() AND cp < tp + 0.1 AND cp > tp - 0.1. wait 2.
-    }
-    CLEARVECDRAWS().
-    module:setfield("target position", 0).
-}
-
-function takePhoto {
-    SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
-    SET cameraLight TO IRcamera:getmodule("ModuleLight").
-    cameraLight:doaction("turn light on", true).
-    HUDTEXT("Say Cheese!! \n", 3, 1, 32, blue, false).
-    Wait 3.
-    SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
-    cameraControl:doaction("perform observation", true).
-    cameraLight:doaction("turn light off", true).
-}
-
 function convertSeconds {
     parameter seconds.
     return FLOOR(seconds / 60) + " min  " + Round(Mod(seconds,60), 0) + " sec".
@@ -92,13 +59,30 @@ function getSol {
     return sol - 31356.
 }
 
+function ascii2angles {
+    parameter msg.
+    set rotList to list().
+    FOR s IN msg {
+        SET ch TO unchar(s).
+        SET hex1 TO FLOOR(ch/16). SET rot1 TO hex1 * 22.
+        SET hex2 TO MOD(ch,16). SET rot2 TO hex2 * 22.
+        print s+" > CharCode="+ch+" > Hex="+hex1+":"+hex2+" > Rotation="+rot1+","+rot2.  // TESTING
+        rotList:add(rot1). rotList:add(rot2).
+    }
+    return rotList.
+}
+
 function sendMessage {
-    parameter MESSAGE.
+    parameter MESSAGE, convert.
     IF (MESSAGE:tostring():length = 0) { return False. }
     SET C TO RemoteVessel:CONNECTION.
     print "Delay is " + COMMDELAY.
     print "Sending message.... ".
     print "   > " + MESSAGE.
+    IF convert {
+        print "Converting to rotational angles...".
+        SET MESSAGE TO ascii2angles(MESSAGE).
+    }
     IF C:SENDMESSAGE(MESSAGE) {
         Wait 1.
         print "Message sent!".
@@ -110,25 +94,84 @@ function rcvMessage {
         set kuniverse:timewarp:warp TO 0.
         Wait Until kuniverse:timewarp:issettled.
     }
+    getvoice(0):PLAY( LIST(NOTE(440, 0.35),NOTE(440, 0.25),NOTE(240, 0.5))).
     HUDTEXT("Receiving Message.... \n", 10, 1, 32, yellow, false). 
     SET RECEIVED TO SHIP:MESSAGES:POP.
-    //print "Sent by " + RECEIVED:SENDER + " at " + RECEIVED:SENTAT + " >>> ".
-    //print RECEIVED:CONTENT.
     return RECEIVED.
 }
 
 LOCAL TextInput IS "".
-
-function rawComm {
+function updateFirmware {
     SET signGUI TO GUI(800,440).
     SET inputField TO signGUI:addtextfield("").
-    SET tooltip TO "Write text on sign".
+    SET tooltip TO "Edit source code and recompile".
     SET inputField:tooltip TO "   " + tooltip.
     SET labelLogo TO signGUI:addlabel(). SET labelLogo:image to "pathfinder". labelLogo.
-    SET writeButton TO signGUI:ADDBUTTON("Write").
+    SET writeButton TO signGUI:ADDBUTTON("Recompile").
+    signGUI:show().
+    Wait Until writeButton:PRESSED.
+    signGUI:hide().
+    SET text TO inputField:text.
+}
 
-    SET P TO SHIP:PARTSNAMED("IR.Camera")[0].
-    SET M TO P:GETMODULE("ModuleScienceExperiment").
+function drawPointer {
+    CLEARVECDRAWS().
+    SET CamPart TO SHIP:partsnamed("IR.Camera")[0].
+    SET CamFwdDir to R(CamPart:rotation:pitch - 180, CamPart:rotation:yaw, CamPart:rotation:roll).
+    VECDRAW(CamPart:position, CamFwdDir:vector, green, "Camera",2.0,TRUE,0.05,TRUE,TRUE).
+    return True.
+}
+
+function rotateCam {
+    parameter rot.
+    CLEARVECDRAWS().
+    SET rotateServo TO SHIP:partsdubbed("CamRotate")[0]:getmodule("ModuleIRServo_v3").
+    rotateServo:setfield("target position", 0).
+    FOR a IN rot {
+        rotateServo:setfield("target position", a).
+        LOCK cp TO rotateServo:getfield("current position").
+        wait until drawPointer() AND cp < a + 0.1 AND cp > a - 0.1.
+        Wait 2.
+    }
+    CLEARVECDRAWS().
+    rotateServo:setfield("target position", 0).
+}
+
+function hasSignFlag {
+    LIST Targets IN Vessels.
+    SET CamPart TO SHIP:partsnamed("IR.Camera")[0].
+    FOR vsl IN Vessels {
+        SET vec TO (vsl:position - CamPart:position) / 2.
+        IF vsl:type = "Flag" AND vec:mag < 10 {
+            SET CamFwdDir to R(CamPart:rotation:pitch - 180, CamPart:rotation:yaw, CamPart:rotation:roll).
+            SET angle TO ROUND(VECTORANGLE(vec, CamFwdDir:vector), 2).
+            HUDTEXT("Flag: " + vsl:shipname + " " + ROUND(vec:mag, 2) + " meters, at " + angle + " degrees", 2, 1, 16, blue, false).
+            drawPointer().
+            VECDRAW(CamPart:position, vec, red, "To Flag",2.0,TRUE,0.02,TRUE,TRUE).
+            Wait 2. CLEARVECDRAWS().
+            IF angle < 10 {
+                SET vsl:type TO "Debris".
+                return vsl:shipname.
+            }
+        }
+    }
+    return "".
+}
+
+function takePhoto {
+    SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
+    SET cameraLight TO IRcamera:getmodule("ModuleLight").
+    cameraLight:doaction("turn light on", true).
+    HUDTEXT("Say Cheese!! \n", 3, 1, 32, blue, false). Wait 3.
+    SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
+    cameraControl:doaction("perform observation", true).
+    Wait Until cameraControl:HASDATA.
+    cameraLight:doaction("turn light off", true).
+    cameraControl:TRANSMIT. Wait 2.
+    Wait Until NOT cameraControl:HASDATA.
+}
+
+function rawComm {
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
         IF NOT SHIP:messages:empty
@@ -136,16 +179,13 @@ function rawComm {
             SET RECEIVED TO rcvMessage(). Wait 10.
             rotateCam(RECEIVED:CONTENT).            
         }
-        IF M:HASDATA {
-            signGUI:show().
-            Wait Until writeButton:PRESSED.
-            signGUI:hide().
-            HUDTEXT("Send Image File \n", 3, 1, 32, white, false).
-            Wait Until NOT M:HASDATA.
-            SET text TO inputField:text.
-            print "Imaging sign > " + text.
-            sendMessage(TIME:seconds + ".jpg(" + text + ")").
+        SET newFlag TO hasSignFlag().
+        IF newFlag:tostring():length > 0 {
+            takePhoto().
+            print "Imaging sign > " + newFlag.
+            sendMessage(TIME:seconds + ".jpg (" + newFlag + ")", False).
         }
+        Wait 1.
     }
 }
 
@@ -161,9 +201,11 @@ function PCSTerminal {
     SET inputField TO chatGUI:addtextfield("").
     SET tooltip TO "Enter Text to Send".
     SET inputField:tooltip TO "   " + tooltip.
-    SET sendButton TO chatGUI:ADDBUTTON("SEND").
+    SET hbox2 TO chatGUI:addhbox().
+    SET sendButton TO hbox2:ADDBUTTON("SEND as ASCII").
+    SET rotButton TO hbox2:ADDBUTTON("SEND as θ(hex)").
     chatGUI:SHOW(). 
-    SET chatGUI:Y To 200.
+    SET chatGUI:Y To 800.
     
     outputBox:addlabel("Communication subsystem status: ONLINE").
     outputBox:addlabel("===========================================================    ").
@@ -171,6 +213,7 @@ function PCSTerminal {
     Wait 2. outputBox:addlabel("Transmission Delay: " + COMMDELAY).
     Wait 2. outputBox:addlabel(COMMLOG:READALL:string).
     outputBox:addlabel("").
+    SET outputBox:position TO V(0,999999,0).
 
     print "MessageQueued = " + NOT SHIP:messages:empty.
 
@@ -186,21 +229,25 @@ function PCSTerminal {
             COMMLOG:writeln(output).
             outputBox:addlabel(output).
             SET outputBox:position TO V(0,999999,0).
-            IF NOT RECEIVED:CONTENT:tostring():contains(".jpg") {
-                rotateCam(RECEIVED:CONTENT). 
-            }         
+            //IF NOT RECEIVED:CONTENT:tostring():contains(".jpg") {
+            //    rotateCam(ascii2angles(RECEIVED:CONTENT)).
+            //}         
         }
-        IF sendButton:PRESSED
-        {
-            sendButton:TAKEPRESS.
+        IF sendButton:PRESSED OR rotButton:PRESSED {
             SET text TO inputField:text.
             SET inputField:text TO "".
             LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
             outputBox:addlabel(output).
             COMMLOG:writeln(output).
             SET outputBox:position TO V(0,999999,0).
-            sendMessage(text).
-            rotateCam(text).
+            IF sendButton:PRESSED {
+                sendButton:TAKEPRESS.
+                sendMessage(text, False).
+            } ELSE IF rotButton:PRESSED {
+                rotButton:TAKEPRESS.
+                sendMessage(text, True).
+                rotateCam(ascii2angles(text)).  // Debugging
+            }
         }
         wait 1. 
     }
@@ -208,12 +255,29 @@ function PCSTerminal {
     TextInput.
 }
 
+function loadFirmware {
+    IF EXISTS("0:firmware_rover_v0.1.42.bin") {
+        SET bin TO OPEN("0:firmware_rover_v0.1.42.bin").
+        SET firmware TO bin:READALL:string.
+        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255") 
+        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600") {
+            print "Rover firmware successfully hacked!".
+            return True.
+        }
+        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105") 
+        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005") {
+            print "Original Firmware".
+        }
+        return False.
+    }
+}
+
 function hasFullCommLink {
     IF shipName = "Pathfinder Demo"
     {
         return True.
     }
-    return False.
+    return loadFirmware().
 }
 
 /////////////////////
