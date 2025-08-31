@@ -59,30 +59,13 @@ function getSol {
     return sol - 31356.
 }
 
-function ascii2angles {
-    parameter msg.
-    set rotList to list().
-    FOR s IN msg {
-        SET ch TO unchar(s).
-        SET hex1 TO FLOOR(ch/16). SET rot1 TO hex1 * 22.
-        SET hex2 TO MOD(ch,16). SET rot2 TO hex2 * 22.
-        print s+" > CharCode="+ch+" > Hex="+hex1+":"+hex2+" > Rotation="+rot1+","+rot2.  // TESTING
-        rotList:add(rot1). rotList:add(rot2).
-    }
-    return rotList.
-}
-
 function sendMessage {
-    parameter MESSAGE, convert.
+    parameter MESSAGE.
     IF (MESSAGE:tostring():length = 0) { return False. }
     SET C TO RemoteVessel:CONNECTION.
     print "Delay is " + COMMDELAY.
     print "Sending message.... ".
     print "   > " + MESSAGE.
-    IF convert {
-        print "Converting to rotational angles...".
-        SET MESSAGE TO ascii2angles(MESSAGE).
-    }
     IF C:SENDMESSAGE(MESSAGE) {
         Wait 1.
         print "Message sent!".
@@ -100,41 +83,48 @@ function rcvMessage {
     return RECEIVED.
 }
 
-LOCAL TextInput IS "".
-function updateFirmware {
-    SET signGUI TO GUI(800,440).
-    SET inputField TO signGUI:addtextfield("").
-    SET tooltip TO "Edit source code and recompile".
-    SET inputField:tooltip TO "   " + tooltip.
-    SET labelLogo TO signGUI:addlabel(). SET labelLogo:image to "pathfinder". labelLogo.
-    SET writeButton TO signGUI:ADDBUTTON("Recompile").
-    signGUI:show().
-    Wait Until writeButton:PRESSED.
-    signGUI:hide().
-    SET text TO inputField:text.
-}
-
 function drawPointer {
     CLEARVECDRAWS().
     SET CamPart TO SHIP:partsnamed("IR.Camera")[0].
     SET CamFwdDir to R(CamPart:rotation:pitch - 180, CamPart:rotation:yaw, CamPart:rotation:roll).
-    VECDRAW(CamPart:position, CamFwdDir:vector, green, "Camera",2.0,TRUE,0.05,TRUE,TRUE).
+    VECDRAW(CamPart:position, CamFwdDir:vector, green,"",2.0,TRUE,0.05,TRUE,TRUE).
     return True.
 }
 
-function rotateCam {
-    parameter rot.
+function ascii2servo {
+    parameter msg, servo.
+    set posList to list().
+    IF servo = "None" { return msg. }
+    IF servo = "Rotate" { SET div TO FLOOR(360 / 16). }
+    IF servo = "Pitch" { SET div TO FLOOR(120 / 16). }
+    IF servo = "Extend" { SET div TO 0.46 / 16. }
+    FOR s IN msg {
+        SET ch TO unchar(s).
+        SET hex1 TO FLOOR(ch/16). SET pos1 TO hex1 * div.
+        SET hex2 TO MOD(ch,16). SET pos2 TO hex2 * div.
+        IF servo = "Pitch" { SET pos1 TO pos1 - 60. SET pos2 TO pos2 - 60. }
+        print s+" > CharCode="+ch+" > Hex="+hex1+":"+hex2+" > position="+pos1+","+pos2.  // TESTING
+        posList:add(pos1). posList:add(pos2).
+    }
+    posList:add(0.46).
+    return posList.
+}
+
+function moveServos {
+    parameter input.
+    SET tuple TO input:split("::").
+    SET servo TO tuple[0].
+    SET positionList TO tuple[1]:split(",").
     CLEARVECDRAWS().
-    SET rotateServo TO SHIP:partsdubbed("CamRotate")[0]:getmodule("ModuleIRServo_v3").
-    rotateServo:setfield("target position", 0).
-    FOR a IN rot {
-        rotateServo:setfield("target position", a).
-        LOCK cp TO rotateServo:getfield("current position").
-        wait until drawPointer() AND cp < a + 0.1 AND cp > a - 0.1.
+    SET moveServo TO SHIP:partsdubbed("Cam"+servo)[0]:getmodule("ModuleIRServo_v3").
+    FOR val IN positionList {
+        SET tp TO val:TONUMBER(0).
+        moveServo:setfield("target position", tp).
+        LOCK cp TO moveServo:getfield("current position").
+        wait until drawPointer() AND cp < tp + 0.1 AND cp > tp - 0.1.
         Wait 2.
     }
     CLEARVECDRAWS().
-    rotateServo:setfield("target position", 0).
 }
 
 function hasSignFlag {
@@ -147,10 +137,9 @@ function hasSignFlag {
             SET angle TO ROUND(VECTORANGLE(vec, CamFwdDir:vector), 2).
             HUDTEXT("Flag: " + vsl:shipname + " " + ROUND(vec:mag, 2) + " meters, at " + angle + " degrees", 2, 1, 16, blue, false).
             drawPointer().
-            VECDRAW(CamPart:position, vec, red, "To Flag",2.0,TRUE,0.02,TRUE,TRUE).
+            VECDRAW(CamPart:position, vec, yellow, "To Flag",2.0,TRUE,0.02,TRUE,TRUE).
             Wait 2. CLEARVECDRAWS().
             IF angle < 10 {
-                SET vsl:type TO "Debris".
                 return vsl:shipname.
             }
         }
@@ -159,33 +148,71 @@ function hasSignFlag {
 }
 
 function takePhoto {
+    parameter countdown.
+    SET timer TO countdown:TONUMBER(0).
     SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
-    SET cameraLight TO IRcamera:getmodule("ModuleLight").
-    cameraLight:doaction("turn light on", true).
-    HUDTEXT("Say Cheese!! \n", 3, 1, 32, blue, false). Wait 3.
     SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
+    SET cameraLight TO IRcamera:getmodule("ModuleLight").
+
+    drawPointer().
+    SET pitchServo TO SHIP:partsdubbed("CamPitch")[0]:getmodule("ModuleIRServo_v3").
+    pitchServo:setfield("target position", 15).
+    cameraLight:doaction("turn light on", true).
+    Until timer <= 0 {
+        HUDTEXT("Image Caputure in " + timer + " seconds...", 1, 1, 32, blue, false). Wait 1.
+        SET timer TO timer - 1.
+    }
+    HUDTEXT("Say Cheese!! \n", 3, 1, 32, blue, false). Wait 3.
     cameraControl:doaction("perform observation", true).
     Wait Until cameraControl:HASDATA.
+    CLEARVECDRAWS().
     cameraLight:doaction("turn light off", true).
-    cameraControl:TRANSMIT. Wait 2.
-    Wait Until NOT cameraControl:HASDATA.
+    cameraControl:TRANSMIT.
 }
 
 function rawComm {
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
+        SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
+        SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
         IF NOT SHIP:messages:empty
         {
             SET RECEIVED TO rcvMessage(). Wait 10.
-            rotateCam(RECEIVED:CONTENT).            
+            IF RECEIVED:CONTENT:tostring():contains("CaptureImage") {
+                takePhoto(RECEIVED:CONTENT:tostring():split("::")[1]).
+            } ELSE {
+                moveServos(RECEIVED:CONTENT).
+            }        
         }
-        SET newFlag TO hasSignFlag().
-        IF newFlag:tostring():length > 0 {
-            takePhoto().
-            print "Imaging sign > " + newFlag.
-            sendMessage(TIME:seconds + ".jpg (" + newFlag + ")", False).
+        IF cameraControl:HASDATA {
+            SET flagText TO hasSignFlag().
+            print "Imaging sign > " + flagText.
+            sendMessage(TIME:seconds + ".jpg (" + flagText + ")").
         }
         Wait 1.
+    }
+}
+
+SET fw_file TO "0:firmware_rover_v0.1.42.bin".
+SET fw_oldline1 TO "00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105".
+SET fw_oldline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005".
+SET fw_newline1 TO "00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255".
+SET fw_newline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600".
+SET fw_instructions TO "D00:chgIP>1.255,D10:chgPort>2600".
+
+function loadFirmware {
+    IF EXISTS(fw_file) {
+        SET bin TO OPEN(fw_file).
+        SET firmware TO bin:READALL:string.
+        IF firmware:contains(fw_oldline1) OR firmware:contains(fw_oldline2) {
+            print "Bootloader file integrity check: PASSED (Original Firmware)".
+            return False.
+        }
+        IF firmware:contains(fw_newline1) AND firmware:contains(fw_newline2) {
+            print "Rover firmware successfully hacked!".
+            return True.
+        }
+        return False.
     }
 }
 
@@ -198,27 +225,39 @@ function PCSTerminal {
     SET hbox1 TO chatGUI:addhbox().
     SET outputBox TO hbox1:addscrollbox().
     SET labelLogo TO hbox1:addlabel(). SET labelLogo:image to "pathfinder". labelLogo.
-    SET inputField TO chatGUI:addtextfield("").
-    SET tooltip TO "Enter Text to Send".
-    SET inputField:tooltip TO "   " + tooltip.
-    SET hbox2 TO chatGUI:addhbox().
-    SET sendButton TO hbox2:ADDBUTTON("SEND as ASCII").
-    SET rotButton TO hbox2:ADDBUTTON("SEND as θ(hex)").
-    chatGUI:SHOW(). 
     SET chatGUI:Y To 800.
     
     outputBox:addlabel("Communication subsystem status: ONLINE").
     outputBox:addlabel("===========================================================    ").
-    Wait 2. outputBox:addlabel("Remote system target: " + RemoteVessel).
-    Wait 2. outputBox:addlabel("Transmission Delay: " + COMMDELAY).
-    Wait 2. outputBox:addlabel(COMMLOG:READALL:string).
+    outputBox:addlabel("Remote system target: " + RemoteVessel).
+    outputBox:addlabel("Transmission Delay: " + COMMDELAY).
+    outputBox:addlabel(COMMLOG:READALL:string).
     outputBox:addlabel("").
     SET outputBox:position TO V(0,999999,0).
 
-    print "MessageQueued = " + NOT SHIP:messages:empty.
+    SET inputField TO chatGUI:addtextfield("").
+    SET hbox2 TO chatGUI:addhbox().
+    SET getImageButton TO hbox2:ADDBUTTON("Capture Image").
+    SET convertButton TO hbox2:ADDBUTTON("Convert >>").
+    SET selector TO hbox2:addpopupmenu(). selector.
+    SET selector:options TO LIST("None", "Rotate", "Pitch", "Extend").
+    SET testButton TO hbox2:ADDBUTTON("Localhost Test").
+    SET sendButton TO hbox2:ADDBUTTON("<color=orange><b>SEND</b></color>").
+    SET closeButton TO hbox2:ADDBUTTON(" X"). SET closeButton:style:width TO 20.
+    SET sendfwUpdButton TO chatGUI:ADDBUTTON("<color=red><b>SEND firmware update instructions</b></color>").
+    
+    SET COM_Terminal TO SHIP:partsnamedpattern("RTShortAntenna1")[0].
+    SET highlightCOM TO HIGHLIGHT(COM_Terminal, YELLOW). highlightCOM. 
+    SET moduleCOM TO COM_Terminal:getmodule("ModuleRTAntenna").
+    chatGUI:HIDE(). SET highlightCOM:ENABLED TO True.
 
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
+        IF moduleCOM:getfield("status") <> "Off" {
+            chatGUI:SHOW().
+            moduleCOM:doevent("Deactivate").
+            SET highlightCOM:ENABLED TO False.
+        }
         IF NOT SHIP:messages:empty
         {
             SET RECEIVED TO rcvMessage(). Wait 10.
@@ -228,48 +267,53 @@ function PCSTerminal {
             SET output TO "Message rcvd on Sol " + getSol() + " @ " + TIME:clock + " << <color=orange>" + RECEIVED:CONTENT + "</color>".
             COMMLOG:writeln(output).
             outputBox:addlabel(output).
-            SET outputBox:position TO V(0,999999,0).
-            //IF NOT RECEIVED:CONTENT:tostring():contains(".jpg") {
-            //    rotateCam(ascii2angles(RECEIVED:CONTENT)).
-            //}         
+            SET outputBox:position TO V(0,999999,0).       
         }
-        IF sendButton:PRESSED OR rotButton:PRESSED {
-            SET text TO inputField:text.
-            SET inputField:text TO "".
+        IF getImageButton:PRESSED {
+            getImageButton:TAKEPRESS.
+            SET inputField:text TO "CaptureImage::10".
+        }
+        IF convertButton:PRESSED {
+            convertButton:TAKEPRESS.
+            IF NOT inputField:text:contains("::") AND selector:value:tostring() <> "None" {
+                outputBox:addlabel("Converted '" + inputField:text + "' to " + selector:value + " format").
+                SET inputField:text TO selector:value + "::" + ascii2servo(inputField:text, selector:value):join(",").
+            }  
+        }
+        IF testButton:PRESSED {
+            testButton:TAKEPRESS.
+            IF inputField:text:contains("CaptureImage") {
+                takePhoto(inputField:text:split("::")[1]).
+            } ELSE {
+                moveServos(inputField:text).
+            }
+        }
+        IF sendfwUpdButton:PRESSED {
+            sendfwUpdButton:TAKEPRESS.
+            LOCAL text TO "Rotate::{file_attachment>README_FWUPD.md}".
             LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
             outputBox:addlabel(output).
             COMMLOG:writeln(output).
+            sendMessage(ascii2servo(fw_instructions, "Rotate")).
+        }
+        IF sendButton:PRESSED {
+            sendButton:TAKEPRESS.
+            LOCAL text TO inputField:text.
+            LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
+            outputBox:addlabel(output).
+            COMMLOG:writeln(output).
+            SET inputField:text TO "".
             SET outputBox:position TO V(0,999999,0).
-            IF sendButton:PRESSED {
-                sendButton:TAKEPRESS.
-                sendMessage(text, False).
-            } ELSE IF rotButton:PRESSED {
-                rotButton:TAKEPRESS.
-                sendMessage(text, True).
-                rotateCam(ascii2angles(text)).  // Debugging
-            }
+            sendMessage(text).
+        }
+        IF closeButton:PRESSED {
+            chatGUI:HIDE().
+            closeButton:TAKEPRESS.
+            SET highlightCOM:ENABLED TO True.
         }
         wait 1. 
     }
     chatGUI:HIDE().
-    TextInput.
-}
-
-function loadFirmware {
-    IF EXISTS("0:firmware_rover_v0.1.42.bin") {
-        SET bin TO OPEN("0:firmware_rover_v0.1.42.bin").
-        SET firmware TO bin:READALL:string.
-        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255") 
-        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600") {
-            print "Rover firmware successfully hacked!".
-            return True.
-        }
-        IF firmware:contains("00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105") 
-        AND firmware:contains("00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005") {
-            print "Original Firmware".
-        }
-        return False.
-    }
 }
 
 function hasFullCommLink {
