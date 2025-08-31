@@ -1,7 +1,7 @@
 wait until ship:unpacked.
 clearscreen.
 print "Welcome to the Rover".
-//runpath("0:RoverPower.ks").
+SET SHIP:type TO "Rover".
 
 function getResource {
     parameter res.
@@ -11,16 +11,18 @@ function getResource {
     return res.
 }
 
-function checkChildPart {
+function childPartDist {
     parameter parent, child.
     SET partParent TO SHIP:partsnamedpattern(parent)[0].
     //print partParent.
     FOR childpart IN partParent:children {
         //print "    " + childpart.
         IF childpart:name:contains(child) {
-            return true.
+            SET vec TO partParent:position - childpart:position.
+            return vec:mag.
         }
     }
+    return 99999.
 }
 
 function CabinHeat {
@@ -34,14 +36,24 @@ function CabinHeat {
     }
 }
 
-function getPowerFlow {
-    FOR res in SHIP:resources {
-        IF res:name:contains("ElectricCharge") {
-            LOCAL prevAmount to res:amount.
-            wait 1.
-            return (res:amount - prevAmount).
+function mainBattEnergy {
+    SET batteries TO LIST(SHIP:partsnamed("Ares-Battery"),SHIP:partsnamedpattern("largeBatteryPack")).
+    SET EC TO 0.
+    FOR battery_type IN batteries { 
+        FOR battery IN battery_type {
+            SET res TO battery:resources[0].
+            IF res:name:contains("ElectricCharge") {
+                SET EC TO EC + res:amount.
+            }
         }
     }
+    return EC.
+}
+
+function getPowerFlow {
+    SET prevAmount TO mainBattEnergy().
+    wait 1.
+    return (mainBattEnergy() - prevAmount).
 }
 
 function powerFaultProtection {
@@ -94,7 +106,7 @@ UNTIL false {
             powerFaultProtection("== NOT GROUNDED ==").
         }
     }
-    IF getResource("_CabinHeater") = 0 AND NOT checkChildPart("Ares-Cockpit","rtg") {
+    IF getResource("_CabinHeater") = 0 AND childPartDist("Ares-Cockpit","rtg") > 0.8 {
         CabinHeat().
     }
     wait 10.

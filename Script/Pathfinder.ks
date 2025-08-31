@@ -5,23 +5,39 @@ Wait Until SHIP:connection:isconnected. Wait 2.
 CORE:DOEVENT("Open Terminal"). // TESTING
 CLEARVECDRAWS().
 
-IF shipName = "Pathfinder Demo"
-{
-    SET RemoteVessel TO VESSEL("Mars Rover").
-} ELSE IF shipName = "Mars Rover" {
-    SET RemoteVessel TO VESSEL("Pathfinder Demo").
-}
 IF ADDONS:available("RT") {
     print "Control delay:         " + ROUND(ADDONS:RT:KSCDELAY(SHIP)) + " sec".
+        IF SHIP:parts:tostring:contains("MediumDishAntenna") {
+        SET dish TO SHIP:partsnamed("MediumDishAntenna")[0].
+        SET module TO dish:getmodule("ModuleRTAntenna").
+        IF module:getfield("status") = "Connected" {
+            SET SHIP:type TO "Probe".
+        }
+    }
+} ELSE { 
+    HUDTEXT("RemoteTech not installed.... \n", 3, 1, 32, blue, false). Wait Until False.
 }
 
+function getRemoteVessel {
+    LIST Targets IN Vessels.
+    FOR vsl IN Vessels {
+        IF vsl:type = "Probe" {
+            print "Remote Target: " + vsl + " - Type: " + vsl:type.
+            return VESSEL(vsl:name).
+        }
+    }
+    print "No Remote Probe Found!".
+    HUDTEXT("No Remote Probe Connection! \n", 10, 1, 16, red, false).
+    Wait 20. Reboot.
+}
+
+SET RemoteVessel TO getRemoteVessel().
 print "Waiting for connection to remote...". Wait 2.
 Wait Until RemoteVessel:connection:isconnected.
 print "SIGNAL ACQUIRED!". print " ".
 
 SET C TO RemoteVessel:CONNECTION.
 SET COMMDELAY TO convertSeconds(ROUND(C:delay())).
-print RemoteVessel.
 print "Transmission delay:    " + COMMDELAY.
 
 IF EXISTS("CommLog") {
@@ -93,7 +109,7 @@ function drawPointer {
 
 function ascii2servo {
     parameter msg, servo.
-    set posList to list().
+    SET posList TO list().
     IF servo = "None" { return msg. }
     IF servo = "Rotate" { SET div TO FLOOR(360 / 16). }
     IF servo = "Pitch" { SET div TO FLOOR(120 / 16). }
@@ -198,7 +214,7 @@ SET fw_oldline1 TO "00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |
 SET fw_oldline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005".
 SET fw_newline1 TO "00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255".
 SET fw_newline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600".
-SET fw_instructions TO "D00:chgIP>1.255,D10:chgPort>2600".
+SET fw_instructions TO "D00:IP>1.255,D10:Port>2600".
 
 function loadFirmware {
     IF EXISTS(fw_file) {
@@ -317,8 +333,7 @@ function PCSTerminal {
 }
 
 function hasFullCommLink {
-    IF shipName = "Pathfinder Demo"
-    {
+    IF BODY:name = "Earth" AND SHIP:parts:tostring:contains("RTShortAntenna1") {
         return True.
     }
     return loadFirmware().

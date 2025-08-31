@@ -1,7 +1,8 @@
 wait until ship:unpacked.
 clearscreen.
 print "Welcome to the Hab".
-//runpath("0:HabCode.ks").
+SET SHIP:type TO "Base".
+
 function completeContractParameter {
     parameter partName.
     FOR part IN SHIP:partsnamed(partName) {

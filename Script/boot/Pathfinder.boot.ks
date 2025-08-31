@@ -1,5 +1,18 @@
-wait until ship:unpacked. //Wait 2.
+wait until ship:unpacked.
 clearscreen.
-print "Loading remote firmware from JPL servers...".
-Wait Until SHIP:connection:isconnected.
-runpath("0:Pathfinder.ks").
+
+Wait Until SHIP:connection:isconnected. Wait 2.
+IF ADDONS:available("RT") {
+    IF ADDONS:RT:HASKSCCONNECTION(SHIP) AND NOT EXISTS("1:Pathfinder.ks") {
+        print "Loading remote firmware from JPL servers...".
+        COPYPATH("0:Pathfinder.ks", "1:Pathfinder.ks").
+        runpath("Pathfinder.ks").
+    } ELSE IF EXISTS("1:Pathfinder.ks") {
+        runpath("Pathfinder.ks").
+    } ELSE {
+        print "No firmware found!".
+        Wait Until False.
+    }
+}
+
+
