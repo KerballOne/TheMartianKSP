@@ -9,3 +9,5 @@ IF module:getfield("status") <> "Off" {
     print "turning off".
     module:doevent("Deactivate").
 }
+
+COMPILE "Pathfinder.ks" to "0:Pathfinder.ksm".
