@@ -46,7 +46,7 @@ IF EXISTS("CommLog") {
     SET COMMLOG TO CREATE("CommLog").
 }
 
-///////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function powerCycle {
     parameter action.
@@ -80,8 +80,7 @@ function sendMessage {
     IF (MESSAGE:tostring():length = 0) { return False. }
     SET C TO RemoteVessel:CONNECTION.
     print "Delay is " + COMMDELAY.
-    print "Sending message.... ".
-    print "   > " + MESSAGE.
+    print "Sending " + MESSAGE:tostring():length + " bytes...".
     IF C:SENDMESSAGE(MESSAGE) {
         Wait 1.
         print "Message sent!".
@@ -94,8 +93,8 @@ function rcvMessage {
         Wait Until kuniverse:timewarp:issettled.
     }
     getvoice(0):PLAY( LIST(NOTE(440, 0.35),NOTE(440, 0.25),NOTE(240, 0.5))).
-    HUDTEXT("Receiving Message.... \n", 10, 1, 32, yellow, false). 
     SET RECEIVED TO SHIP:MESSAGES:POP.
+    HUDTEXT("Receiving Message.... \n" + RECEIVED:CONTENT:Length + " bytes", 10, 1, 32, yellow, false). 
     return RECEIVED.
 }
 
@@ -140,10 +139,13 @@ function moveServos {
         wait until drawPointer() AND cp < tp + 0.1 AND cp > tp - 0.1.
         Wait 2.
     }
+    IF BODY:name = "Mars" AND servo = "Pitch" AND positionList:length >= 2 {
+        /// CONTRACT PARAMETER COMPLETE, Mark arms up YESS photo
+    }
     CLEARVECDRAWS().
 }
 
-function hasSignFlag {
+function signFlag {
     LIST Targets IN Vessels.
     SET CamPart TO SHIP:partsnamed("IR.Camera")[0].
     FOR vsl IN Vessels {
@@ -186,30 +188,16 @@ function takePhoto {
     cameraControl:TRANSMIT.
 }
 
-function rawComm {
-    UNTIL False {
-        //CORE:DOEVENT("Close Terminal").
-        SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
-        SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
-        IF NOT SHIP:messages:empty
-        {
-            SET RECEIVED TO rcvMessage(). Wait 10.
-            IF RECEIVED:CONTENT:tostring():contains("CaptureImage") {
-                takePhoto(RECEIVED:CONTENT:tostring():split("::")[1]).
-            } ELSE {
-                moveServos(RECEIVED:CONTENT).
-            }        
-        }
-        IF cameraControl:HASDATA {
-            SET flagText TO hasSignFlag().
-            print "Imaging sign > " + flagText.
-            sendMessage(TIME:seconds + ".jpg (" + flagText + ")").
-        }
-        Wait 1.
+function highlightConsole {
+    IF SHIP:parts:tostring:contains("RTShortAntenna1") {
+        SET COM_Terminal TO SHIP:partsnamedpattern("RTShortAntenna1")[0].
+        SET highlightCOM TO HIGHLIGHT(COM_Terminal, YELLOW). highlightCOM. 
+        SET moduleCOM TO COM_Terminal:getmodule("ModuleRTAntenna").
+        SET highlightCOM:ENABLED TO True.
     }
 }
 
-SET fw_file TO "0:firmware_rover_v0.1.42.bin".
+SET fw_file TO "1:firmware_rover_v0.1.42.bin".
 SET fw_oldline1 TO "00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105".
 SET fw_oldline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005".
 SET fw_newline1 TO "00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255".
@@ -217,6 +205,10 @@ SET fw_newline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |
 SET fw_instructions TO "D00:IP>1.255,D10:Port>2600".
 
 function loadFirmware {
+    IF CORE:volume:name <> "PCS_3M_9766" AND ADDONS:RT:HASKSCCONNECTION(SHIP) {
+        print "Loading remote firmware from JPL servers...".
+        COPYPATH("0:firmware_rover_v0.1.42.bin", "1:firmware_rover_v0.1.42.bin").
+    }
     IF EXISTS(fw_file) {
         SET bin TO OPEN(fw_file).
         SET firmware TO bin:READALL:string.
@@ -226,14 +218,59 @@ function loadFirmware {
         }
         IF firmware:contains(fw_newline1) AND firmware:contains(fw_newline2) {
             print "Rover firmware successfully hacked!".
+            /// CONTRACT PARAMETER COMPLETE, hex hacking rover firmware
+            SET CORE:volume:name TO "PCS_3M_9766".
             return True.
         }
         return False.
     }
 }
 
+function rawComm {
+    parameter doHighlight.
+    loadFirmware().
+    UNTIL False {
+        //CORE:DOEVENT("Close Terminal").
+        SET IRcamera TO SHIP:partsnamedpattern("IR.Camera")[0].
+        SET cameraControl TO IRcamera:getmodule("ModuleScienceExperiment").
+        IF NOT SHIP:messages:empty
+        {
+            SET RECEIVED TO rcvMessage(). Wait 10.
+            IF RECEIVED:CONTENT:tostring():contains("CaptureImage::") {
+                print "Received CaptureImage command".
+                takePhoto(RECEIVED:CONTENT:tostring():split("::")[1]).
+                /// CONTRACT PARAMETER COMPLETE, sign post
+            } ELSE IF RECEIVED:CONTENT:tostring():contains("::") {
+                print "Received MoveServos command".
+                moveServos(RECEIVED:CONTENT).
+            } 
+            IF RECEIVED:CONTENT:tostring():contains("file_attachment") {
+                print "Received compressed file".
+                SET CORE:volume:name TO "PCS_2M_4575".
+                SET doHighlight TO True.
+            }
+        }
+        IF doHighlight { highlightConsole(). }
+        IF moduleCOM:getfield("status") <> "Off" {
+            EDIT fw_file.
+            moduleCOM:doevent("Deactivate").
+            SET highlightCOM:ENABLED TO False.
+        }
+        IF cameraControl:HASDATA {
+            SET flagText TO signFlag().
+            print "Imaging sign > " + flagText.
+            sendMessage(TIME:seconds + ".jpg (" + flagText + ")").
+        }
+        Wait 1.
+    }
+}
+
 function PCSTerminal {
+    parameter show.
     SET chatGUI TO GUI(800,440).
+    chatGUI:HIDE().
+    highlightConsole().
+
     SET title TO chatGUI:addlabel("<b><color=black><size=30>
         Pathfinder Communications Subsystem        
         </size></color></b>"). title.
@@ -254,19 +291,18 @@ function PCSTerminal {
     SET inputField TO chatGUI:addtextfield("").
     SET hbox2 TO chatGUI:addhbox().
     SET getImageButton TO hbox2:ADDBUTTON("Capture Image").
-    SET convertButton TO hbox2:ADDBUTTON("Convert >>").
-    SET selector TO hbox2:addpopupmenu(). selector.
-    SET selector:options TO LIST("None", "Rotate", "Pitch", "Extend").
-    SET testButton TO hbox2:ADDBUTTON("Localhost Test").
+    IF show >= 1 {
+        SET convertButton TO hbox2:ADDBUTTON("Convert >>").
+        SET selector TO hbox2:addpopupmenu(). selector.
+        SET selector:options TO LIST("None", "Rotate", "Pitch", "Extend").
+        SET testButton TO hbox2:ADDBUTTON("Localhost Test").
+    }
     SET sendButton TO hbox2:ADDBUTTON("<color=orange><b>SEND</b></color>").
     SET closeButton TO hbox2:ADDBUTTON(" X"). SET closeButton:style:width TO 20.
-    SET sendfwUpdButton TO chatGUI:ADDBUTTON("<color=red><b>SEND firmware update instructions</b></color>").
+    IF show >= 2 {
+        SET sendfwUpdButton TO chatGUI:ADDBUTTON("<color=red><b>SEND firmware update instructions</b></color>").
+    }
     
-    SET COM_Terminal TO SHIP:partsnamedpattern("RTShortAntenna1")[0].
-    SET highlightCOM TO HIGHLIGHT(COM_Terminal, YELLOW). highlightCOM. 
-    SET moduleCOM TO COM_Terminal:getmodule("ModuleRTAntenna").
-    chatGUI:HIDE(). SET highlightCOM:ENABLED TO True.
-
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
         IF moduleCOM:getfield("status") <> "Off" {
@@ -284,19 +320,24 @@ function PCSTerminal {
             COMMLOG:writeln(output).
             outputBox:addlabel(output).
             SET outputBox:position TO V(0,999999,0).       
+            IF RECEIVED:CONTENT:tostring():contains(".jpg") AND BODY:name = "Earth" {
+                /// CONTRACT PARAMETER COMPLETE, Are you receiving me?
+                IF show = 0 { SET CORE:volume:name TO "PCS_2E_1665". }
+                IF show = 1 { SET CORE:volume:name TO "PCS_3E_4571". SET show TO 2. }
+            }
         }
         IF getImageButton:PRESSED {
             getImageButton:TAKEPRESS.
             SET inputField:text TO "CaptureImage::10".
         }
-        IF convertButton:PRESSED {
+        IF show >= 1 AND convertButton:PRESSED {
             convertButton:TAKEPRESS.
             IF NOT inputField:text:contains("::") AND selector:value:tostring() <> "None" {
                 outputBox:addlabel("Converted '" + inputField:text + "' to " + selector:value + " format").
                 SET inputField:text TO selector:value + "::" + ascii2servo(inputField:text, selector:value):join(",").
             }  
         }
-        IF testButton:PRESSED {
+        IF show >= 1 AND testButton:PRESSED {
             testButton:TAKEPRESS.
             IF inputField:text:contains("CaptureImage") {
                 takePhoto(inputField:text:split("::")[1]).
@@ -304,23 +345,27 @@ function PCSTerminal {
                 moveServos(inputField:text).
             }
         }
-        IF sendfwUpdButton:PRESSED {
+        IF  show >= 2 AND sendfwUpdButton:PRESSED {
             sendfwUpdButton:TAKEPRESS.
-            LOCAL text TO "Rotate::{file_attachment>README_FWUPD.md}".
+            LOCAL text TO "{file_attachment>FirmwareUpdate/README.md}".
             LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
             outputBox:addlabel(output).
+            SET outputBox:position TO V(0,999999,0).
             COMMLOG:writeln(output).
-            sendMessage(ascii2servo(fw_instructions, "Rotate")).
+            sendMessage(text). Wait 5.
+            sendMessage("Rotate::" + ascii2servo(fw_instructions, "Rotate"):join(",")).
         }
         IF sendButton:PRESSED {
             sendButton:TAKEPRESS.
             LOCAL text TO inputField:text.
-            LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
-            outputBox:addlabel(output).
-            COMMLOG:writeln(output).
-            SET inputField:text TO "".
-            SET outputBox:position TO V(0,999999,0).
-            sendMessage(text).
+            IF text:length > 0 {
+                LOCAL output TO "Message sent on Sol " + getSol() + " @ " + TIME:clock + " >> <color=white>" + text + "</color>".
+                outputBox:addlabel(output).
+                COMMLOG:writeln(output).
+                SET inputField:text TO "".
+                SET outputBox:position TO V(0,999999,0).
+                sendMessage(text).
+            }
         }
         IF closeButton:PRESSED {
             chatGUI:HIDE().
@@ -332,43 +377,25 @@ function PCSTerminal {
     chatGUI:HIDE().
 }
 
-function hasFullCommLink {
-    IF BODY:name = "Earth" AND SHIP:parts:tostring:contains("RTShortAntenna1") {
-        return True.
-    }
-    return loadFirmware().
-}
-
-/////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //SET CORE:volume:name TO "".  /// TESTING RESET
-
 IF CORE:volume:name = "" { SET CORE:volume:name TO "Init0". }
-
-IF CORE:volume:name = "Init0" {
+print CORE:volume:name.
+IF CORE:volume:name = "Init0" AND RemoteVessel:CONNECTION:ISCONNECTED {
     COMMLOG:clear.
     powerCycle("wake").
-    SET CORE:volume:name TO "Init1". 
+    Wait 3. print "Connection established with " + RemoteVessel:name.
+    IF BODY:name = "Earth" { SET CORE:volume:name TO "PCS_1E_8429". }
+    IF BODY:name = "Mars"  { SET CORE:volume:name TO "PCS_1M_2347". }
 }
 
-IF CORE:volume:name = "Init1" {
-    Wait 5.
-    IF RemoteVessel:CONNECTION:ISCONNECTED {
-        Wait 2. print "Connection established with " + RemoteVessel:name.
-        SET CORE:volume:name TO "Init2".
-    }
-}
+IF CORE:volume:name = "PCS_1E_8429" { PCSTerminal(0). }
+IF CORE:volume:name = "PCS_2E_1665" { PCSTerminal(1). }
+IF CORE:volume:name = "PCS_3E_4571" { PCSTerminal(2). }
 
-IF CORE:volume:name = "Init2" {
-    IF hasFullCommLink {
-        PCSTerminal().
-    } ELSE {
-        print "Receiving blind".
-        rawComm().
-    }
-}
+IF CORE:volume:name = "PCS_1M_2347" { rawComm(False). }
+IF CORE:volume:name = "PCS_2M_4575" { rawComm(True). }
+IF CORE:volume:name = "PCS_3M_9766" { PCSTerminal(0). }
 
-IF CORE:volume:name = "PCS_Start" {
-    PCSTerminal().
-    //SET CORE:volume:name TO "Next1".
-}
+
 
