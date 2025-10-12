@@ -2,7 +2,7 @@ ship = Pathfinder Probe
 version = 1.12.5
 description = 
 type = VAB
-size = 4.83688831,1.38198757,4.21745968
+size = 4.83688879,1.38025284,4.21745968
 steamPublishedFileId = 0
 persistentId = 210099676
 rot = 0,0,0,0
@@ -12,12 +12,12 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.24.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.4.0|kOS-Career=0.2.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.0|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.0|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.2.6
+_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.0|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.25.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.4.0|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.2
 PART
 {
 	part = probeCoreOcto2.v2_4290493764
 	partName = Part
-	persistentId = 806978517
+	persistentId = 1955963004
 	pos = 0.124743246,5.96784782,-0.377787679
 	attPos = 0,0,0
 	attPos0 = 0.124743246,5.96784782,-0.377787679
@@ -1454,7 +1454,7 @@ PART
 {
 	part = EquiTriangle1p5_4290450910
 	partName = Part
-	persistentId = 1552401048
+	persistentId = 3014175895
 	pos = 0.124743246,5.87343597,-0.377787679
 	attPos = 0,0,0
 	attPos0 = 0,-0.09441185,0
@@ -1650,7 +1650,7 @@ PART
 {
 	part = IR.RailHinge.Short_4290385320
 	partName = Part
-	persistentId = 584001913
+	persistentId = 5387418
 	pos = -0.356785536,5.9385643,-0.672433138
 	attPos = 0.0700636208,0,0.0404513776
 	attPos0 = -0.55159241,0.0651283264,-0.335096866
@@ -2088,7 +2088,7 @@ PART
 {
 	part = EquiTriangle1p5_4290379990
 	partName = Part
-	persistentId = 3465597283
+	persistentId = 4249712014
 	pos = -0.877621055,5.90007114,-0.979121685
 	attPos = -0.00517872628,-0.0200508013,-0.500456393
 	attPos0 = -8.3819014E-09,0.0585486069,-0.10394419
@@ -2282,7 +2282,7 @@ PART
 {
 	part = solarPanels5_4290357970
 	partName = Part
-	persistentId = 2519583532
+	persistentId = 993589720
 	pos = -0.672989964,5.89255905,-0.852861047
 	attPos = -0.0629247651,-0.041010052,0.0312040001
 	attPos0 = 0.0578837693,0.0334995613,0.209192038
@@ -2430,7 +2430,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -2530,7 +2530,7 @@ PART
 {
 	part = solarPanels5_4290356790
 	partName = Part
-	persistentId = 2296994189
+	persistentId = 2449107212
 	pos = -0.985626221,5.89625359,-1.03545344
 	attPos = -0.0612573102,-0.0373183787,0.00050637126
 	attPos0 = 0.0550327487,0.0334995836,-0.122159973
@@ -2678,7 +2678,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -2730,7 +2730,7 @@ PART
 	MODULE
 	{
 		name = KOSNameTag
-		isEnabled = False
+		isEnabled = True
 		nameTag = 
 		stagingEnabled = True
 		EVENTS
@@ -2778,7 +2778,7 @@ PART
 {
 	part = solarPanels5_4290356338
 	partName = Part
-	persistentId = 1430936224
+	persistentId = 542216812
 	pos = -1.33847392,5.89895535,-1.24424827
 	attPos = -0.0517034568,-0.0346195996,0.000427663326
 	attPos0 = 0.0464853756,0.0334996097,-0.53207618
@@ -2926,7 +2926,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -2978,7 +2978,7 @@ PART
 	MODULE
 	{
 		name = KOSNameTag
-		isEnabled = False
+		isEnabled = True
 		nameTag = 
 		stagingEnabled = True
 		EVENTS
@@ -3026,7 +3026,7 @@ PART
 {
 	part = solarPanels5_4290355022
 	partName = Part
-	persistentId = 2652615348
+	persistentId = 2835243247
 	pos = -0.488306373,5.89140987,-1.24003804
 	attPos = -0.0455706716,-0.0421582572,0.000376597047
 	attPos0 = 0.467883259,0.0334995687,0.202835217
@@ -3174,7 +3174,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -3274,7 +3274,7 @@ PART
 {
 	part = solarPanels5_4290354618
 	partName = Part
-	persistentId = 1909654727
+	persistentId = 655792593
 	pos = -0.899246693,5.89179325,-0.511840105
 	attPos = -0.0453492999,-0.041775059,0.000374659896
 	attPos0 = -0.368349195,0.0334986001,0.217967838
@@ -3422,7 +3422,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -3522,7 +3522,7 @@ PART
 {
 	part = solarPanels5_4290354048
 	partName = Part
-	persistentId = 1661098121
+	persistentId = 3182375896
 	pos = -1.17545056,5.89768314,-0.836792707
 	attPos = 0.0455392003,-0.035890013,0.0961881876
 	attPos0 = -0.319250345,0.0334995873,-0.280694157
@@ -3670,7 +3670,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -3770,7 +3770,7 @@ PART
 {
 	part = solarPanels5_4290351982
 	partName = Part
-	persistentId = 3603900296
+	persistentId = 2226704871
 	pos = -0.907684207,5.89830208,-1.32393324
 	attPos = -0.0197916925,-0.0352700092,-0.085589841
 	attPos0 = 0.301723868,0.0334995873,-0.115190148
@@ -3918,7 +3918,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -4018,7 +4018,7 @@ PART
 {
 	part = IR.RailHinge.Short_4290381706
 	partName = Part
-	persistentId = 2244892713
+	persistentId = 1095123949
 	pos = 0.110337123,5.9385643,0.186551183
 	attPos = 3.7252903E-09,0,-0.0809026361
 	attPos0 = -0.0144061232,0.0651283264,0.645241499
@@ -4456,7 +4456,7 @@ PART
 {
 	part = EquiTriangle1p5_4290378176
 	partName = Part
-	persistentId = 811353049
+	persistentId = 1902458443
 	pos = 0.105158359,5.90007019,0.79095161
 	attPos = -0.00517873932,-0.0200508162,-0.500456095
 	attPos0 = -1.430559E-09,0.0585486218,-0.103944175
@@ -4652,11 +4652,11 @@ PART
 {
 	part = solarPanels5_4290358614
 	partName = Part
-	persistentId = 3570998224
+	persistentId = 208142536
 	pos = 0.112186268,5.89255905,0.550605536
 	attPos = -0.0629247129,-0.0410100967,0.0312040299
 	attPos0 = 0.0578837693,0.0334999785,0.209192038
-	rot = 0.50000155,0.500002205,0.499997765,-0.499998748
+	rot = 0.500001431,0.500002325,0.499997795,-0.499998868
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929245,0.502062261,0.502062261,0.497929245
 	mir = 1,1,1
@@ -4800,7 +4800,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -4900,11 +4900,11 @@ PART
 {
 	part = solarPanels5_4290356904
 	partName = Part
-	persistentId = 266384506
+	persistentId = 1520124636
 	pos = 0.110377058,5.89625263,0.912652493
 	attPos = -0.0612572208,-0.0373181626,0.00050650537
 	attPos0 = 0.0550327599,0.0334993899,-0.122159943
-	rot = 0.50000155,0.500002205,0.499997765,-0.499998748
+	rot = 0.500001431,0.500002325,0.499997795,-0.499998868
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929245,0.502062261,0.502062261,0.497929245
 	mir = 1,1,1
@@ -5048,7 +5048,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -5148,11 +5148,11 @@ PART
 {
 	part = solarPanels5_4290356452
 	partName = Part
-	persistentId = 24762973
+	persistentId = 1019748423
 	pos = 0.105981551,5.89895535,1.32262528
 	attPos = -0.0517034009,-0.0346201025,0.000427603722
 	attPos0 = 0.0464854501,0.0334998444,-0.53207612
-	rot = 5.15703569E-08,0.707109511,0.707104206,8.97652161E-11
+	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.707100809,0.00292250817,0.0029225084,0.707100749
 	mir = 1,1,1
@@ -5296,7 +5296,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -5396,11 +5396,11 @@ PART
 {
 	part = solarPanels5_4290356000
 	partName = Part
-	persistentId = 372948685
-	pos = -0.31546548,5.89141083,0.584256172
+	persistentId = 1168490010
+	pos = -0.315466821,5.89141083,0.584256172
 	attPos = -0.0455710292,-0.0421583466,0.000376582146
 	attPos0 = 0.467882991,0.0334999487,0.202835172
-	rot = 5.15703569E-08,0.707109511,0.707104206,8.97652161E-11
+	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.707100809,0.00292250817,0.0029225084,0.707100749
 	mir = 1,1,1
@@ -5544,7 +5544,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -5644,11 +5644,11 @@ PART
 {
 	part = solarPanels5_4290355548
 	partName = Part
-	persistentId = 2994701323
-	pos = 0.520652413,5.8917923,0.576036215
+	persistentId = 437070762
+	pos = 0.520653605,5.8917923,0.576036215
 	attPos = -0.0453489125,-0.0417759195,0.000374734402
 	attPos0 = -0.368348926,0.0334990472,0.217967868
-	rot = 5.15703569E-08,0.707109511,0.707104206,8.97652161E-11
+	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.707100809,0.00292250817,0.0029225084,0.707100749
 	mir = 1,1,1
@@ -5792,7 +5792,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -5892,11 +5892,11 @@ PART
 {
 	part = solarPanels5_4290354270
 	partName = Part
-	persistentId = 3425479670
-	pos = 0.377338529,5.89768124,0.977713823
+	persistentId = 4158251307
+	pos = 0.377339423,5.89768124,0.977713823
 	attPos = 0.0455394983,-0.0358898081,0.0961882025
 	attPos0 = -0.319250077,0.0334995948,-0.280694097
-	rot = 0.188038275,-0.681648374,-0.681644738,-0.188036591
+	rot = 0.188038319,-0.681648254,-0.681644917,-0.188036561
 	attRot = -5.33452642E-08,4.08063414E-08,0.963993669,0.265925169
 	attRot0 = 0.68241781,0.185218573,0.185218632,-0.68241781
 	mir = 1,1,1
@@ -6040,7 +6040,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -6140,11 +6140,11 @@ PART
 {
 	part = solarPanels5_4290352204
 	partName = Part
-	persistentId = 3340297213
-	pos = -0.178427488,5.89830112,0.989394546
+	persistentId = 3220770806
+	pos = -0.178428382,5.89830112,0.989394546
 	attPos = -0.0197918415,-0.035269741,-0.0855898783
 	attPos0 = 0.301723659,0.0334993638,-0.115190171
-	rot = 0.686745763,-0.168472439,-0.168470502,-0.686742544
+	rot = 0.686745584,-0.168472543,-0.168470532,-0.686742663
 	attRot = 5.19844754E-08,6.49584493E-08,0.238254398,0.97120297
 	attRot0 = 0.17130819,0.686042011,0.686041892,-0.171308219
 	mir = 1,1,1
@@ -6288,7 +6288,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -6388,7 +6388,7 @@ PART
 {
 	part = IR.RailHinge.Short_4290381530
 	partName = Part
-	persistentId = 283425458
+	persistentId = 2792250879
 	pos = 0.620678067,5.9385643,-0.647481084
 	attPos = -0.0700637698,0,0.0404512286
 	attPos0 = 0.565998614,0.0651283264,-0.310144663
@@ -6826,11 +6826,11 @@ PART
 {
 	part = EquiTriangle1p5_4290378114
 	partName = Part
-	persistentId = 1577794774
+	persistentId = 1580146997
 	pos = 1.14669287,5.9000721,-0.945198298
 	attPos = -0.00517873652,-0.0200507119,-0.500456214
 	attPos0 = 1.86264471E-09,0.0585486069,-0.103944182
-	rot = -4.23419488E-06,0.50357312,-2.20742891E-06,-0.863952637
+	rot = -4.23419624E-06,0.503573179,-2.20742822E-06,-0.863952696
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = -0.0390597396,-2.98023188E-08,-0.999236882,1.49011594E-08
 	mir = 1,1,1
@@ -7020,11 +7020,11 @@ PART
 {
 	part = solarPanels5_4290358024
 	partName = Part
-	persistentId = 1735961241
+	persistentId = 1487298076
 	pos = 0.935033739,5.89256001,-0.831110716
 	attPos = -0.0629247352,-0.0410093404,0.0312039703
 	attPos0 = 0.0578838028,0.0334996805,0.209192097
-	rot = 0.683010757,-0.183011055,-0.183016881,-0.683014095
+	rot = 0.683010578,-0.183011204,-0.183016762,-0.683014452
 	attRot = 0,0,0,1
 	attRot0 = -0.497929186,0.502062261,0.502062142,0.497929245
 	mir = 1,1,1
@@ -7168,7 +7168,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -7268,11 +7268,11 @@ PART
 {
 	part = solarPanels5_4290356844
 	partName = Part
-	persistentId = 2361891675
+	persistentId = 1857522644
 	pos = 1.24947941,5.89625454,-1.0105685
 	attPos = -0.0612573251,-0.037318632,0.000506535172
 	attPos0 = 0.0550328791,0.0334997848,-0.122159943
-	rot = 0.683010757,-0.183011055,-0.183016881,-0.683014095
+	rot = 0.683010578,-0.183011204,-0.183016762,-0.683014452
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929186,0.502062261,0.502062142,0.497929245
 	mir = 1,1,1
@@ -7416,7 +7416,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -7516,7 +7516,7 @@ PART
 {
 	part = solarPanels5_4290356392
 	partName = Part
-	persistentId = 1211697840
+	persistentId = 444342704
 	pos = 1.60672307,5.8989563,-1.21174943
 	attPos = -0.0517033562,-0.0346198827,0.000427484512
 	attPos0 = 0.0464855134,0.0334999114,-0.532075942
@@ -7664,7 +7664,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -7764,8 +7764,8 @@ PART
 {
 	part = solarPanels5_4290355076
 	partName = Part
-	persistentId = 4261210819
-	pos = 1.17800319,5.89141178,-0.477581292
+	persistentId = 123006086
+	pos = 1.17800367,5.89141178,-0.477580488
 	attPos = -0.04557091,-0.0421577692,0.000376537442
 	attPos0 = 0.467883319,0.0334997848,0.202835143
 	rot = 0.612369537,0.353553891,0.353550285,-0.612377107
@@ -7912,7 +7912,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -8012,8 +8012,8 @@ PART
 {
 	part = solarPanels5_4290354672
 	partName = Part
-	persistentId = 4096828664
-	pos = 0.752823472,5.89179325,-1.19756579
+	persistentId = 2182845954
+	pos = 0.752823114,5.89179325,-1.19756651
 	attPos = -0.0453489125,-0.0417750701,0.000374719501
 	attPos0 = -0.368349224,0.033498615,0.217967927
 	rot = 0.612369537,0.353553891,0.353550285,-0.612377107
@@ -8160,7 +8160,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -8260,11 +8260,11 @@ PART
 {
 	part = solarPanels5_4290354102
 	partName = Part
-	persistentId = 4141787376
-	pos = 1.17234349,5.8976841,-1.27429187
+	persistentId = 3763879859
+	pos = 1.17234349,5.8976841,-1.27429199
 	attPos = 0.0455396473,-0.035890121,0.096188277
 	attPos0 = -0.319250286,0.0334997363,-0.280694216
-	rot = -0.496302783,-0.503667176,-0.50366658,0.496309251
+	rot = -0.496302843,-0.503667116,-0.503666759,0.49630937
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.707100689,0.00292248814,0.00292250444,0.707100868
 	mir = 1,1,1
@@ -8408,7 +8408,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -8508,11 +8508,11 @@ PART
 {
 	part = solarPanels5_4290352036
 	partName = Part
-	persistentId = 2555694913
-	pos = 1.46034479,5.89830303,-0.798828781
+	persistentId = 1830207959
+	pos = 1.46034586,5.89830303,-0.798828006
 	attPos = -0.0197918415,-0.0352704003,-0.0855898634
 	attPos0 = 0.301723987,0.0334998481,-0.115190171
-	rot = 0.197472006,-0.678972006,-0.678976238,-0.197467372
+	rot = 0.197471946,-0.678972065,-0.678976297,-0.197467208
 	attRot = -5.33452642E-08,4.08063414E-08,0.963993669,0.265925169
 	attRot0 = 0.351572871,0.613511622,0.613511622,-0.351572931
 	mir = 1,1,1
@@ -8656,7 +8656,7 @@ PART
 		name = SolarPanelFixer
 		isEnabled = True
 		editorEnabled = True
-		nominalRate = 0.34999999403953552
+		nominalRate = 0.059999998658895493
 		persistentFactor = 1
 		state = Static
 		trackedSunIndex = 0
@@ -8756,8 +8756,8 @@ PART
 {
 	part = KAS.JS1_4290213044
 	partName = Part
-	persistentId = 428334478
-	pos = 0.0897812024,5.88351822,1.61702049
+	persistentId = 4160245525
+	pos = 0.0897811651,5.88351822,1.61702049
 	attPos = 0.000390226021,0.0569409207,0.0472066998
 	attPos0 = 0.00815797411,-0.0734998658,-0.873373985
 	rot = -1.00000012,3.66014774E-08,-2.3947301E-08,-3.70270618E-06
@@ -8961,7 +8961,7 @@ PART
 {
 	part = EquiTriangle1p5_4290202042
 	partName = Part
-	persistentId = 1452499708
+	persistentId = 4104321847
 	pos = 0.175340444,5.74337101,-0.365870118
 	attPos = 0,-0.0965652466,0
 	attPos0 = 0.0505971909,-0.0334997177,0.0119175483
@@ -9148,7 +9148,7 @@ PART
 {
 	part = dockingPort3_4290211470
 	partName = Part
-	persistentId = 3287987950
+	persistentId = 3874699431
 	pos = 0.175340444,5.798069,-0.365870118
 	attPos = 0,-0.0880479813,0
 	attPos0 = 0,0.0333499908,0
@@ -9170,11 +9170,6 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = beacon11_4293307324
-	link = beacon12_4293306962
-	link = beacon13_4293306616
-	link = beacon14_4293306254
-	link = beacon15_4293305926
 	attN = top,Null_0_0|0.140000001|0_0|1|0_0|0.140000001|0_0|1|0
 	attN = bottom,EquiTriangle1p5_4290202042_0|0|0_0|-1|0_0|0|0_0|-1|0
 	EVENTS
@@ -9437,11 +9432,11 @@ PART
 {
 	part = flagPartFlat_4290152552
 	partName = Part
-	persistentId = 2467116681
+	persistentId = 4115489443
 	pos = 0.105836108,5.8415699,0.70209229
 	attPos = -0.0142550943,7.4505806E-09,0.14227581
 	attPos0 = 0.0143118678,-0.0585003942,-0.0534134135
-	rot = -8.96219632E-09,-0.707109511,-0.707104206,-4.26976179E-08
+	rot = -8.96219454E-09,-0.707109571,-0.707104266,-4.26976179E-08
 	attRot = 0,0,0,1
 	attRot0 = 0.707100689,-0.00292246602,-0.00292246533,-0.707100868
 	mir = 1,1,1
@@ -9716,7 +9711,7 @@ PART
 {
 	part = SurfaceScanner_4290249514
 	partName = Part
-	persistentId = 643556920
+	persistentId = 45558313
 	pos = -0.208898813,6.00693607,-0.0339559019
 	attPos = 0,0,0.134946153
 	attPos0 = -0.333642066,0.133500099,0.343831778
@@ -9988,7 +9983,7 @@ PART
 {
 	part = strutCube_4290126124
 	partName = Part
-	persistentId = 2325130279
+	persistentId = 3111435699
 	pos = 0.608558357,6.03567028,-0.0276193321
 	attPos = -0.0630095899,0,0.031654954
 	attPos0 = 0.546824694,0.162234306,0.318513393
@@ -10144,7 +10139,7 @@ PART
 {
 	part = RobotArmScanner.S1_4290121070
 	partName = Part
-	persistentId = 1650318505
+	persistentId = 1616007521
 	pos = 0.555575371,6.00325871,-0.0102783144
 	attPos = -0.0777179301,-0.11206913,-0.120060593
 	attPos0 = 0.0241584778,0.0796575546,0.104591489
@@ -10398,7 +10393,7 @@ PART
 {
 	part = mediumDishAntenna_4293623812
 	partName = Part
-	persistentId = 2673916592
+	persistentId = 1738856532
 	pos = -0.0571428165,5.93193531,-0.830122471
 	attPos = -0.181886107,0,0.124385566
 	attPos0 = 5.04185209E-08,0.0584993362,-0.576720357
@@ -10563,7 +10558,7 @@ PART
 		IsNonRetractable = False
 		RTDishCosAngle = 0.92387953251128674
 		RTOmniRange = 0
-		RTDishRange = 50000000
+		RTDishRange = 5.25000016E+11
 		RTDeactivatePowerThreshold = 20
 		RTActivatePowerThreshold = 80
 		stagingEnabled = True
@@ -10720,7 +10715,7 @@ PART
 {
 	part = sensorBarometer_4293602684
 	partName = Part
-	persistentId = 411908854
+	persistentId = 2734747097
 	pos = 0.281482905,5.90693569,-0.774561405
 	attPos = 0,0,0
 	attPos0 = 0.156739667,0.0334997177,-0.396773696
@@ -10924,7 +10919,7 @@ PART
 {
 	part = batteryPack_4290116116
 	partName = Part
-	persistentId = 383131050
+	persistentId = 2537480877
 	pos = 0.136680394,6.17654037,-0.484064281
 	attPos = -1.49011612E-08,0.148373604,0.0178083703
 	attPos0 = 0.0119371582,0.0603189468,-0.124084964
@@ -11086,7 +11081,7 @@ PART
 {
 	part = sensorThermometer_4293603318
 	partName = Part
-	persistentId = 2696915775
+	persistentId = 1509675289
 	pos = 0.673667669,5.92245007,-0.437821954
 	attPos = -0.0993509889,0.0155143738,-0.260899723
 	attPos0 = 0.648275435,0.0334997177,0.200865462
@@ -11290,7 +11285,7 @@ PART
 {
 	part = sensorAccelerometer_4293602276
 	partName = Part
-	persistentId = 2172422726
+	persistentId = 2690457445
 	pos = 0.855524898,5.90693569,-0.00358092785
 	attPos = 0,0,0
 	attPos0 = 0.730781674,0.0334997177,0.374206752
@@ -11499,7 +11494,7 @@ PART
 {
 	part = KAS.JS1_4292960588
 	partName = Part
-	persistentId = 2889584188
+	persistentId = 59384133
 	pos = 0.143496424,6.00652695,-1.29545748
 	attPos = 0,0.0995912552,0
 	attPos0 = 0.018753184,0.0334997177,-0.917669773
@@ -11704,7 +11699,7 @@ PART
 {
 	part = IR.Extendatron.Basic.v3_4293395734
 	partName = Part
-	persistentId = 1598662843
+	persistentId = 1506538392
 	pos = 0.124743246,6.2769413,-0.377787679
 	attPos = 0,0,0
 	attPos0 = 0,0.309093475,0
@@ -12141,7 +12136,7 @@ PART
 {
 	part = IR.Rotatron.Basic.v3_4293395690
 	partName = Part
-	persistentId = 193576839
+	persistentId = 2244883590
 	pos = 0.124743246,6.54997253,-0.377787679
 	attPos = 0,0,0.0530062392
 	attPos0 = 0,0.273031235,0
@@ -12578,7 +12573,7 @@ PART
 {
 	part = IR.Pivotron.Sixty.v3_4293395646
 	partName = Part
-	persistentId = 32198775
+	persistentId = 2989601478
 	pos = 0.124743246,6.63965607,-0.377787679
 	attPos = 0,0,0
 	attPos0 = 0,0.0896835327,0
@@ -13015,7 +13010,7 @@ PART
 {
 	part = IR.Camera_4293395602
 	partName = Part
-	persistentId = 3599096183
+	persistentId = 3223819353
 	pos = 0.124773763,6.70989609,-0.256083578
 	attPos = 0,0,0
 	attPos0 = 0,0.140479088,0
@@ -13287,1621 +13282,6 @@ PART
 		name = KOSNameTag
 		isEnabled = False
 		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = beacon11_4293307324
-	partName = Part
-	persistentId = 4147609291
-	pos = 0.116794392,5.65504122,-0.147373155
-	attPos = 0,0,0
-	attPos0 = -0.0585460514,0.143027782,-0.218496963
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0.707106829,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,dockingPort3_4290211470,collider,0|0|0,0|0|-0.100000001,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		disableColorPicker = False
-		lightR = 0.875
-		lightG = 0.875
-		lightB = 0.875
-		castLight = True
-		movementTransformName = movementTransformName
-		isBlinking = False
-		rotationAngle = 0
-		pitchAngle = 0
-		blinkRate = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			lightR
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightG
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightB
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			rotationAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			pitchAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			blinkRate
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 4
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = ModuleLight
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = False
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = beacon12_4293306962
-	partName = Part
-	persistentId = 450547420
-	pos = 0.0638272315,5.65504122,-0.172723606
-	attPos = 0,0,0
-	attPos0 = -0.111513212,0.143027782,-0.193146512
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0.707106829,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,dockingPort3_4290211470,collider,0|0|0,0|0|-0.100000001,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		disableColorPicker = False
-		lightR = 0.875
-		lightG = 0.875
-		lightB = 0.875
-		castLight = True
-		movementTransformName = movementTransformName
-		isBlinking = False
-		rotationAngle = 0
-		pitchAngle = 0
-		blinkRate = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			lightR
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightG
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightB
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			rotationAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			pitchAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			blinkRate
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 4
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = ModuleLight
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = False
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = beacon13_4293306616
-	partName = Part
-	persistentId = 3948951632
-	pos = 0.0169142634,5.65504122,-0.207443938
-	attPos = 0,0,0
-	attPos0 = -0.15842618,0.143027782,-0.15842618
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0.707106829,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,dockingPort3_4290211470,collider,0|0|0,0|0|-0.100000001,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		disableColorPicker = False
-		lightR = 0.875
-		lightG = 0.875
-		lightB = 0.875
-		castLight = True
-		movementTransformName = movementTransformName
-		isBlinking = False
-		rotationAngle = 0
-		pitchAngle = 0
-		blinkRate = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			lightR
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightG
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightB
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			rotationAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			pitchAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			blinkRate
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 4
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = ModuleLight
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = False
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = beacon14_4293306254
-	partName = Part
-	persistentId = 1380725972
-	pos = -0.0177563801,5.65504122,-0.254385591
-	attPos = 0,0,0
-	attPos0 = -0.193096817,0.143027782,-0.111484528
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0.707106829,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,dockingPort3_4290211470,collider,0|0|0,0|0|-0.100000001,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		disableColorPicker = False
-		lightR = 0.875
-		lightG = 0.875
-		lightB = 0.875
-		castLight = True
-		movementTransformName = movementTransformName
-		isBlinking = False
-		rotationAngle = 0
-		pitchAngle = 0
-		blinkRate = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			lightR
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightG
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightB
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			rotationAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			pitchAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			blinkRate
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 4
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = ModuleLight
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = False
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = beacon15_4293305926
-	partName = Part
-	persistentId = 3571888
-	pos = -0.0438601151,5.65504169,-0.307135522
-	attPos = 0,0,0
-	attPos0 = -0.219200552,0.143027306,-0.0587345958
-	rot = 0,0.707106829,0.707106829,0
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0.707106829,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,dockingPort3_4290211470,collider,0|0|0,0|0|-0.100000001,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLight
-		isEnabled = True
-		isOn = False
-		uiWriteLock = False
-		disableColorPicker = False
-		lightR = 0.875
-		lightG = 0.875
-		lightB = 0.875
-		castLight = True
-		movementTransformName = movementTransformName
-		isBlinking = False
-		rotationAngle = 0
-		pitchAngle = 0
-		blinkRate = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleLightAction
-			{
-				actionGroup = Light
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			LightOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			lightR
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightG
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			lightB
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			rotationAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			pitchAngle
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			blinkRate
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 4
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = ModuleLight
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = False
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
