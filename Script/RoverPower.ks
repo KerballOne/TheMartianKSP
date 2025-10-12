@@ -60,17 +60,17 @@ function powerFaultProtection {
 }
 
 function checkPower {
-    FOR panel IN SHIP:partsnamedpattern("SolarPanel") {
+    FOR panel IN SHIP:partsnamedpattern("LgRadialSolarPanel") {
         SET panelParent to panel:parent:name.
         IF NOT panelParent:contains("PortPylon") 
-        AND NOT panelParent:contains("SolarPanel") {
+        AND NOT panelParent:contains("LgRadialSolarPanel") {
             print panelParent + " cannot support Solar Panels".
             return true.
         }
         IF panel:parent:name:contains("PortPylon") {
             FOR pylonChild IN panel:parent:children {
                 IF NOT pylonChild:name:contains("groundAnchor") 
-                AND NOT pylonChild:name:contains("SolarPanel") {
+                AND NOT pylonChild:name:contains("LgRadialSolarPanel") {
                     print panel:name + " is not grounded!".
                     return true.
                 }
@@ -81,7 +81,7 @@ function checkPower {
 
 UNTIL false {
     //print timestamp().
-    IF SHIP:partsnamedpattern("SolarPanel"):length > 0 AND getPowerFlow() > 1.0 {
+    IF SHIP:partsnamedpattern("LgRadialSolarPanel"):length > 0 AND getPowerFlow() > 1.0 {
         IF SHIP:groundspeed > 1 {
             powerFaultProtection("== CURRENT DRAW ==").
         }

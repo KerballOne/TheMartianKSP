@@ -1,17 +1,25 @@
-//clearScreen.
 
-function completeContractParameter {
-    parameter partName.
-    FOR part IN SHIP:partsnamed(partName) {
-        print partName.
-        LOCAL m TO part:getmodule("ModuleTestSubject").
-        if m:alleventnames:contains("run test") {
-            print "Triggering Event".
-            m:doevent("run test").
-        } ELSE {
-            print "No Event".
+clearScreen.
+
+print SHIP:shipname.
+function checkChildPart {
+    parameter parent, child.
+    SET partParent TO SHIP:partsnamedpattern(parent)[0].
+    print partParent.
+    FOR childpart IN partParent:children {
+        print "    " + childpart.
+        IF childpart:name:contains(child) {
+            return true.
         }
     }
 }
+function sealVents {
+    print "Waiting for duct tape and hab canvas...".
+    Wait until checkChildPart("Decoupler", "KKAOSS.gangway.end").
+    FOR module in SHIP:modulesnamed("ModuleResourceDrain") {
+        module:setfield("drain", False).
+    }
+}
 
-completeContractParameter("beacon13").
+print checkChildPart("Decoupler", "KKAOSS.gangway.end").
+sealVents().
