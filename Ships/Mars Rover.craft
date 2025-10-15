@@ -2,7 +2,7 @@ ship = Mars Rover
 version = 1.12.5
 description = 
 type = SPH
-size = 3.19172168,3.03776741,6.71691513
+size = 3.19172168,3.03777313,6.71692181
 steamPublishedFileId = 0
 persistentId = 2420048392
 rot = 0,0,0,0
@@ -12,7 +12,7 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.25.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.4.0|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.2
+_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.1|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.25.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.5.1|kOS.Safe=1.5.1|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.3
 PART
 {
 	part = Ares-Cockpit_4292900754
@@ -40,7 +40,6 @@ PART
 	modMass = 0.264999986
 	modSize = 0,0,0
 	link = Ares-Flatbed_4292893856
-	link = rtg_4293617912
 	link = kerbalism-container-radial-box-prosemian-normal_4292314952
 	link = kerbalism-container-radial-pressurized-prosemian-medium_4292310020
 	link = RTShortAntenna1_4293642076
@@ -1754,7 +1753,7 @@ PART
 	{
 		name = ProcessController
 		isEnabled = True
-		running = False
+		running = True
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -1765,8 +1764,41 @@ PART
 			Action
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = BonVoyageModule
+		isEnabled = True
+		techLevel = 1
+		active = False
+		shutdown = False
+		arrived = False
+		vesselType = 0
+		rotationVector = 3
+		targetLatitude = 0
+		targetLongitude = 0
+		distanceToTarget = 0
+		distanceTravelled = 0
+		pathEncoded = 
+		averageSpeed = 0
+		averageSpeedAtNight = 0
+		requiredPower = 0
+		lastTimeUpdated = 0
+		manned = False
+		vesselHeightFromTerrain = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1919,7 +1951,7 @@ PART
 	RESOURCE
 	{
 		name = _CabinHeater
-		amount = 0
+		amount = 1
 		maxAmount = 1
 		flowState = True
 		isTweakable = True
@@ -1939,7 +1971,7 @@ PART
 	part = Ares-Flatbed_4292893856
 	partName = Part
 	persistentId = 2707442456
-	pos = -0.340398461,8.62615585,0.136912107
+	pos = -0.340398461,8.62615585,0.13690877
 	attPos = 0,0,0
 	attPos0 = 0,-2,0.605000615
 	rot = 0,-0.707106829,-0.707106829,0
@@ -2066,7 +2098,7 @@ PART
 	part = Ares-Trailer_4293563644
 	partName = Part
 	persistentId = 3280251672
-	pos = -0.340398461,8.75115013,-2.24321246
+	pos = -0.340398461,8.75115013,-2.24321914
 	attPos = 0,0,0
 	attPos0 = 0,-2.38000083,0.124999657
 	rot = 0,-0.707106829,-0.707106829,0
@@ -2187,7 +2219,7 @@ PART
 	part = wheelMed_4292629284
 	partName = Part
 	persistentId = 3091747421
-	pos = -0.92914176,8.54712105,-0.881860018
+	pos = -0.92914176,8.54712105,-0.881866693
 	attPos = 0,0,0
 	attPos0 = 0.588743389,-1.01864564,-0.079030402
 	rot = 0,2.98023224E-08,-2.98023224E-08,1.00000012
@@ -2541,7 +2573,7 @@ PART
 	part = wheelMed_4292889446
 	partName = Part
 	persistentId = 3686779727
-	pos = 0.248344868,8.54712105,-0.881860018
+	pos = 0.248344868,8.54712105,-0.881866693
 	attPos = 0,0,0
 	attPos0 = -0.588743389,-1.01864564,-0.079030402
 	rot = -2.98023188E-08,1.00000012,1.1920929E-07,-1.39090766E-08
@@ -2887,7 +2919,7 @@ PART
 	part = wheelMed_4292888954
 	partName = Part
 	persistentId = 4250178131
-	pos = -0.92914176,8.59153271,1.19970167
+	pos = -0.92914176,8.59153271,1.1997
 	attPos = 0,0,0
 	attPos0 = 0.588743389,1.06272614,-0.03462613
 	rot = 0,2.98023224E-08,-2.98023224E-08,1.00000012
@@ -3233,7 +3265,7 @@ PART
 	part = wheelMed_4292888508
 	partName = Part
 	persistentId = 2088642080
-	pos = 0.248344868,8.59153175,1.19970167
+	pos = 0.248344868,8.59153175,1.1997
 	attPos = 0,0,0
 	attPos0 = -0.588743389,1.06272602,-0.0346260704
 	rot = -2.98023188E-08,1.00000012,1.1920929E-07,-1.39090766E-08
@@ -3579,7 +3611,7 @@ PART
 	part = wheelMed_4293562972
 	partName = Part
 	persistentId = 1120496018
-	pos = -0.929141641,8.53278351,-2.48281932
+	pos = -0.929141641,8.53278351,-2.48282599
 	attPos = 0,0,0
 	attPos0 = 0.588743269,-0.239606857,-0.218366653
 	rot = 0,2.98023224E-08,-2.98023224E-08,1.00000012
@@ -3925,7 +3957,7 @@ PART
 	part = wheelMed_4293562834
 	partName = Part
 	persistentId = 2656402368
-	pos = 0.248344749,8.53278351,-2.48281932
+	pos = 0.248344749,8.53278351,-2.48282599
 	attPos = 0,0,0
 	attPos0 = -0.588743269,-0.239606857,-0.218366653
 	rot = -2.98023188E-08,1.00000012,1.1920929E-07,-1.39090766E-08
@@ -4271,7 +4303,7 @@ PART
 	part = IR.Rotatron.Basic.v3_4292198560
 	partName = Part
 	persistentId = 1126839407
-	pos = -0.340398461,8.92118835,-1.4138422
+	pos = -0.340398461,8.92118835,-1.41384888
 	attPos = 0,-1.550668,-0.024964571
 	attPos0 = 0,-4.76837158E-07,0.319999695
 	rot = 1.90734863E-06,6.25848998E-07,3.19643334E-07,1.00000012
@@ -4797,7 +4829,7 @@ PART
 	part = IR.Pivotron.RangeNinety.v3_4290740768
 	partName = Part
 	persistentId = 627647589
-	pos = -0.34039852,9.17118835,-1.41384482
+	pos = -0.34039852,9.17118835,-1.4138515
 	attPos = 0,0,0
 	attPos0 = 1.00218138E-07,0.250000089,-1.49011646E-06
 	rot = 0.500000119,-0.499999821,-0.500000119,-0.500000238
@@ -5323,7 +5355,7 @@ PART
 	part = IR.Extendatron.Basic.v3_4292195114
 	partName = Part
 	persistentId = 1045325853
-	pos = -0.340398043,9.94620514,-1.41394734
+	pos = -0.340398043,9.94620514,-1.41395736
 	attPos = 0,0,0
 	attPos0 = 1.41039436E-06,-1.78813863E-07,0.775000155
 	rot = 0,2.98023792E-08,8.1224762E-08,1.00000024
@@ -5849,7 +5881,7 @@ PART
 	part = IR.Pivotron.Hinge.Basic.v3_4292192632
 	partName = Part
 	persistentId = 2742373992
-	pos = -0.221293271,10.6904516,-1.41396022
+	pos = -0.221291602,10.6904583,-1.41396999
 	attPos = 0,0,0
 	attPos0 = 0.300000101,0.796063006,-1.49011612E-06
 	rot = -0.705937803,-0.0407032371,0.705931365,-0.0406993032
@@ -6375,7 +6407,7 @@ PART
 	part = IR.Extendatron.Basic.v3_4292190048
 	partName = Part
 	persistentId = 719398784
-	pos = -0.0173876882,9.96464634,-1.41421056
+	pos = -0.0173856318,9.96464634,-1.41421819
 	attPos = 0,0,0
 	attPos0 = 1.16556078E-06,0.615118444,-0.119054615
 	rot = -3.26707959E-06,3.57627869E-06,-0.998342395,0.0575589389
@@ -6797,7 +6829,7 @@ PART
 	part = KAS.W1_4291282772
 	partName = Part
 	persistentId = 1066327074
-	pos = 0.0744752884,9.17089653,-1.41417384
+	pos = 0.0744786263,9.17089462,-1.41418052
 	attPos = 0,0,0
 	attPos0 = -8.56808583E-07,0.799001336,-2.45213414E-06
 	rot = -0.46992296,-0.528362453,-0.47085616,0.527542233
@@ -7004,7 +7036,7 @@ PART
 	part = dockingPort3_4293562374
 	partName = Part
 	persistentId = 3919601135
-	pos = -0.340398461,8.76160431,-2.55649972
+	pos = -0.340398461,8.76160431,-2.5565064
 	attPos = 0,-0.313286304,-0.0895462036
 	attPos0 = 0,-9.53674316E-07,0.0999999046
 	rot = 0,0,0,1.00000012
@@ -7274,7 +7306,7 @@ PART
 	part = ksp.r.largeBatteryPack_4293607576
 	partName = Part
 	persistentId = 494520105
-	pos = -0.28072831,8.85791397,0.389115214
+	pos = -0.28072831,8.85791397,0.389111876
 	attPos = -0.0984110013,-0.0406503677,0
 	attPos0 = 0.0387408659,0.292853475,0.231757998
 	rot = -0.50000006,-0.50000006,0.50000006,-0.50000006
@@ -7421,7 +7453,7 @@ PART
 	part = Ares-Battery_4293410748
 	partName = Part
 	persistentId = 429212271
-	pos = -0.340398461,9.02615261,-0.863174915
+	pos = -0.340398461,9.02615261,-0.863181591
 	attPos = 0,-0.0790698528,-0.0520851612
 	attPos0 = 0,-0.920931816,0.452084541
 	rot = 3.2927247E-10,1.00000012,0,-2.77555756E-17
@@ -7635,207 +7667,10 @@ PART
 }
 PART
 {
-	part = rtg_4293617912
-	partName = Part
-	persistentId = 2631540412
-	pos = -0.405874193,9.36475182,1.48093784
-	attPos = 0,0.9382388,0.217591107
-	attPos0 = -0.0654757321,-1.59432673,-0.351181746
-	rot = 0.707106829,0,0,-0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 1,0,0,0
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,Ares-Cockpit_4292900754,collider2.collider,0|-0.326802492|0,0|-1|0,0|-0.326802492|0
-	attN = top,Null_0_0|0.326802492|0_0|1|0_0|0.326802492|0_0|1|0
-	attN = bottom,Null_0_0|-0.326802492|0_0|-1|0_0|-0.326802492|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutOff
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutRoot
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutHeaviest
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		AutostrutGrandparent
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesEnableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-		ResourcesDisableFlow
-		{
-			actionGroup = None
-			active = False
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		packedVolume = 90
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProcessController
-		isEnabled = True
-		running = True
-		stagingEnabled = True
-		persistentValveIndex = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = Emitter
-		isEnabled = True
-		title = Radiation
-		toggle = False
-		radiation = 2.77775E-05
-		ec_rate = 0
-		running = True
-		radiation_impact = 0.17582332738527548
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			Action
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KOSNameTag
-		isEnabled = True
-		nameTag = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = _RTG
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = KAS.RTS1_4291615306
 	partName = Part
 	persistentId = 1352282668
-	pos = 0.527716279,8.65655136,0.114311457
+	pos = 0.527716279,8.65655136,0.114308119
 	attPos = 0.331001639,-4.76837158E-07,0
 	attPos0 = -0.868114531,-0.0226006508,0.0303955078
 	rot = -0.50000006,-0.50000006,0.49999997,-0.50000006
@@ -8020,7 +7855,7 @@ PART
 	part = kerbalism-container-radial-box-prosemian-normal_4292314952
 	partName = Part
 	persistentId = 762407227
-	pos = -0.34039852,9.86043549,1.55617142
+	pos = -0.34039852,9.86043549,1.55617011
 	attPos = 0,0,0
 	attPos0 = -5.96046448E-08,-0.580842018,-0.629274368
 	rot = -0.707106709,1.78260962E-10,1.78261045E-10,-0.707106948
@@ -8222,7 +8057,7 @@ PART
 	part = kerbalism-container-radial-pressurized-prosemian-medium_4292310020
 	partName = Part
 	persistentId = 784117570
-	pos = -0.340398401,9.80147171,1.02808666
+	pos = -0.340398401,9.80147171,1.02808404
 	attPos = 0,0,0
 	attPos0 = 5.96046448E-08,-1.10890365,-0.570310533
 	rot = -0.287293583,-0.287293583,0.646113396,-0.646113396
@@ -8701,7 +8536,7 @@ PART
 	part = KAS.TJ2_4292549684
 	partName = Part
 	persistentId = 3919378952
-	pos = -0.311032087,8.80201435,-3.30750394
+	pos = -0.311032087,8.80201435,-3.30751061
 	attPos = 0,0,0
 	attPos0 = -0.0293663666,-1.06429148,0.0508642197
 	rot = -0.50000006,-0.50000006,0.50000006,0.50000006
@@ -8888,7 +8723,7 @@ PART
 	part = SolarPanelRackContainer_4293617170
 	partName = Part
 	persistentId = 4056494283
-	pos = -0.34039858,9.38160324,-2.55650067
+	pos = -0.34039858,9.38160324,-2.55650735
 	attPos = 0,0,0
 	attPos0 = -1.19209346E-07,0.619999111,-1.01327919E-06
 	rot = -0.50000006,0.50000006,0.50000006,-0.50000006
@@ -8906,8 +8741,8 @@ PART
 	sepI = 0
 	attm = 0
 	sameVesselCollision = False
-	modCost = 7200
-	modMass = 0.479999989
+	modCost = 28100
+	modMass = 0.399999976
 	modSize = 0,0,0
 	link = KAS.PortPylonPwr_4293604466
 	attN = top,Null_0_0|0.699999988|0_0|2|0_0|0.699999988|0_0|2|0
@@ -8994,7 +8829,7 @@ PART
 		name = ModuleInventoryPart
 		isEnabled = True
 		stagingEnabled = True
-		inventory = LgRadialSolarPanel,LgRadialSolarPanel,LgRadialSolarPanel
+		inventory = LgRadialSolarPanel,LgRadialSolarPanel,rtg
 		EVENTS
 		{
 		}
@@ -9517,17 +9352,17 @@ PART
 			STOREDPART
 			{
 				slotIndex = 2
-				partName = LgRadialSolarPanel
-				quantity = 4
-				stackCapacity = 4
+				partName = rtg
+				quantity = 1
+				stackCapacity = 1
 				variantName = 
 				PART
 				{
-					name = LgRadialSolarPanel
-					cid = 4293596850
+					name = rtg
+					cid = 4293433210
 					uid = 0
 					mid = 0
-					persistentId = 882751835
+					persistentId = 4184903784
 					launchID = 0
 					parent = 0
 					position = 0,0,0
@@ -9543,7 +9378,7 @@ PART
 					attm = 0
 					sameVesselCollision = False
 					srfN = None, -1
-					mass = 0.0399999991
+					mass = 0.0799999982
 					shielded = False
 					temp = -1
 					tempExt = 0
@@ -9556,11 +9391,11 @@ PART
 					autostrutMode = Off
 					rigidAttachment = False
 					flag = 
-					rTrf = LgRadialSolarPanel
+					rTrf = rtg
 					modCost = 0
 					modMass = 0
 					moduleVariantName = 
-					moduleCargoStackableQuantity = 4
+					moduleCargoStackableQuantity = 1
 					EVENTS
 					{
 					}
@@ -9619,48 +9454,9 @@ PART
 					}
 					MODULE
 					{
-						name = ModuleDeployableSolarPanel
-						isEnabled = True
-						efficiencyMult = 1
-						launchUT = -1
-						currentRotation = (0, 0, 0, 1)
-						storedAnimationTime = 0
-						storedAnimationSpeed = 0
-						deployState = EXTENDED
-						stagingEnabled = True
-						EVENTS
-						{
-						}
-						ACTIONS
-						{
-							ExtendPanelsAction
-							{
-								actionGroup = None
-								active = False
-								wasActiveBeforePartWasAdjusted = False
-							}
-							ExtendAction
-							{
-								actionGroup = None
-								active = False
-								wasActiveBeforePartWasAdjusted = False
-							}
-							RetractAction
-							{
-								actionGroup = None
-								active = False
-								wasActiveBeforePartWasAdjusted = False
-							}
-						}
-						UPGRADESAPPLIED
-						{
-						}
-					}
-					MODULE
-					{
 						name = ModuleCargoPart
 						isEnabled = True
-						packedVolume = 50
+						packedVolume = 90
 						beingAttached = False
 						beingSettled = False
 						reinitResourcesOnStoreInVessel = False
@@ -9677,53 +9473,26 @@ PART
 					}
 					MODULE
 					{
-						name = SolarPanelFixer
+						name = Emitter
 						isEnabled = True
-						editorEnabled = True
-						nominalRate = 1
-						persistentFactor = 1
-						state = Static
-						trackedSunIndex = 0
-						manualTracking = False
-						launchUT = -1
-						stagingEnabled = True
-						timeEfficCurve
-						{
-							key = 0 1 0 0
-						}
-						EVENTS
-						{
-						}
-						ACTIONS
-						{
-						}
-						UPGRADESAPPLIED
-						{
-						}
-					}
-					MODULE
-					{
-						name = Reliability
-						isEnabled = True
-						type = SolarPanelFixer
-						broken = False
-						critical = False
-						quality = False
-						last = 0
-						next = 0
-						last_inspection = 0
-						needMaintenance = False
-						enforce_breakdown = False
-						running = False
-						operation_duration = 0
-						fail_duration = 0
-						ignitions = 0
+						title = Radiation
+						toggle = False
+						radiation = 2.77775E-05
+						ec_rate = 0
+						running = True
+						radiation_impact = 0.00054855727726278107
 						stagingEnabled = True
 						EVENTS
 						{
 						}
 						ACTIONS
 						{
+							Action
+							{
+								actionGroup = None
+								active = False
+								wasActiveBeforePartWasAdjusted = False
+							}
 						}
 						UPGRADESAPPLIED
 						{
@@ -9740,6 +9509,29 @@ PART
 						}
 						ACTIONS
 						{
+						}
+						UPGRADESAPPLIED
+						{
+						}
+					}
+					MODULE
+					{
+						name = ProcessController
+						isEnabled = True
+						running = True
+						stagingEnabled = True
+						persistentValveIndex = 0
+						EVENTS
+						{
+						}
+						ACTIONS
+						{
+							Action
+							{
+								actionGroup = None
+								active = False
+								wasActiveBeforePartWasAdjusted = False
+							}
 						}
 						UPGRADESAPPLIED
 						{
@@ -9774,6 +9566,17 @@ PART
 						UPGRADESAPPLIED
 						{
 						}
+					}
+					RESOURCE
+					{
+						name = _RTG0
+						amount = 1
+						maxAmount = 1
+						flowState = True
+						isTweakable = False
+						hideFlow = False
+						isVisible = False
+						flowMode = Both
 					}
 				}
 			}
@@ -9819,7 +9622,7 @@ PART
 	part = KAS.PortPylonPwr_4293604466
 	partName = Part
 	persistentId = 3467686355
-	pos = -0.34039858,10.0200272,-2.55650115
+	pos = -0.34039858,10.0200272,-2.55650783
 	attPos = 0,0,0
 	attPos0 = -0.638424218,-1.01327896E-06,0
 	rot = 0,0,0,1.00000012
