@@ -1,25 +1,29 @@
-
 clearScreen.
 
-print SHIP:shipname.
-function checkChildPart {
-    parameter parent, child.
-    SET partParent TO SHIP:partsnamedpattern(parent)[0].
-    print partParent.
-    FOR childpart IN partParent:children {
-        print "    " + childpart.
-        IF childpart:name:contains(child) {
-            return true.
+function getRemoteVessel {
+    LIST Targets IN Vessels.
+    FOR vsl IN Vessels {
+        IF vsl:type <> "SpaceObject"
+        AND vsl:body <> SHIP:body
+        AND vsl:status = "LANDED"
+        AND vsl:connection:isconnected
+        AND ADDONS:RT:HASCONNECTION(vsl) {
+            print "Remote Target: " + vsl + " - Type: " + vsl:type.
+            print vsl:body.
+            print vsl:status.
+            print vsl:crew.
+            print vsl:connection:isconnected.
+            print vsl:connection:delay.
+            print ADDONS:RT:DELAY(vsl).
+            print ADDONS:RT:HASCONNECTION(vsl).
+            print " ".
+            return VESSEL(vsl:name).
         }
     }
-}
-function sealVents {
-    print "Waiting for duct tape and hab canvas...".
-    Wait until checkChildPart("Decoupler", "KKAOSS.gangway.end").
-    FOR module in SHIP:modulesnamed("ModuleResourceDrain") {
-        module:setfield("drain", False).
-    }
+    print "No Remote Probe Found!".
+    //HUDTEXT("No Remote Probe Connection! \n", 10, 1, 16, red, false).
+    //Wait 20. Reboot.
 }
 
-print checkChildPart("Decoupler", "KKAOSS.gangway.end").
-sealVents().
+print getRemoteVessel().
+print ADDONS:RT:DELAY(SHIP).

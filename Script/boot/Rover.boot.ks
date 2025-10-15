@@ -1,14 +1,24 @@
 wait until ship:unpacked.
 clearscreen.
 print "Welcome to the Rover".
-SET SHIP:type TO "Rover".
+//SET SHIP:type TO "Rover".
+//CORE:DOEVENT("Open Terminal"). // TESTING
 
-function getResource {
-    parameter res.
-    FOR resource in SHIP:resources {
-        IF resource:NAME = res { SET res TO resource:amount. }
+function completeContractParameter {
+    parameter paramName.
+    IF ADDONS:available("CAREER") {
+        IF ADDONS:CAREER:ACTIVECONTRACTS():length > 0 {
+            SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
+            FOR P IN ALL {
+                IF P:ID = paramName {
+                    P:CHEAT_SET_STATE("COMPLETE").
+                    wait 0.2.
+                }
+            }
+        } 
+    } ELSE {
+        HUDTEXT("ERROR! \n kOS:Career addon must be installed. \n", 10, 1, 32, red, false).
     }
-    return res.
 }
 
 function childPartDist {
@@ -25,72 +35,60 @@ function childPartDist {
     return 99999.
 }
 
-function CabinHeat {
-    FOR module in SHIP:modulesnamed("ProcessController") {
-        FOR action in module:allactionnames {
-            IF action:contains("cabin heater") {
-                print "Restarting Cabin Heat".
-                module:doaction(action,true).
+GLOBAL chargingMode TO false.
+function setChargingMode {
+    parameter charging.
+    IF charging {
+        SET BVaction TO "Shutdown".
+        SET WHLaction TO "disable".
+    } ELSE {
+        SET BVaction TO "Activate".
+        SET WHLaction TO "enable".
+    }
+    SET cockpit to SHIP:partsnamedpattern("cockpit")[0].
+    IF cockpit:allmodules:contains("BonVoyageModule") {
+        SET BVmodule TO cockpit:getmodule("BonVoyageModule").
+        SET BVactionStr TO BVaction + " Bon Voyage Controller".
+        print BVactionStr.
+        IF BVmodule:alleventnames:contains(BVactionStr) {
+            BVmodule:doevent(BVactionStr).
+        }
+    }
+    FOR wheel IN SHIP:partsnamed("wheelMed") {
+        LOCAL wheelModule is wheel:getmodule("ModuleWheelMotor").
+        wheelModule:doaction(WHLaction + " motor", true).
+    }
+    SET chargingMode TO charging.
+}
+
+function powerFaultCheck {
+    FOR panel IN SHIP:partsnamedpattern("LgRadialSolarPanel") {
+        SET panelParent to panel:parent:name.
+        IF NOT panelParent:contains("PortPylon") 
+        AND NOT panelParent:contains("LgRadialSolarPanel") {
+            print panelParent + " cannot support Solar Panels".
+            powerFaultProtection(panelParent + " cannot support Solar Panels").
+        }
+        FOR pylon IN SHIP:partsnamedpattern("PortPylon") {
+            IF NOT pylon:children:tostring:contains("groundAnchor") {
+                print pylon:name + " is not grounded!".
+                powerFaultProtection(panel:name + " is not grounded!").
             }
         }
     }
-}
-
-function mainBattEnergy {
-    SET batteries TO LIST(SHIP:partsnamed("Ares-Battery"),SHIP:partsnamedpattern("largeBatteryPack")).
-    SET EC TO 0.
-    FOR battery_type IN batteries { 
-        FOR battery IN battery_type {
-            SET res TO battery:resources[0].
-            IF res:name:contains("ElectricCharge") {
-                SET EC TO EC + res:amount.
-            }
-        }
-    }
-    return EC.
-}
-
-function getPowerFlow {
-    SET prevAmount TO mainBattEnergy().
-    wait 1.
-    return (mainBattEnergy() - prevAmount).
+    Wait 10.
 }
 
 function powerFaultProtection {
     parameter reason.
     BRAKES ON.
-    HUDTEXT("Warning! \n Power fault detected! \n" + reason, 10, 1, 32, red, false).
-    HUDTEXT("Shutting down wheel motors", 10, 1, 22, red, false).
+    HUDTEXT("Warning! \n Electrical Power ground fault detected! \n", 10, 1, 32, red, false).
+    HUDTEXT(reason, 10, 1, 26, yellow, false).
     HUDTEXT("Isolating Main Traction Battery", 10, 1, 22, red, false).
     FOR part in SHIP:parts {
-            FOR part_resource in part:resources {
-                if part_resource:name = "ElectricCharge" AND part_resource:capacity > 200 {
-                    SET part_resource:enabled TO false.
-                }
-            }
-        }
-    FOR wheel IN SHIP:partsnamed("wheelMed") {
-        LOCAL module is wheel:getmodule("ModuleWheelMotor").
-        module:doaction("disable motor", true).
-    }
-    wait 1.
-}
-
-function checkPower {
-    FOR panel IN SHIP:partsnamedpattern("SolarPanel") {
-        SET panelParent to panel:parent:name.
-        IF NOT panelParent:contains("PortPylon") 
-        AND NOT panelParent:contains("SolarPanel") {
-            print panelParent + " cannot support Solar Panels".
-            return true.
-        }
-        IF panel:parent:name:contains("PortPylon") {
-            FOR pylonChild IN panel:parent:children {
-                IF NOT pylonChild:name:contains("groundAnchor") 
-                AND NOT pylonChild:name:contains("SolarPanel") {
-                    print panel:name + " is not grounded!".
-                    return true.
-                }
+        FOR part_resource in part:resources {
+            if part_resource:name = "ElectricCharge" AND part_resource:capacity > 200 {
+                SET part_resource:enabled TO false.
             }
         }
     }
@@ -98,18 +96,17 @@ function checkPower {
 
 UNTIL false {
     //print timestamp().
-    IF SHIP:partsnamedpattern("SolarPanel"):length > 0 AND getPowerFlow() > 1.0 {
-        IF SHIP:groundspeed > 1 {
-            powerFaultProtection("== CURRENT DRAW ==").
-        }
-        IF checkPower() {
-            powerFaultProtection("== NOT GROUNDED ==").
-        }
+    IF SHIP:partsnamedpattern("LgRadialSolarPanel"):length > 0 {
+        IF NOT chargingMode { setChargingMode(true). }
+        powerFaultCheck().
+    } ELSE {
+        IF chargingMode { setChargingMode(false). }
     }
-    IF getResource("_CabinHeater") = 0 AND childPartDist("Ares-Cockpit","rtg") > 0.8 {
-        CabinHeat().
+    IF childPartDist("Ares-Cockpit","rtg") < 1.1 {
+        HUDTEXT("Success! \n RTG Installed! \n", 10, 1, 32, green, false).
+        completeContractParameter("kOSparam6").
     }
-    wait 10.
+    wait 1.
 }
 
 

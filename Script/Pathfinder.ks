@@ -21,7 +21,11 @@ IF ADDONS:available("RT") {
 function getRemoteVessel {
     LIST Targets IN Vessels.
     FOR vsl IN Vessels {
-        IF vsl:type = "Probe" {
+        IF vsl:type <> "SpaceObject"
+        AND vsl:body <> SHIP:body
+        AND vsl:status = "LANDED"
+        AND vsl:connection:isconnected
+        AND ADDONS:RT:HASCONNECTION(vsl) {
             print "Remote Target: " + vsl + " - Type: " + vsl:type.
             return VESSEL(vsl:name).
         }
@@ -36,8 +40,11 @@ print "Waiting for connection to remote...". Wait 2.
 Wait Until RemoteVessel:connection:isconnected.
 print "SIGNAL ACQUIRED!". print " ".
 
-SET C TO RemoteVessel:CONNECTION.
-SET COMMDELAY TO convertSeconds(ROUND(C:delay())).
+SET COMMDELAY_sec TO ROUND(MAX(RemoteVessel:CONNECTION:delay(),SHIP:CONNECTION:delay())).
+IF COMMDELAY_sec <= 1 {
+    SET COMMDELAY_sec TO ROUND(MAX(ADDONS:RT:DELAY(RemoteVessel),ADDONS:RT:DELAY(SHIP))).
+}
+SET COMMDELAY TO convertSeconds(COMMDELAY_sec).
 print "Transmission delay:    " + COMMDELAY.
 
 IF EXISTS("CommLog") {
@@ -49,12 +56,12 @@ IF EXISTS("CommLog") {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function completeContractParameter {
-    parameter partName.
-    FOR part IN SHIP:partsnamed(partName) {
-        print partName.
-        LOCAL m TO part:getmodule("ModuleTestSubject").
-        if m:alleventnames:contains("run test") {
-            m:doevent("run test").
+    parameter paramName.
+    SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
+    FOR P IN ALL {
+        IF P:ID = paramName {
+            P:CHEAT_SET_STATE("COMPLETE").
+            wait 0.2.
         }
     }
 }
@@ -152,7 +159,7 @@ function moveServos {
     }
     IF BODY:name = "Mars" AND servo = "Pitch" AND positionList:length >= 2 {
         /// CONTRACT PARAMETER COMPLETE, Mark arms up YESS photo
-        completeContractParameter("beacon12").
+        completeContractParameter("kOSparam12").
     }
     CLEARVECDRAWS().
 }
@@ -231,7 +238,7 @@ function loadFirmware {
         IF firmware:contains(fw_newline1) AND firmware:contains(fw_newline2) {
             print "Rover firmware successfully hacked!".
             /// CONTRACT PARAMETER COMPLETE, hex hacking rover firmware
-            completeContractParameter("beacon14").
+            completeContractParameter("kOSparam14").
             SET CORE:volume:name TO "PCS_3M_9766".
             return True.
         }
@@ -258,7 +265,7 @@ function rawComm {
             } 
             IF RECEIVED:CONTENT:tostring():contains("file_attachment") {
                 print "Received compressed file".
-                completeContractParameter("beacon13").
+                completeContractParameter("kOSparam13").
                 SET CORE:volume:name TO "PCS_2M_4575".
                 SET doHighlight TO True.
             }
@@ -337,7 +344,7 @@ function PCSTerminal {
             SET outputBox:position TO V(0,999999,0).       
             IF RECEIVED:CONTENT:tostring():contains(".jpg") AND BODY:name = "Earth" {
                 /// CONTRACT PARAMETER COMPLETE, Are you receiving me?
-                completeContractParameter("beacon11").
+                completeContractParameter("kOSparam11").
                 IF show = 0 { SET CORE:volume:name TO "PCS_2E_1665". }
                 IF show = 1 { SET CORE:volume:name TO "PCS_3E_4571". SET show TO 2. }
             }
