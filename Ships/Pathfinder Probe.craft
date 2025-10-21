@@ -2,9 +2,9 @@ ship = Pathfinder Probe
 version = 1.12.5
 description = 
 type = VAB
-size = 4.83688879,1.38025284,4.21745968
+size = 4.83688927,1.1795063,4.21745968
 steamPublishedFileId = 0
-persistentId = 210099676
+persistentId = 883083508
 rot = 0,0,0,0
 missionFlag = aresexploration/Flags/nasa_darker
 vesselType = Probe
@@ -12,15 +12,15 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.0|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.25.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.4.0|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.2
+_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.1|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.99.0|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalismBootstrap=3.25.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.5.1|kOS.Safe=1.5.1|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.3|Kerbalism=3.25.0
 PART
 {
 	part = probeCoreOcto2.v2_4290493764
 	partName = Part
-	persistentId = 1955963004
-	pos = 0.124743246,5.96784782,-0.377787679
+	persistentId = 1425780941
+	pos = -0.0299543999,4.17591429,-0.759023905
 	attPos = 0,0,0
-	attPos0 = 0.124743246,5.96784782,-0.377787679
+	attPos0 = -0.0299543999,4.17591429,-0.759023905
 	rot = 0,0,0,-1
 	attRot = 0,0,0,-0.999999881
 	attRot0 = 0,0,0,1
@@ -1310,7 +1310,7 @@ PART
 		IsRTPowered = True
 		IsRTBroken = False
 		RTDishCosAngle = 1
-		RTOmniRange = 3000
+		RTOmniRange = 77000
 		RTDishRange = -1
 		stagingEnabled = True
 		EVENTS
@@ -1417,21 +1417,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1454,8 +1439,8 @@ PART
 {
 	part = EquiTriangle1p5_4290450910
 	partName = Part
-	persistentId = 3014175895
-	pos = 0.124743246,5.87343597,-0.377787679
+	persistentId = 2433427794
+	pos = -0.0299543999,4.08150244,-0.759023905
 	attPos = 0,0,0
 	attPos0 = 0,-0.09441185,0
 	rot = 0,0,0,-1
@@ -1630,28 +1615,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.RailHinge.Short_4290385320
 	partName = Part
-	persistentId = 5387418
-	pos = -0.356785536,5.9385643,-0.672433138
+	persistentId = 4225736647
+	pos = -0.511483192,4.14663076,-1.05366933
 	attPos = 0.0700636208,0,0.0404513776
 	attPos0 = -0.55159241,0.0651283264,-0.335096866
 	rot = -0.499997228,3.05008007E-06,-0.866026998,-2.47766866E-06
@@ -2068,28 +2038,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = EquiTriangle1p5_4290379990
 	partName = Part
-	persistentId = 4249712014
-	pos = -0.877621055,5.90007114,-0.979121685
+	persistentId = 4086256325
+	pos = -1.03231871,4.10813761,-1.36035788
 	attPos = -0.00517872628,-0.0200508013,-0.500456393
 	attPos0 = -8.3819014E-09,0.0585486069,-0.10394419
 	rot = -3.02890567E-06,-0.496413678,2.44954231E-06,-0.8680861
@@ -2262,28 +2217,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290357970
 	partName = Part
-	persistentId = 993589720
-	pos = -0.672989964,5.89255905,-0.852861047
+	persistentId = 138307040
+	pos = -0.827687562,4.10062551,-1.23409724
 	attPos = -0.0629247651,-0.041010052,0.0312040001
 	attPos0 = 0.0578837693,0.0334995613,0.209192038
 	rot = 0.183012158,-0.683012366,-0.683012009,-0.183017403
@@ -2510,28 +2450,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356790
 	partName = Part
-	persistentId = 2449107212
-	pos = -0.985626221,5.89625359,-1.03545344
+	persistentId = 213286946
+	pos = -1.14032388,4.10432005,-1.41668963
 	attPos = -0.0612573102,-0.0373183787,0.00050637126
 	attPos0 = 0.0550327487,0.0334995836,-0.122159973
 	rot = 0.183012158,-0.683012366,-0.683012009,-0.183017403
@@ -2758,28 +2683,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356338
 	partName = Part
-	persistentId = 542216812
-	pos = -1.33847392,5.89895535,-1.24424827
+	persistentId = 3642536849
+	pos = -1.49317157,4.10702181,-1.62548447
 	attPos = -0.0517034568,-0.0346195996,0.000427663326
 	attPos0 = 0.0464853756,0.0334996097,-0.53207618
 	rot = 0.612370968,-0.353553534,-0.35354957,-0.612376213
@@ -3006,28 +2916,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290355022
 	partName = Part
-	persistentId = 2835243247
-	pos = -0.488306373,5.89140987,-1.24003804
+	persistentId = 4041656153
+	pos = -0.643004,4.09947634,-1.62127423
 	attPos = -0.0455706716,-0.0421582572,0.000376597047
 	attPos0 = 0.467883259,0.0334995687,0.202835217
 	rot = 0.612370968,-0.353553534,-0.35354957,-0.612376213
@@ -3254,28 +3149,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290354618
 	partName = Part
-	persistentId = 655792593
-	pos = -0.899246693,5.89179325,-0.511840105
+	persistentId = 3939913242
+	pos = -1.05394435,4.09985971,-0.89307636
 	attPos = -0.0453492999,-0.041775059,0.000374659896
 	attPos0 = -0.368349195,0.0334986001,0.217967838
 	rot = 0.612370968,-0.353553534,-0.35354957,-0.612376213
@@ -3502,28 +3382,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290354048
 	partName = Part
-	persistentId = 3182375896
-	pos = -1.17545056,5.89768314,-0.836792707
+	persistentId = 687452754
+	pos = -1.33014822,4.10574961,-1.2180289
 	attPos = 0.0455392003,-0.035890013,0.0961881876
 	attPos0 = -0.319250345,0.0334995873,-0.280694157
 	rot = -0.684341013,0.177978113,0.17797406,0.684343874
@@ -3750,28 +3615,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290351982
 	partName = Part
-	persistentId = 2226704871
-	pos = -0.907684207,5.89830208,-1.32393324
+	persistentId = 964454760
+	pos = -1.06238186,4.10636854,-1.70516944
 	attPos = -0.0197916925,-0.0352700092,-0.085589841
 	attPos0 = 0.301723868,0.0334995873,-0.115190148
 	rot = -0.48927182,-0.510501683,-0.510505915,0.489269644
@@ -3998,28 +3848,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.RailHinge.Short_4290381706
 	partName = Part
-	persistentId = 1095123949
-	pos = 0.110337123,5.9385643,0.186551183
+	persistentId = 948023106
+	pos = -0.0443605222,4.14663076,-0.194685042
 	attPos = 3.7252903E-09,0,-0.0809026361
 	attPos0 = -0.0144061232,0.0651283264,0.645241499
 	rot = 1,-5.84228693E-15,2.58098112E-08,3.6729034E-06
@@ -4436,28 +4271,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = EquiTriangle1p5_4290378176
 	partName = Part
-	persistentId = 1902458443
-	pos = 0.105158359,5.90007019,0.79095161
+	persistentId = 3878342313
+	pos = -0.0495392866,4.10813665,0.409715414
 	attPos = -0.00517873932,-0.0200508162,-0.500456095
 	attPos0 = -1.430559E-09,0.0585486218,-0.103944175
 	rot = 2.15535305E-08,0.999991536,-3.58341413E-06,0.00413301447
@@ -4632,31 +4452,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290358614
 	partName = Part
-	persistentId = 208142536
-	pos = 0.112186268,5.89255905,0.550605536
+	persistentId = 4078279403
+	pos = -0.0425113738,4.10062551,0.16936934
 	attPos = -0.0629247129,-0.0410100967,0.0312040299
 	attPos0 = 0.0578837693,0.0334999785,0.209192038
-	rot = 0.500001431,0.500002325,0.499997795,-0.499998868
+	rot = 0.500001371,0.500002325,0.499997795,-0.499998868
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929245,0.502062261,0.502062261,0.497929245
 	mir = 1,1,1
@@ -4880,31 +4685,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356904
 	partName = Part
-	persistentId = 1520124636
-	pos = 0.110377058,5.89625263,0.912652493
+	persistentId = 1508523769
+	pos = -0.0443205833,4.1043191,0.531416297
 	attPos = -0.0612572208,-0.0373181626,0.00050650537
 	attPos0 = 0.0550327599,0.0334993899,-0.122159943
-	rot = 0.500001431,0.500002325,0.499997795,-0.499998868
+	rot = 0.500001371,0.500002325,0.499997795,-0.499998868
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929245,0.502062261,0.502062261,0.497929245
 	mir = 1,1,1
@@ -5128,28 +4918,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356452
 	partName = Part
-	persistentId = 1019748423
-	pos = 0.105981551,5.89895535,1.32262528
+	persistentId = 2209177758
+	pos = -0.0487160906,4.10702181,0.941389084
 	attPos = -0.0517034009,-0.0346201025,0.000427603722
 	attPos0 = 0.0464854501,0.0334998444,-0.53207612
 	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
@@ -5376,28 +5151,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356000
 	partName = Part
-	persistentId = 1168490010
-	pos = -0.315466821,5.89141083,0.584256172
+	persistentId = 1153846914
+	pos = -0.470165014,4.09947729,0.203019977
 	attPos = -0.0455710292,-0.0421583466,0.000376582146
 	attPos0 = 0.467882991,0.0334999487,0.202835172
 	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
@@ -5624,28 +5384,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290355548
 	partName = Part
-	persistentId = 437070762
-	pos = 0.520653605,5.8917923,0.576036215
+	persistentId = 1241114264
+	pos = 0.365956455,4.09985876,0.194800019
 	attPos = -0.0453489125,-0.0417759195,0.000374734402
 	attPos0 = -0.368348926,0.0334990472,0.217967868
 	rot = 5.15703533E-08,0.707109571,0.707104266,8.97669925E-11
@@ -5872,31 +5617,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290354270
 	partName = Part
-	persistentId = 4158251307
-	pos = 0.377339423,5.89768124,0.977713823
+	persistentId = 2674221987
+	pos = 0.222642124,4.1057477,0.596477628
 	attPos = 0.0455394983,-0.0358898081,0.0961882025
 	attPos0 = -0.319250077,0.0334995948,-0.280694097
-	rot = 0.188038319,-0.681648254,-0.681644917,-0.188036561
+	rot = 0.188038334,-0.681648195,-0.681644976,-0.188036546
 	attRot = -5.33452642E-08,4.08063414E-08,0.963993669,0.265925169
 	attRot0 = 0.68241781,0.185218573,0.185218632,-0.68241781
 	mir = 1,1,1
@@ -6120,31 +5850,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290352204
 	partName = Part
-	persistentId = 3220770806
-	pos = -0.178428382,5.89830112,0.989394546
+	persistentId = 3235513830
+	pos = -0.333126396,4.10636759,0.60815835
 	attPos = -0.0197918415,-0.035269741,-0.0855898783
 	attPos0 = 0.301723659,0.0334993638,-0.115190171
-	rot = 0.686745584,-0.168472543,-0.168470532,-0.686742663
+	rot = 0.686745524,-0.168472588,-0.168470547,-0.686742723
 	attRot = 5.19844754E-08,6.49584493E-08,0.238254398,0.97120297
 	attRot0 = 0.17130819,0.686042011,0.686041892,-0.171308219
 	mir = 1,1,1
@@ -6368,28 +6083,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.RailHinge.Short_4290381530
 	partName = Part
-	persistentId = 2792250879
-	pos = 0.620678067,5.9385643,-0.647481084
+	persistentId = 3818350392
+	pos = 0.465980411,4.14663076,-1.02871728
 	attPos = -0.0700637698,0,0.0404512286
 	attPos0 = 0.565998614,0.0651283264,-0.310144663
 	rot = 0.499998003,4.29153488E-06,-0.86602658,2.22917834E-06
@@ -6806,31 +6506,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = EquiTriangle1p5_4290378114
 	partName = Part
-	persistentId = 1580146997
-	pos = 1.14669287,5.9000721,-0.945198298
+	persistentId = 3529011157
+	pos = 0.991995275,4.10813856,-1.32643449
 	attPos = -0.00517873652,-0.0200507119,-0.500456214
 	attPos0 = 1.86264471E-09,0.0585486069,-0.103944182
-	rot = -4.23419624E-06,0.503573179,-2.20742822E-06,-0.863952696
+	rot = -4.23419715E-06,0.503573179,-2.20742754E-06,-0.863952696
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = -0.0390597396,-2.98023188E-08,-0.999236882,1.49011594E-08
 	mir = 1,1,1
@@ -7000,31 +6685,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290358024
 	partName = Part
-	persistentId = 1487298076
-	pos = 0.935033739,5.89256001,-0.831110716
+	persistentId = 4218660256
+	pos = 0.780336142,4.10062647,-1.21234691
 	attPos = -0.0629247352,-0.0410093404,0.0312039703
 	attPos0 = 0.0578838028,0.0334996805,0.209192097
-	rot = 0.683010578,-0.183011204,-0.183016762,-0.683014452
+	rot = 0.683010578,-0.183011234,-0.183016673,-0.683014512
 	attRot = 0,0,0,1
 	attRot0 = -0.497929186,0.502062261,0.502062142,0.497929245
 	mir = 1,1,1
@@ -7248,31 +6918,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356844
 	partName = Part
-	persistentId = 1857522644
-	pos = 1.24947941,5.89625454,-1.0105685
+	persistentId = 311923189
+	pos = 1.09478176,4.104321,-1.3918047
 	attPos = -0.0612573251,-0.037318632,0.000506535172
 	attPos0 = 0.0550328791,0.0334997848,-0.122159943
-	rot = 0.683010578,-0.183011204,-0.183016762,-0.683014452
+	rot = 0.683010578,-0.183011234,-0.183016673,-0.683014512
 	attRot = 0,0,-0.707106709,0.707106709
 	attRot0 = -0.497929186,0.502062261,0.502062142,0.497929245
 	mir = 1,1,1
@@ -7496,28 +7151,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290356392
 	partName = Part
-	persistentId = 444342704
-	pos = 1.60672307,5.8989563,-1.21174943
+	persistentId = 3991378593
+	pos = 1.45202541,4.10702276,-1.59298563
 	attPos = -0.0517033562,-0.0346198827,0.000427484512
 	attPos0 = 0.0464855134,0.0334999114,-0.532075942
 	rot = 0.612369537,0.353553891,0.353550285,-0.612377107
@@ -7744,28 +7384,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290355076
 	partName = Part
-	persistentId = 123006086
-	pos = 1.17800367,5.89141178,-0.477580488
+	persistentId = 3258971874
+	pos = 1.02330625,4.09947824,-0.858816385
 	attPos = -0.04557091,-0.0421577692,0.000376537442
 	attPos0 = 0.467883319,0.0334997848,0.202835143
 	rot = 0.612369537,0.353553891,0.353550285,-0.612377107
@@ -7992,28 +7617,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290354672
 	partName = Part
-	persistentId = 2182845954
-	pos = 0.752823114,5.89179325,-1.19756651
+	persistentId = 3396383945
+	pos = 0.598125398,4.09985971,-1.57880294
 	attPos = -0.0453489125,-0.0417750701,0.000374719501
 	attPos0 = -0.368349224,0.033498615,0.217967927
 	rot = 0.612369537,0.353553891,0.353550285,-0.612377107
@@ -8240,31 +7850,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290354102
 	partName = Part
-	persistentId = 3763879859
-	pos = 1.17234349,5.8976841,-1.27429199
+	persistentId = 42352010
+	pos = 1.01764584,4.10575056,-1.65552819
 	attPos = 0.0455396473,-0.035890121,0.096188277
 	attPos0 = -0.319250286,0.0334997363,-0.280694216
-	rot = -0.496302843,-0.503667116,-0.503666759,0.49630937
+	rot = -0.496302813,-0.503667057,-0.503666759,0.4963094
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.707100689,0.00292248814,0.00292250444,0.707100868
 	mir = 1,1,1
@@ -8488,31 +8083,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = solarPanels5_4290352036
 	partName = Part
-	persistentId = 1830207959
-	pos = 1.46034586,5.89830303,-0.798828006
+	persistentId = 1504665453
+	pos = 1.30564868,4.1063695,-1.18006396
 	attPos = -0.0197918415,-0.0352704003,-0.0855898634
 	attPos0 = 0.301723987,0.0334998481,-0.115190171
-	rot = 0.197471946,-0.678972065,-0.678976297,-0.197467208
+	rot = 0.197471902,-0.678972125,-0.678976297,-0.197467163
 	attRot = -5.33452642E-08,4.08063414E-08,0.963993669,0.265925169
 	attRot0 = 0.351572871,0.613511622,0.613511622,-0.351572931
 	mir = 1,1,1
@@ -8736,28 +8316,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = KAS.JS1_4290213044
 	partName = Part
-	persistentId = 4160245525
-	pos = 0.0897811651,5.88351822,1.61702049
+	persistentId = 859064760
+	pos = -0.0649164915,4.09158468,1.23578429
 	attPos = 0.000390226021,0.0569409207,0.0472066998
 	attPos0 = 0.00815797411,-0.0734998658,-0.873373985
 	rot = -1.00000012,3.66014774E-08,-2.3947301E-08,-3.70270618E-06
@@ -8941,28 +8506,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = EquiTriangle1p5_4290202042
 	partName = Part
-	persistentId = 4104321847
-	pos = 0.175340444,5.74337101,-0.365870118
+	persistentId = 48449445
+	pos = 0.0206427984,3.95143747,-0.747106314
 	attPos = 0,-0.0965652466,0
 	attPos0 = 0.0505971909,-0.0334997177,0.0119175483
 	rot = 0,0,-1,0
@@ -9128,28 +8678,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = dockingPort3_4290211470
 	partName = Part
-	persistentId = 3874699431
-	pos = 0.175340444,5.798069,-0.365870118
+	persistentId = 391558748
+	pos = 0.0206427984,4.00613546,-0.747106314
 	attPos = 0,-0.0880479813,0
 	attPos0 = 0,0.0333499908,0
 	rot = -1,0,0,0
@@ -9412,28 +8947,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = flagPartFlat_4290152552
 	partName = Part
-	persistentId = 4115489443
-	pos = 0.105836108,5.8415699,0.70209229
+	persistentId = 1792648343
+	pos = -0.0488615371,4.04963636,0.320856094
 	attPos = -0.0142550943,7.4505806E-09,0.14227581
 	attPos0 = 0.0143118678,-0.0585003942,-0.0534134135
 	rot = -8.96219454E-09,-0.707109571,-0.707104266,-4.26976179E-08
@@ -9691,28 +9211,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = SurfaceScanner_4290249514
 	partName = Part
-	persistentId = 45558313
-	pos = -0.208898813,6.00693607,-0.0339559019
+	persistentId = 1822586080
+	pos = -0.363596469,4.21500254,-0.415192127
 	attPos = 0,0,0.134946153
 	attPos0 = -0.333642066,0.133500099,0.343831778
 	rot = 0.5,-0.5,0.5,0.5
@@ -9963,28 +9468,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = strutCube_4290126124
 	partName = Part
-	persistentId = 3111435699
-	pos = 0.608558357,6.03567028,-0.0276193321
+	persistentId = 1556574551
+	pos = 0.4538607,4.24373674,-0.408855557
 	attPos = -0.0630095899,0,0.031654954
 	attPos0 = 0.546824694,0.162234306,0.318513393
 	rot = 0,-0.294313967,0,-0.955708802
@@ -10119,28 +9609,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = RobotArmScanner.S1_4290121070
 	partName = Part
-	persistentId = 1616007521
-	pos = 0.555575371,6.00325871,-0.0102783144
+	persistentId = 1471992354
+	pos = 0.400877714,4.21132517,-0.39151454
 	attPos = -0.0777179301,-0.11206913,-0.120060593
 	attPos0 = 0.0241584778,0.0796575546,0.104591489
 	rot = 0.212328419,0.66453135,-0.205584273,0.686330736
@@ -10373,28 +9848,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = mediumDishAntenna_4293623812
 	partName = Part
-	persistentId = 1738856532
-	pos = -0.0571428165,5.93193531,-0.830122471
+	persistentId = 2508325736
+	pos = -0.211840466,4.14000177,-1.21135867
 	attPos = -0.181886107,0,0.124385566
 	attPos0 = 5.04185209E-08,0.0584993362,-0.576720357
 	rot = 0,-0.965925872,0,-0.258818924
@@ -10477,8 +9937,8 @@ PART
 		name = ModuleAnimateGeneric
 		isEnabled = True
 		aniState = LOCKED
-		animSwitch = False
-		animTime = 0.994404137
+		animSwitch = True
+		animTime = 0.00986329466
 		animSpeed = 0
 		deployPercent = 100
 		animationIsDisabled = False
@@ -10552,13 +10012,13 @@ PART
 		name = ModuleRTAntenna
 		isEnabled = True
 		IsRTAntenna = True
-		IsRTActive = True
+		IsRTActive = False
 		IsRTPowered = True
 		IsRTBroken = False
 		IsNonRetractable = False
 		RTDishCosAngle = 0.92387953251128674
 		RTOmniRange = 0
-		RTDishRange = 5.25000016E+11
+		RTDishRange = 0
 		RTDeactivatePowerThreshold = 20
 		RTActivatePowerThreshold = 80
 		stagingEnabled = True
@@ -10682,21 +10142,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleRTDataTransmitter
 		isEnabled = True
 		stagingEnabled = True
@@ -10715,8 +10160,8 @@ PART
 {
 	part = sensorBarometer_4293602684
 	partName = Part
-	persistentId = 2734747097
-	pos = 0.281482905,5.90693569,-0.774561405
+	persistentId = 1088345804
+	pos = 0.126785249,4.11500216,-1.1557976
 	attPos = 0,0,0
 	attPos0 = 0.156739667,0.0334997177,-0.396773696
 	rot = 0.5,-0.5,0.5,0.5
@@ -10899,28 +10344,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = batteryPack_4290116116
 	partName = Part
-	persistentId = 2537480877
-	pos = 0.136680394,6.17654037,-0.484064281
+	persistentId = 304095531
+	pos = -0.018017251,4.38460684,-0.865300536
 	attPos = -1.49011612E-08,0.148373604,0.0178083703
 	attPos0 = 0.0119371582,0.0603189468,-0.124084964
 	rot = 0,0,-0.707106829,-0.707106829
@@ -11050,21 +10480,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -11081,8 +10496,8 @@ PART
 {
 	part = sensorThermometer_4293603318
 	partName = Part
-	persistentId = 1509675289
-	pos = 0.673667669,5.92245007,-0.437821954
+	persistentId = 1240046257
+	pos = 0.518970072,4.13051653,-0.81905818
 	attPos = -0.0993509889,0.0155143738,-0.260899723
 	attPos0 = 0.648275435,0.0334997177,0.200865462
 	rot = -0.187349141,0.681836009,-0.681836009,-0.187349096
@@ -11265,28 +10680,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = sensorAccelerometer_4293602276
 	partName = Part
-	persistentId = 2690457445
-	pos = 0.855524898,5.90693569,-0.00358092785
+	persistentId = 2767134846
+	pos = 0.700827301,4.11500216,-0.384817153
 	attPos = 0,0,0
 	attPos0 = 0.730781674,0.0334997177,0.374206752
 	rot = -0.707106829,0,0,-0.707106829
@@ -11474,28 +10874,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = KAS.JS1_4292960588
 	partName = Part
-	persistentId = 59384133
-	pos = 0.143496424,6.00652695,-1.29545748
+	persistentId = 2620529635
+	pos = -0.0112012215,4.21459341,-1.67669368
 	attPos = 0,0.0995912552,0
 	attPos0 = 0.018753184,0.0334997177,-0.917669773
 	rot = 0.707106829,0,0,-0.707106829
@@ -11679,28 +11064,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.Extendatron.Basic.v3_4293395734
 	partName = Part
-	persistentId = 1506538392
-	pos = 0.124743246,6.2769413,-0.377787679
+	persistentId = 2680336667
+	pos = -0.0299543999,4.48500776,-0.759023905
 	attPos = 0,0,0
 	attPos0 = 0,0.309093475,0
 	rot = 0,0,0,1
@@ -12116,28 +11486,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.Rotatron.Basic.v3_4293395690
 	partName = Part
-	persistentId = 2244883590
-	pos = 0.124743246,6.54997253,-0.377787679
+	persistentId = 1195347578
+	pos = -0.0299543999,4.758039,-0.759023905
 	attPos = 0,0,0.0530062392
 	attPos0 = 0,0.273031235,0
 	rot = 0,-2.98023188E-08,0,1
@@ -12553,28 +11908,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.Pivotron.Sixty.v3_4293395646
 	partName = Part
-	persistentId = 2989601478
-	pos = 0.124743246,6.63965607,-0.377787679
+	persistentId = 675532918
+	pos = -0.0299543999,4.84772253,-0.759023905
 	attPos = 0,0,0
 	attPos0 = 0,0.0896835327,0
 	rot = 0.5,0,0,0.866025388
@@ -12990,28 +12330,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = IR.Camera_4293395602
 	partName = Part
-	persistentId = 3223819353
-	pos = 0.124773763,6.70989609,-0.256083578
+	persistentId = 264015625
+	pos = -0.0299238823,4.91796255,-0.637319803
 	attPos = 0,0,0
 	attPos0 = 0,0.140479088,0
 	rot = 0,-0.866025388,-0.5,0
@@ -13296,21 +12621,6 @@ PART
 	MODULE
 	{
 		name = ModulePartInfoInPAW
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleIRMovedPartEditor2
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
