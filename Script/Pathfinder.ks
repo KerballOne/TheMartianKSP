@@ -55,14 +55,24 @@ IF EXISTS("CommLog") {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function completeContractParameter {
-    parameter paramName.
-    SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
-    FOR P IN ALL {
-        IF P:ID = paramName {
-            P:CHEAT_SET_STATE("COMPLETE").
-            wait 0.2.
-        }
+function contractParameter {
+    parameter paramName, action.
+    IF ADDONS:available("CAREER") {
+        IF ADDONS:CAREER:ACTIVECONTRACTS():length > 0 {
+            SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
+            FOR P IN ALL {
+                IF P:ID = paramName {
+                    IF action = "state" {
+                        return P:state.
+                    } ELSE {
+                        P:CHEAT_SET_STATE(action).
+                    }
+                    wait 0.2.
+                }
+            }
+        } 
+    } ELSE {
+        HUDTEXT("ERROR! \n kOS:Career addon must be installed. \n", 10, 1, 32, red, false).
     }
 }
 
@@ -159,7 +169,7 @@ function moveServos {
     }
     IF BODY:name = "Mars" AND servo = "Pitch" AND positionList:length >= 2 {
         /// CONTRACT PARAMETER COMPLETE, Mark arms up YESS photo
-        completeContractParameter("kOSparam12").
+        contractParameter("kOSparam12","COMPLETE").
     }
     CLEARVECDRAWS().
 }
@@ -238,7 +248,7 @@ function loadFirmware {
         IF firmware:contains(fw_newline1) AND firmware:contains(fw_newline2) {
             print "Rover firmware successfully hacked!".
             /// CONTRACT PARAMETER COMPLETE, hex hacking rover firmware
-            completeContractParameter("kOSparam14").
+            contractParameter("kOSparam14","COMPLETE").
             SET CORE:volume:name TO "PCS_3M_9766".
             return True.
         }
@@ -265,7 +275,7 @@ function rawComm {
             } 
             IF RECEIVED:CONTENT:tostring():contains("file_attachment") {
                 print "Received compressed file".
-                completeContractParameter("kOSparam13").
+                contractParameter("kOSparam13","COMPLETE").
                 SET CORE:volume:name TO "PCS_2M_4575".
                 SET doHighlight TO True.
             }
@@ -344,7 +354,7 @@ function PCSTerminal {
             SET outputBox:position TO V(0,999999,0).       
             IF RECEIVED:CONTENT:tostring():contains(".jpg") AND BODY:name = "Earth" {
                 /// CONTRACT PARAMETER COMPLETE, Are you receiving me?
-                completeContractParameter("kOSparam11").
+                contractParameter("kOSparam11","COMPLETE").
                 IF show = 0 { SET CORE:volume:name TO "PCS_2E_1665". }
                 IF show = 1 { SET CORE:volume:name TO "PCS_3E_4571". SET show TO 2. }
             }

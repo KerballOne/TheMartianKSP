@@ -1,17 +1,21 @@
 wait until ship:unpacked.
 clearscreen.
+CORE:DOEVENT("Open Terminal"). // TESTING
 print "Welcome to the Rover".
-//SET SHIP:type TO "Rover".
-//CORE:DOEVENT("Open Terminal"). // TESTING
 
-function completeContractParameter {
-    parameter paramName.
+
+function contractParameter {
+    parameter paramName, action.
     IF ADDONS:available("CAREER") {
         IF ADDONS:CAREER:ACTIVECONTRACTS():length > 0 {
             SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
             FOR P IN ALL {
                 IF P:ID = paramName {
-                    P:CHEAT_SET_STATE("COMPLETE").
+                    IF action = "state" {
+                        return P:state.
+                    } ELSE {
+                        P:CHEAT_SET_STATE(action).
+                    }
                     wait 0.2.
                 }
             }
@@ -35,7 +39,6 @@ function childPartDist {
     return 99999.
 }
 
-GLOBAL chargingMode TO false.
 function setChargingMode {
     parameter charging.
     IF charging {
@@ -49,16 +52,18 @@ function setChargingMode {
     IF cockpit:allmodules:contains("BonVoyageModule") {
         SET BVmodule TO cockpit:getmodule("BonVoyageModule").
         SET BVactionStr TO BVaction + " Bon Voyage Controller".
-        print BVactionStr.
         IF BVmodule:alleventnames:contains(BVactionStr) {
+            print BVactionStr.
             BVmodule:doevent(BVactionStr).
         }
     }
     FOR wheel IN SHIP:partsnamed("wheelMed") {
-        LOCAL wheelModule is wheel:getmodule("ModuleWheelMotor").
-        wheelModule:doaction(WHLaction + " motor", true).
+        SET wheelModule TO wheel:getmodule("ModuleWheelMotor").
+        SET WHLactionStr TO WHLaction + " motor".
+        IF wheelModule:allactionnames:contains(WHLactionStr) {
+            wheelModule:doaction(WHLactionStr, true).
+        }
     }
-    SET chargingMode TO charging.
 }
 
 function powerFaultCheck {
@@ -76,7 +81,6 @@ function powerFaultCheck {
             }
         }
     }
-    Wait 10.
 }
 
 function powerFaultProtection {
@@ -97,16 +101,17 @@ function powerFaultProtection {
 UNTIL false {
     //print timestamp().
     IF SHIP:partsnamedpattern("LgRadialSolarPanel"):length > 0 {
-        IF NOT chargingMode { setChargingMode(true). }
+        setChargingMode(true).
         powerFaultCheck().
     } ELSE {
-        IF chargingMode { setChargingMode(false). }
+        setChargingMode(false).
     }
-    IF childPartDist("Ares-Cockpit","rtg") < 1.1 {
+    IF contractParameter("kOSparam6","state") = "Incomplete"
+    AND childPartDist("Ares-Cockpit","rtg") < 1.1 {
         HUDTEXT("Success! \n RTG Installed! \n", 10, 1, 32, green, false).
-        completeContractParameter("kOSparam6").
+        contractParameter("kOSparam6","COMPLETE").
     }
-    wait 1.
+    wait 3.
 }
 
 
