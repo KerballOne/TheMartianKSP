@@ -1,17 +1,31 @@
 wait until ship:unpacked.
 clearscreen.
+//CORE:DOEVENT("Open Terminal"). // TESTING
 print "Welcome to the Hab".
 SET SHIP:type TO "Base".
 
-function completeContractParameter {
-    parameter partName.
-    FOR part IN SHIP:partsnamed(partName) {
-        print partName.
-        LOCAL m TO part:getmodule("ModuleTestSubject").
-        if m:alleventnames:contains("run test") {
-            m:doevent("run test").
-        }
+function contractParameter {
+    parameter paramName, action.
+    IF NOT ADDONS:available("CAREER") {
+        HUDTEXT("ERROR! \n kOS:Career addon must be installed. \n", 10, 1, 32, red, false).
+        return false.
     }
+    FOR contract IN ADDONS:CAREER:ACTIVECONTRACTS() {
+        FOR param IN contract:PARAMETERS() {
+            IF param:ID = paramName {
+                IF action = "getState" {
+                    return param:state.
+                } ELSE {
+                    IF contractParameter(paramName,"getState") <> action {
+                        param:CHEAT_SET_STATE(action).
+                        HUDTEXT("SUCCESS! \n Objective " + param:state + "\n", 10, 1, 32, green, false).
+                        return param:ID + " " + param:state.
+                    }
+                }
+                wait 0.2.
+            }
+        }
+    } 
 }
 
 function getResource {
@@ -59,6 +73,14 @@ function openVents {
     }
 }
 
+function closeExhaust {
+    Wait until getResource("Atmosphere") < 1.
+    FOR vent IN SHIP:partsnamed("ReleaseValveExhaust") {
+        SET moduleEx TO vent:getmodule("ModuleResourceDrain").
+        moduleEx:setfield("drain", False).
+    }
+}
+
 function checkChildPart {
     parameter parent, child.
     SET partParent TO SHIP:partsnamedpattern(parent)[0].
@@ -71,17 +93,6 @@ function checkChildPart {
     }
 }
 
-function sealVents {
-    print "Waiting for duct tape and hab canvas...".
-    Wait until checkChildPart("Decoupler", "KKAOSS.gangway.end").
-    Wait 2.
-    FOR module in SHIP:modulesnamed("ModuleResourceDrain") {
-        module:setfield("drain", False).
-    }
-    Wait 2.
-    completeContractParameter("beacon3").
-}
-
 function breachHab {
     disconnect().
     enableResourceFlow(list("Organics","Compost","Atmosphere","WasteAtmosphere")).
@@ -89,22 +100,55 @@ function breachHab {
     SHIP:PARTSDUBBED("AL102")[0]:getModule("ModuleDecouple"):doEvent("decouple").
     wait 0.1.
     SHIP:PARTSDUBBED("Airlock O2 Tank")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
+
 }
 
 function statusCheck {
-    IF checkChildPart("RRTankStackGas125", "rcsTankMini") 
-    AND checkChildPart("rcsTankMini", "kerbalism-chemicalplant") 
-    AND getResource("Hydrazine") = 80 {
-        completeContractParameter("beacon1").
+    IF CORE:volume:name = "Init0"
+    AND getResource("Hydrazine") > 60 {
+        //print "Hydrazine available".
+        contractParameter("kOSparam_Hab1","COMPLETE").
+        SET CORE:volume:name TO "HAB_1M_4534".
+        IF checkChildPart("RRTankStackGas125", "rcsTankMini") 
+        AND checkChildPart("rcsTankMini", "kerbalism-chemicalplant") {
+            Wait 3. contractParameter("kOSparam_Hab1_bonus","COMPLETE").
+        }
     }
-    IF getResource("Hydrogen") > 0.02 AND SHIP:PARTSDUBBED("excess_O2"):length = 1 {
-        SHIP:PARTSDUBBED("excess_O2")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
-        Wait 3.
-        completeContractParameter("beacon2").
+    IF CORE:volume:name = "HAB_1M_4534"
+    AND getResource("Hydrogen") > 0.02 {
+        //print "Hydrogen has being produced".
+        contractParameter("kOSparam_Hab2","COMPLETE").
+        SET CORE:volume:name TO "HAB_2M_7655".
+        IF SHIP:PARTSDUBBED("excess_O2"):length = 1 {
+            SHIP:PARTSDUBBED("excess_O2")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
+            Wait 3. contractParameter("kOSparam_Hab2_bonus","COMPLETE").
+        }
     }
-    IF getResource("Food") > 500 {
-        print "Wow! Those are tasty taters!".
-        return true.
+    IF CORE:volume:name = "HAB_2M_7655" 
+    AND getResource("Food") > 500 {
+        //print "Food is now plentiful".
+        contractParameter("kOSparam_Hab3","COMPLETE").
+        SET CORE:volume:name TO "HAB_3M_2353".
+    }
+    IF CORE:volume:name = "HAB_3M_2353" 
+    AND SHIP:crew:length > 0 {
+        FOR cm in SHIP:crew {
+            IF cm:NAME = "Mark Watney" AND cm:part:tag = "Airlock 1" {
+                print "Cycling Airlock 1".
+                breachHab(). Wait 2. closeExhaust().
+                Wait 3. contractParameter("kOSparam_Hab4","COMPLETE").
+                SET CORE:volume:name TO "HAB_4M_7686".
+            }       
+        }
+    }
+    IF CORE:volume:name = "HAB_4M_7686"
+    AND checkChildPart("Decoupler", "KKAOSS.gangway.end") > 0 {
+        print "Habitat hole sealed!".
+        FOR module in SHIP:modulesnamed("ModuleResourceDrain") {
+            module:setfield("drain", False).
+        }
+        Wait 2. contractParameter("kOSparam_Hab5","COMPLETE").
+        SET CORE:volume:name TO "HAB_5M_2348".
     }
     Wait 5.
     return false.
@@ -112,21 +156,7 @@ function statusCheck {
 
 ///////////////////////////////
 
-print "Waiting for crew".
-Wait until SHIP:crew:length > 0.
-FOR member in SHIP:crew {
-   IF member:NAME = "Mark Watney" {
-        print member:NAME + " is aboard".
-        SET mark TO member.
-   }
-}
+IF CORE:volume:name = "" { SET CORE:volume:name TO "Init0". }
+print CORE:volume:name.
 
 Wait until statusCheck().
-
-Wait until SHIP:crew:length > 0.
-Wait until mark:part:tag = "Airlock 1".
-print "Cycling Airlock 1".
-wait 0.05. print ".". wait 0.05. print ".". wait 0.05. print ".". wait 0.05. print ".".
-breachHab().
-wait 10.
-sealVents().

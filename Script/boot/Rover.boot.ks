@@ -1,28 +1,31 @@
 wait until ship:unpacked.
 clearscreen.
-CORE:DOEVENT("Open Terminal"). // TESTING
+//CORE:DOEVENT("Open Terminal"). // TESTING
 print "Welcome to the Rover".
 
 
 function contractParameter {
     parameter paramName, action.
-    IF ADDONS:available("CAREER") {
-        IF ADDONS:CAREER:ACTIVECONTRACTS():length > 0 {
-            SET ALL TO ADDONS:CAREER:ACTIVECONTRACTS()[0]:PARAMETERS().
-            FOR P IN ALL {
-                IF P:ID = paramName {
-                    IF action = "state" {
-                        return P:state.
-                    } ELSE {
-                        P:CHEAT_SET_STATE(action).
-                    }
-                    wait 0.2.
-                }
-            }
-        } 
-    } ELSE {
+    IF NOT ADDONS:available("CAREER") {
         HUDTEXT("ERROR! \n kOS:Career addon must be installed. \n", 10, 1, 32, red, false).
+        return false.
     }
+    FOR contract IN ADDONS:CAREER:ACTIVECONTRACTS() {
+        FOR param IN contract:PARAMETERS() {
+            IF param:ID = paramName {
+                IF action = "getState" {
+                    return param:state.
+                } ELSE {
+                    IF contractParameter(paramName,"getState") <> action {
+                        param:CHEAT_SET_STATE(action).
+                        HUDTEXT("SUCCESS! \n Objective " + param:state + "\n", 10, 1, 32, green, false).
+                        return param:ID + " " + param:state.
+                    }
+                }
+                wait 0.2.
+            }
+        }
+    } 
 }
 
 function childPartDist {
@@ -106,10 +109,8 @@ UNTIL false {
     } ELSE {
         setChargingMode(false).
     }
-    IF contractParameter("kOSparam6","state") = "Incomplete"
-    AND childPartDist("Ares-Cockpit","rtg") < 1.1 {
-        HUDTEXT("Success! \n RTG Installed! \n", 10, 1, 32, green, false).
-        contractParameter("kOSparam6","COMPLETE").
+    IF childPartDist("Ares-Cockpit","rtg") < 1.1 {
+        contractParameter("kOSparam_Rover6","COMPLETE").
     }
     wait 3.
 }
