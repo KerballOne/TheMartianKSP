@@ -12,7 +12,7 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.11.2|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.0|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|Kerbalism=3.21.0|KerbalismBootstrap=3.21.0|UnityEngine.AnimationModule=0.0.0|UnityEngine.AudioModule=0.0.0|UnityEngine.CoreModule=0.0.0|UnityEngine=0.0.0|UnityEngine.IMGUIModule=0.0.0|UnityEngine.InputLegacyModule=0.0.0|UnityEngine.InputModule=0.0.0|UnityEngine.PhysicsModule=0.0.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.4.0|kOS-Career=0.2.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.0|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.0|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.0|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.2.6
+_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AllAboard=0.0.0|AnyResContinued=2.0.9|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.1|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.99.0|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.1|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalismBootstrap=3.25.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.5.1|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.3|Kerbalism=3.25.0
 PART
 {
 	part = Ares-MAV-Lander_4293466768
@@ -168,7 +168,7 @@ PART
 	{
 		name = ModuleCryoTank
 		isEnabled = True
-		LastUpdateTime = 2677692050.190557
+		LastUpdateTime = 2677718133.6334505
 		CoolingAllowed = True
 		CoolingEnabled = True
 		BoiloffOccuring = False
@@ -3216,7 +3216,7 @@ PART
 	{
 		name = ModuleCrewAssignment
 		isEnabled = True
-		slotAssignments = 
+		slotAssignments = Empty
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3444,6 +3444,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3466,6 +3467,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3488,6 +3490,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3510,6 +3513,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3532,6 +3536,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3554,6 +3559,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3576,6 +3582,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3598,6 +3605,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3620,6 +3628,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3642,6 +3651,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3664,6 +3674,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3704,6 +3715,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3726,6 +3738,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3748,6 +3761,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3770,6 +3784,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3792,6 +3807,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3814,6 +3830,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3836,6 +3853,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3858,6 +3876,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3880,6 +3899,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3902,6 +3922,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3924,6 +3945,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 1
 		EVENTS
@@ -3946,6 +3968,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3968,6 +3991,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -3990,6 +4014,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4012,6 +4037,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4034,6 +4060,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4056,6 +4083,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4078,6 +4106,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4128,6 +4157,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4150,6 +4180,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4172,6 +4203,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4194,6 +4226,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4216,6 +4249,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4238,6 +4272,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4260,6 +4295,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4282,6 +4318,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4304,6 +4341,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4326,6 +4364,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4348,6 +4387,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4370,6 +4410,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4392,6 +4433,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4414,6 +4456,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4436,6 +4479,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4458,6 +4502,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4480,6 +4525,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4502,6 +4548,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4524,6 +4571,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4546,6 +4594,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4568,6 +4617,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -4618,9 +4668,9 @@ PART
 	RESOURCE
 	{
 		name = _SplitterCO2
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
@@ -4629,537 +4679,9 @@ PART
 	RESOURCE
 	{
 		name = _MethaloxRF
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _WaterElectrolysis
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SabatierRF
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _Haber
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _WasteIncinerator
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _WasteCompressor
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _AnthraquinoneRF
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HydrazineProductionRF
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _NitroHydrazineRF
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MRE
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SOE
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SCO
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MRER
-		amount = 0
-		maxAmount = 1.242
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _AmmoniaBrew
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _AmmoniaToMono
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _CarbonFuser
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _CarbonMonoA
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _CarbonMonoB
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _GlykerolBrew
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MaterialKitting
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _ECHeatedMetalSmelter
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterAl2O3
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterExMins
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterHydrates
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterMins
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterMona
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterOre
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterSilica
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterSpod
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HydroloxRF
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _Aerozine50
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _EthanolA
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _EthanolB
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _Ethanol75A
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _Ethanol75B
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HTP
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HydrazineRF
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _Kerosene
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MMHA
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MMHB
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _MMHC
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _NTO
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _UDMH
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _UH25
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterHTP
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _SplitterHydrazine
-		amount = 0
-		maxAmount = 0.0138
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HyLiquefaction
-		amount = 0
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _LHyEvaporator
-		amount = 0
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = _HydrogenBurner
-		amount = 0
-		maxAmount = 0.050000000000000003
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
@@ -5379,7 +4901,7 @@ PART
 	pos = 0.67492193,6.8096261,-0.185343504
 	attPos = -0.583664119,0.812933922,0.38197273
 	attPos0 = 1.32927716,-0.366113663,-0.801451862
-	rot = -1.47963158E-06,-0.965925753,3.96466447E-07,0.258819222
+	rot = -1.47963169E-06,-0.965925813,3.96466476E-07,0.258819252
 	attRot = 0,0,0,1
 	attRot0 = 1.47963181E-06,0.965925872,-3.9646639E-07,-0.258819193
 	mir = 1,1,1
@@ -5499,6 +5021,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5521,6 +5044,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5543,6 +5067,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5565,6 +5090,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5587,6 +5113,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5609,6 +5136,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5631,6 +5159,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5653,6 +5182,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5675,6 +5205,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5697,6 +5228,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5719,6 +5251,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5759,6 +5292,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5781,6 +5315,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5803,6 +5338,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5825,6 +5361,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5847,6 +5384,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5869,6 +5407,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5891,6 +5430,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5913,6 +5453,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5935,6 +5476,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5957,6 +5499,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -5979,6 +5522,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 1
 		EVENTS
@@ -6001,6 +5545,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6023,6 +5568,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6045,6 +5591,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6067,6 +5614,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6089,6 +5637,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6111,6 +5660,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6133,6 +5683,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6183,6 +5734,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6205,6 +5757,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6227,6 +5780,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6249,6 +5803,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6271,6 +5826,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6293,6 +5849,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6315,6 +5872,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6337,6 +5895,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6359,6 +5918,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6381,6 +5941,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6403,6 +5964,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6425,6 +5987,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6447,6 +6010,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6469,6 +6033,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6491,6 +6056,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6513,6 +6079,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6535,6 +6102,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6557,6 +6125,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6579,6 +6148,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6601,6 +6171,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6623,6 +6194,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -6673,9 +6245,9 @@ PART
 	RESOURCE
 	{
 		name = _SplitterCO2
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
@@ -6684,9 +6256,9 @@ PART
 	RESOURCE
 	{
 		name = _MethaloxRF
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
@@ -6701,7 +6273,7 @@ PART
 	pos = 0.674920738,6.35892582,-0.185342818
 	attPos = 0.576853752,-0.0767831802,0
 	attPos0 = 0,-0.450700283,0
-	rot = -1.47963158E-06,-0.965925753,3.96466447E-07,0.258819222
+	rot = -1.47963169E-06,-0.965925813,3.96466476E-07,0.258819252
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -7026,6 +6598,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7048,6 +6621,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7070,6 +6644,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7092,6 +6667,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7114,6 +6690,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7136,6 +6713,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7158,6 +6736,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7180,6 +6759,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7202,6 +6782,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7224,6 +6805,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7246,6 +6828,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7286,6 +6869,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7308,6 +6892,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7330,6 +6915,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7352,6 +6938,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7374,6 +6961,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7396,6 +6984,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7418,6 +7007,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7440,6 +7030,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7462,6 +7053,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7484,6 +7076,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7506,6 +7099,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 1
 		EVENTS
@@ -7528,6 +7122,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7550,6 +7145,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7572,6 +7168,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7594,6 +7191,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7616,6 +7214,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7638,6 +7237,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7660,6 +7260,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7710,6 +7311,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7732,6 +7334,7 @@ PART
 		name = ProcessController
 		isEnabled = True
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7754,6 +7357,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7776,6 +7380,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7798,6 +7403,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7820,6 +7426,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7842,6 +7449,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7864,6 +7472,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7886,6 +7495,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7908,6 +7518,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7930,6 +7541,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7952,6 +7564,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7974,6 +7587,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -7996,6 +7610,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8018,6 +7633,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8040,6 +7656,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8062,6 +7679,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8084,6 +7702,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8106,6 +7725,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8128,6 +7748,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8150,6 +7771,7 @@ PART
 		name = ProcessController
 		isEnabled = False
 		running = False
+		broken = False
 		stagingEnabled = True
 		persistentValveIndex = 0
 		EVENTS
@@ -8200,9 +7822,9 @@ PART
 	RESOURCE
 	{
 		name = _SplitterCO2
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
@@ -8211,9 +7833,9 @@ PART
 	RESOURCE
 	{
 		name = _MethaloxRF
-		amount = 0
+		amount = 0.0138
 		maxAmount = 0.0138
-		flowState = True
+		flowState = False
 		isTweakable = False
 		hideFlow = False
 		isVisible = False
