@@ -8245,7 +8245,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 26780455160.1631789
+		NextSpawnTime = 2678045516000.1631789
 	}
 	SCENARIO
 	{
@@ -9247,7 +9247,7 @@ GAME
 						{
 							name = K&K Planetary Command Module
 							is_private = False
-							dataCapacity = 0.5
+							dataCapacity = 5000
 							sampleCapacity = 1
 							sendFileNames = 
 							files
@@ -9255,6 +9255,14 @@ GAME
 							}
 							samples
 							{
+								surfaceSample@318767114
+								{
+									size = 850
+									resultText = You've collected a sample of the surface.
+									useStockCrediting = False
+									analyze = False
+									mass = 0.015
+								}
 							}
 						}
 					}
@@ -20894,7 +20902,7 @@ GAME
 							file
 							{
 								filename = Hab.boot.ks
-								binary = H4sIALpB+WgA,61YbW,jNgz+nl+h06cUy5y35nYwdge4jnst2sRF7OsN2IZAsdXEiy0HstKXDf3vo+R3x+m13Qy0jRWSIvnwoag+kECgPRNBiJJNsNP3bEe8LfW1jhdSwhOPU8q0Tr9v2gtLn9rWrTV3u9jeUYZcyqOAkRCfaKjfR67luJfzr50dD5hA+DsNvTiiSMRIbCi6ICusdRzLRc7F5Y0unnYUuTbCZySh8EXnbs88EcQMeTETnHjihnASUUE5+qeD4NkV7+rTHF56iCgdTQlcnqO57SJjOrXnjk7uSRCSVUi72DQWlrXAJ5kh+Vx8m7rWbxCItVjYiw,oD4a2tqObBMLliPg+OBLtE4FWFAUsESQMIScghntoOICfHhqPeohTv4fuSJjQE62wzanYc5Yup6vP6ve5vSiCQ5fz3NHUO90w3ctby7Tn7gI+Ot2qt1JTBS3VchP6jbEwZpZrLerCWSqUvH45RZ,LfDWkMsk0hyCH11Q4ggiKWwQrkaWmEympHcg9I+vasY4YgN0O4O2WcJYOnKBfv+SOtZsqSkI3LyzDXUJlLR3XcK1uqnaiHVUrwHe+mablOAp+e,UXBcV7ijD6qRoivOEm7mvJikPkX8wXQAGWmtbblZ87P15RzB1oo7qFUi799Iw6zxVyQYIXNIn33KMHtOI0SW1JksKLEcXQGCRJB1pRwDzXDlhK5HwhqeAEMOfL+hxqFGqL1wRadylUiFrSmpF0KiktFLVaeJRJxucRnofxQ1uUqb,tMbWFk9FPFDHLl2Y4udCyak0utGYof4K7upLOJE0,ly61F7,MXV0vjdyXeRR838bLl8uklkY,SICmDPiQ7Z+1LrkSc9mEyjRIh,0dEZBb1sUL16n12WvbNK5RFPv7EBKSlEZ0qMR0uYuvDOc6YNscNjOXwRVqQUml4rpsxfeUCblxost2QqBDd7FPBfE25Q642RQzfT9W6m0KzZKTT0azyVtcCWNv+wZHmuLai+DEcPTegl5SwSZPcFaf6WsKTRfP1Fue3SkHH2suZe4kVNwFNAQFX4ogLvtwD40GFX+OiMKyFHWh8H4oXJerh+aFcUKtxw2RJ2,q4PdyPqn0ri42oHqS3YZydVagYclmmdOWEoXapDDRJPSWhPf5JrU8SFKlPluPkkfSULVMW,PYDNd6bAn4vHJONCLeUG9rboLQv5ENpmXSASd6IAYSZXOWUd2or6SfR7iY6p78PvgzVez308GsVC5zpuyrFgeJKwV0tQ6fKlnKzWD5Ig+zQrfGkGJVdbSSG2q9SYisqdcbV1vtrzgFysIomRkoG1U3S+,hCdANgwRIZvM1YYGX4B4242gXA,i9ahX18HeSCFqtq8xkQbh8D5VwmL5cZ,rt7MyaQjVeDwcjLHMtC2ZWK5gp9eL9LgR7wHgrbz35WmoxazLDo,YDrpqEPUIuYdtip3ppXpFVHEfVfbZq5YPcppZHOXrsE1MWX5ZJgExN+PdxuI+KYwhfskAMsJIw5tM6BS+eoL7,Dphk4Bf0cdBWJIUMKuZxXEJ8OAtimMJV+S8B5KHEyp7dXMOQW2WapMCBs,IucWGcLYez5elkfIob1VilGbSChUwjjJre9itJhqMJkBRzL5Grs4AFEFGhLuNu6ldFQXNL+YpAmUU,g2AUeCTchYSJg8avmtlY+2Hcy1XM9smR6KvT0BHUqnk4jl28pkxBN9AGo2PgSSG0IQlchAK2RjsOleZR,,Ugjt4D4mi2,OXjZFIH8ZAW9BGmqmRpA,X0kLK12ED0w+ac+ZLa23n0DjxH,weeeUpQO6DncewrMCeDViLK7+UAxmAkhsYDB+rdPnw9iuP3oDieLUfjyRhrr4swFy8jVNB5nD7k6EKtNuZyLyqmHil4eA,2ovwKgmeEbwEzwegTTmkdqXNTF2Qtv8+77LDt,pvl0XzyQkmEUvZw1C5OKTgw0hoZabXZpttyZ3xlLZ0eAeJVgJzKGvr0seHyc,b3rRWZWyvganbJ,OTjskdeXRm242hwCK8fyJNGWVquVTzztkNWAZxPaBPDSJtQAteaDxWX,,O8K5+js+l540pfXgQKIF8GaPIepkxk6Z9+qjFF7ZddO+r,UoKTvP,y0+kcwQ0q+7gn6WGvwf4pEk0hGCIq43hlhpD1,C+,cfEISRQAAA==
+								binary = H4sIAO9b+mgA,61YeW,iRhT,n08xO3+BSh1jQrprdSMRcDZRAo6wN1uprdBgT8DFB5oxOVrlu,fN+D7I1VraLB7ee,OO37t4IF6M9mHs+YhvvJ2+D3fE2VJX6Tg+JYw7jNJQ6RwdTcyFoU9N49aY211s7miIbMoCLyQ+7ino6AjZhmVfzr91dswLY4R,UN+JAoriCMUbii7ICisdy7CRdXF5o8dPO4psE+Ezwil80bnbh07sRSFyojBmxIlvCCMBjSlD,3QQPLv8XX6aw0sfEcmjSILLczQ3bTSeTs25pZN74vlk5dMunowXhrHAvVSQeC6+T23jNzDEWCzMxSf0R4i2pqVPCJjLEHFdUCTY8xitKPJCHhPfB58AGe6jgQr,+mio9RGjbh,dEZ,TnpLLZjTeszA5Tk6f5d9zc5Ebhy7nmaKJdvp4Yl,eGhNzbi,go9Utays4pdGCLROh34wX45lhG4sqceoKSa9fTtHXwl81qpQy8SHQ4TWNrZjEFLcQlixLRHNBqTTonpFxbRkHBMBtjfB2i3AWCvTQr6eZYu2ickjokwtjbC8BWUvLHttGN2HrKQfZ8uBb3ycTw7Jk+M3VXxQY7ynC6KeyifCG63Ffi6xoRv5Ff0EoQFJdejvzc+f1E5m5qqJVJRR0yadn1HkuJRc4eEF5tGcObaQVozyRJZIUXsZBBIVBJKmq5ABmGbcXJomcHfBSnCDM2bE+B4wCtliFoPWWnIXII6VuSafk0pxRqZhHQ5HxmYXnfvTQZmWib7tNbeak6RfnNouXujkZ0bIsTRy0eih7vLsqkx6KNP1aqNQOfuG7Kl9iuSv8GLN9W16+DJOKG12PQ5qGkA,p,WnpEicRE0WocINQ2N2RGHwbdvHCtip19tqcjK9RELl7HxzCCyE6IDE57uKrsXXthdssbJOMBpdSCyCVkOuiFN,TMBYXc12UEwIVuotdGhNnU9yA60Ux5Xcjyd7GUIeceNI0G71HFT9ytu9QpE6uvBicCFrvLfDxUmwyB6f4TF6T0HTxTL5l3p0y0LGiUqoOp,GdR31gcAUJYqIO95GmlvQ5QArHgtQG4L1KXKWrmub4EafG44aIzpso+KOYT0q1q4vHgB6+21AmewUaFNksfNoCUcAmhYmG01vi32eXVPwgkirR2XgUeSQElWHa6se6ucZji8HnpT5Rs3hDne1k4,nujSgwLZMOKNEHMqAoirOw6kZ+JfQ8kIsJb+939c+E8egoGcwK5sJnUr4sceC4gkCX5,Cp5KVMDBYvopnlvJUMyU9lRStyQ57XEyIt6tXC1Yb9FaOQsjBKpgKKQtVN3dvsAF3f45BkJluT0HM47uNJFOwiCH6,jKI+,kF4TMu4SkXmCZfdIR0O05dtTb+fnRlTQOP1QNWw8LUAzKwCmCl1ov3OB3mQ8UZWerKzRGJaZAYH5XtMFglTQzYJt,lNVWhekVUUBeV7tvLkk7gG,Ji7kcDQ,vS3F66nJCapKwWueMzkTM737I5A8+EkACVRN4BFAPkkdKHBEMdzie8RtIMDL,ZID+fjd0vxuQYNoJJE7An0isHrAJ51t1cAAk7KcGhA4bmpOHVLegv4blw3z,jq9ReEuVMGUx2uz9P0XpZtwQfs1VLenKZTat2n4TreoFOkaS2tOVU+I+b7VWrvYNg,EeaH+2AFE6,ae2VoK486anXEEVPjnk9E3Ug1APXkcnYf+fsgnyDwJURHxZJiPJ9WY15ZGNJ8HmcEaAZp6xExC60j3wNzq3jguNBeoKZxuYDQxfhsqc6WA03TcHkJOqBsmbymchJt0PgUfT7+onxpaF4jE0P27AxFd007MsqSAc11BMMiKCvwEuqMKsqFObu5hj2rXOxfs3t0fPIeuyV5bnel0V08QReBsAgEn6ITta0U5zQo33rfbuLgIyYOZsvj0fAY12p+uZlBw12IYgULnbP9RvhAG0ErxMzh4nTmhR5YlLMLu+v8ZVLg3FK2gsrDg5+BMPAc4osSFDfGKzkyDJVX7V6uIB,5Aeuf3xa7zA+HYxetaShDpyqqdih4gghtCEcrKhJwx6CIOe,BqfaRIGqz5S8no1E1iM3mQx9hd+FLExpcVv++okF9m3uJ7f3d6gPx1P6PeGYuQe0BPY8iVwZzpLYmovherDkhLJ5QKWFsvdv7b4,i8CNRHM6W2nA0fGu1ycgLC2XoHEYfiu6m1pqlE+S7hSBs9kcnyBZ9DFV3CzGLQ,qEk7QO5HSqx2Qtvs9mmUHbr0ypHydPji8SoaBtLrT5LAhjWYIRTalsEN2WX2beiKXjA4F4U0COBYY+n9RUfk7,fy8iM2l5uOpVMpsvmaiRV1dj07IUGHXXD+RJoWECV7XZ7sFKD0YJtIlgwuOU+NT9VFL5P2+V4jm4AZ7XfjgrBqA8kC8HaPSRTBkJ6B9,rmSKvC9d7qs,3MLQdfTy0+kciBsg+7AmyVymwP1JJOpEMKqXlt7SuCfw,C9QQEYhrxcAAA==
 							}
 						}
 					}
@@ -33118,7 +33126,7 @@ GAME
 				RESOURCE
 				{
 					name = CarbonDioxide
-					amount = 1000000
+					amount = 14654
 					maxAmount = 1000000
 					flowState = True
 					isTweakable = True
@@ -72832,7 +72840,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 0.326363475177972
+					amount = 0.051
 					maxAmount = 12.5
 					flowState = True
 					isTweakable = True
