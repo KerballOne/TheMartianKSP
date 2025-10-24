@@ -102,9 +102,36 @@ function breachHab {
     SHIP:PARTSDUBBED("Airlock O2 Tank")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
 
 }
+function analyzingData {
+    SET str TO "surface sample (mars landed acidalia planitia)".
+    IF SHIP:modulesnamed("Laboratory"):tostring():contains(str) {
+        return true.
+    }
+}
+function analyzedData {
+    FOR hdd IN SHIP:modulesnamed("HardDrive") {
+        FOR evtname IN hdd:alleventnames {
+            IF evtname:length > 22 {
+                return evtname:substring(13,6):tonumber(0).
+            }
+        }
+    }
+    return 0.
+}
 
 function statusCheck {
     IF CORE:volume:name = "Init0"
+    AND analyzingData() {
+        print "Analyzing Martian regolith surface samples".
+        SET CORE:volume:name TO "HAB_0M_1222".
+    }
+    IF CORE:volume:name = "HAB_0M_1222"
+    AND analyzedData() > 849.9 {
+        print analyzedData() + " MB of Martian regolith analyzed".
+        contractParameter("kOSparam_Hab0","COMPLETE").
+        SET CORE:volume:name TO "HAB_0M_5462".
+    }
+    IF CORE:volume:name = "HAB_0M_5462"
     AND getResource("Hydrazine") > 60 {
         //print "Hydrazine available".
         contractParameter("kOSparam_Hab1","COMPLETE").
