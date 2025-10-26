@@ -2,9 +2,9 @@ ship = The Hab
 version = 1.12.5
 description = 
 type = VAB
-size = 13.2380505,3.51390266,19.1574535
+size = 13.2380562,3.51390266,19.1574593
 steamPublishedFileId = 3520812435
-persistentId = 1640511171
+persistentId = 1563850692
 rot = 0,0,0,0
 missionFlag = aresexploration/Flags/nasa_darker
 vesselType = Base
@@ -12,12 +12,12 @@ OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
-_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AllAboard=0.0.0|AnyResContinued=2.0.9|AsteroidSpawnLimiter=1.0.0|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.1|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.99.0|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.1|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalismBootstrap=3.25.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.227|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.5.1|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.3|Kerbalism=3.25.0
+_modVersions = ModuleManager=4.2.3|ClickThroughBlocker=2.1.10|0Harmony=2.2.1|HarmonyInstallChecker=2.2.1|ToolbarControl=0.1.9|4kSPExpanded=0.2.1|AllAboard=0.0.0|AnyResContinued=2.0.9|AsteroidSpawnLimiter=1.0.0|B9PartSwitch=2.21.0|BAMCont=1.3.3|BetterCrewAssignment=0.0.0|KSP_Log=1.2.0|BetterLoadSaveGame=2.5.3|BonVoyage=1.5.1|CCK=5.1.0|CommunityTraitIcons=1.1.2|CLSInterfaces=2.0.1|ConnectedLivingSpace=2.0.2|ContractConfigurator=2.99.0|RemoteTech=1.9.12|CC_RemoteTech=2.0.0|SimpleBoiloff=0.2.1|MagiCore=1.4.0|DatedQuickSaves=1.2.5|DeployableEngines=2.2.0|DockingFunctions=1.0.4|DynamicBatteryStorage=1.0.0|EasyVesselSwitch=2.3.7852|KSPDev_Utils.2.6-EVS=2.6.0|Atmosphere=1.11.7|CelestialShadows=1.11.7|CityLights=1.11.7|EVEManager=1.11.7|PartFX=1.11.7|PQSManager=1.11.7|ShaderLoader=1.11.7|Terrain=1.11.7|TextureConfig=1.11.7|Utils=1.11.7|_BuildManager=1.11.7|FreeIva=0.2.20|HangerExtenderExtended=3.6.1|HUDReplacer=1.0.0|IRConnectionSystem=1.0.5|JanitorsCloset=0.3.9|Kaboom=1.4.0|KAS-API-v2=2.0.7239|KAS=1.12.8285|KSPDev_Utils.2.7=2.7.0|KerbalChangelog=1.4.2|KerbalEngineer.Unity=1.0.0|KerbalEngineer=1.1.9|KerbalismBootstrap=3.25.0|KerbalJointReinforcement=3.8.6|HyperEdit=1.5.8|Kopernicus.Parser=1.0.0|ModularFlightIntegrator=1.2.10|Kopernicus=1.12.229|ICSharpCode.SharpZipLib=0.86.0|kOS=1.4.0|kOS.Safe=1.5.1|kOS-Career=0.3.0|KRASH=0.5.34|0_MultipleModuleInPartAPI=1.0.0|KSPCommunityFixes=1.39.1|IRSurfaceSampler=1.0.1|InfernalRobotics_v3=3.1.10|MechJeb2=2.14.3|System.Buffers=4.6.28619|NFPropUtils=1.0.0|Grass=0.0.0|ParallaxQualityLibrary=1.0.0|ParallaxOptimized=1.0.0|ParkingBrake=0.4.4|PartInfoInPAW=0.0.0|PlanetarySurfaceStructures=1.6.16|PortraitStats=18.1.0|ROUtils=1.1.1|ProceduralParts=2.8.0|QuickBrake=1.4.0|QuickSearch=3.3.1|QuickStart=2.2.1|SolverEngines=3.13.1|RealFuels=15.12.0|RealFuelsB9PSPatch=1.0.0|RealSolarSystem=20.1.3|ResourceOverview=2.0.2|RSSTimeFormatter=1.12.0|RSSVE=1.8.1|scatterer=0.878.0|Shabby=0.4.2|ButtonManager=1.0.2|KSP_ColorPicker=1.1.1|KSP_PartHighlighter=1.1.1|SpaceTuxUtility=1.0.2|VesselModuleSave=1.0.2|KSPSteamCtrlr=0.0.1|HabUtils=1.0.0|TextureReplacer=4.5.3|ThroughTheEyes=2.0.4|KSPAlternateResourcePanel=2.11.0|TransferWindowPlanner=1.9.1|TUFX=1.1.1|VABOrganizer=0.0.0|VesselMover=1.12.0|WasdEditorCameraContinued=0.7.3|WaypointManager=2.8.4|Deferred=1.3.3|Kerbalism=3.25.0
 PART
 {
 	part = KKAOSS.Central.Hub_4292786108
 	partName = Part
-	persistentId = 3832731189
+	persistentId = 3713947502
 	pos = 1.01701236,8.59196854,0.994924963
 	attPos = 0,0,0
 	attPos0 = 1.01701236,8.59196854,0.994924963
@@ -4828,6 +4828,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -5037,8 +5052,8 @@ PART
 {
 	part = Cherry Light_4292883902
 	partName = Part
-	persistentId = 2475740176
-	pos = 1.0773077,10.7066898,1.72508192
+	persistentId = 2141810769
+	pos = 1.0773077,10.7066898,1.72508204
 	attPos = 0,0,0
 	attPos0 = -0.730121255,2.11472225,0.0602946281
 	rot = 2.52881165E-07,1.1920929E-07,-1.19209318E-07,-1.00000012
@@ -5328,13 +5343,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Cherry Light_4292882878
 	partName = Part
-	persistentId = 1392987581
-	pos = 1.61920333,10.7066898,0.57761097
+	persistentId = 2653314923
+	pos = 1.61920345,10.7066898,0.57761085
 	attPos = 0,0,0
 	attPos0 = 0.417277455,2.11472225,0.602156281
 	rot = 2.32022614E-08,-0.866025388,-2.78606137E-07,-0.50000006
@@ -5600,13 +5630,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Cherry Light_4292882808
 	partName = Part
-	persistentId = 3787711905
-	pos = 0.354528546,10.7066898,0.682073176
+	persistentId = 1142388035
+	pos = 0.354528427,10.7066898,0.682073116
 	attPos = 0,0,0
 	attPos0 = 0.312843949,2.11472225,-0.66245091
 	rot = -2.29678832E-07,-0.866025448,-1.59396834E-07,0.49999997
@@ -5872,13 +5917,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SurfAntenna_4293260372
 	partName = Part
-	persistentId = 3281411447
-	pos = 0.983925581,10.7131748,0.0132994056
+	persistentId = 4223171641
+	pos = 0.983925581,10.7131748,0.0132991672
 	attPos = 0,0,0
 	attPos0 = 0.981561244,2.12120724,-0.033085227
 	rot = 0.000755816698,-0.989382923,0.145239756,0.00514864922
@@ -6130,6 +6190,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleRTDataTransmitter
 		isEnabled = True
 		stagingEnabled = True
@@ -6148,8 +6223,8 @@ PART
 {
 	part = kerbalism-container-radial-pressurized-prosemian-small_4293069622
 	partName = Part
-	persistentId = 1961416066
-	pos = 3.8134234,7.86862564,0.994924009
+	persistentId = 3851127025
+	pos = 3.81342435,7.86862564,0.994924009
 	attPos = 2.38418608E-07,-0.0987186432,0.968637109
 	attPos0 = -2.84217094E-14,-0.624624252,1.82766449
 	rot = -0.499999523,0.50000006,0.500000298,-0.500000417
@@ -6364,6 +6439,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -6380,7 +6470,7 @@ PART
 {
 	part = RRTankStackGas125_4293585320
 	partName = Part
-	persistentId = 3786396848
+	persistentId = 1131069611
 	pos = 1.01701236,10.5919685,0.994924963
 	attPos = 7.10542736E-15,-0.346870422,5.96046519E-08
 	attPos0 = -7.10542736E-15,2.34687042,-5.96046519E-08
@@ -6542,6 +6632,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = CarbonDioxide
@@ -6558,8 +6663,8 @@ PART
 {
 	part = kerbalism-container-radial-pressurized-prosemian-small_4293573282
 	partName = Part
-	persistentId = 885055345
-	pos = 1.61702406,10.3919687,1.39493656
+	persistentId = 2376745482
+	pos = 1.6170243,10.3919687,1.3949368
 	attPos = -0.0637661219,0.451232195,0.0904053748
 	attPos0 = -0.53623426,-0.251232266,0.30959487
 	rot = -0.866025507,-2.87354638E-08,0.50000006,-4.97712946E-08
@@ -6774,6 +6879,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -6790,8 +6910,8 @@ PART
 {
 	part = kerbalism-container-radial-pressurized-prosemian-small_4293572968
 	partName = Part
-	persistentId = 1838451605
-	pos = 0.370563269,10.3919687,1.31456411
+	persistentId = 426799311
+	pos = 0.370562553,10.3919687,1.31456459
 	attPos = 0.110176623,0.451232195,0.0100204647
 	attPos0 = 0.536234379,-0.251232266,0.309595048
 	rot = -0.866025507,2.8735478E-08,-0.50000006,-4.97713231E-08
@@ -7006,6 +7126,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -7022,8 +7157,8 @@ PART
 {
 	part = kerbalism-container-radial-pressurized-prosemian-small_4293572892
 	partName = Part
-	persistentId = 2221482494
-	pos = 1.06343472,10.3919687,0.27528578
+	persistentId = 1361995167
+	pos = 1.06343496,10.3919687,0.275285304
 	attPos = -0.0464102775,0.451232195,-0.100425899
 	attPos0 = -5.9604659E-08,-0.251232266,-0.619190097
 	rot = 0,5.74709702E-08,-1.00000012,-5.32907052E-15
@@ -7238,6 +7373,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -7254,7 +7404,7 @@ PART
 {
 	part = KKAOSS.gangway.end_4293163130
 	partName = Part
-	persistentId = 1043000105
+	persistentId = 2632884779
 	pos = 1.01701224,10.8919687,0.994924963
 	attPos = 0,0,0
 	attPos0 = 5.96046732E-08,-0.30000031,1.42108581E-14
@@ -7383,13 +7533,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.Habitat.MK2.g_4290870930
 	partName = Part
-	persistentId = 2818848568
-	pos = 1.01701093,8.3488884,4.38596058
+	persistentId = 3587288219
+	pos = 1.01701093,8.3488884,4.38596153
 	attPos = 0,0,0
 	attPos0 = -3.39099932,-0.243080139,2.38418579E-07
 	rot = 0,-0.707106829,0.707106829,0
@@ -8272,6 +8437,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -8387,8 +8567,8 @@ PART
 {
 	part = KKAOSS.CrossSection.g_4293038806
 	partName = Part
-	persistentId = 2421100237
-	pos = 1.01701236,8.3488884,7.26404333
+	persistentId = 4285520031
+	pos = 1.01701236,8.3488884,7.26404524
 	attPos = 0,0,0
 	attPos0 = -2.38418636E-07,-2.87800121,0
 	rot = 0.50000006,0.50000006,-0.50000006,0.50000006
@@ -8573,13 +8753,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.Storage.mid.g_4293037340
 	partName = Part
-	persistentId = 2381670908
-	pos = 3.38609934,8.3488884,7.26400518
+	persistentId = 1708269488
+	pos = 3.38610029,8.3488884,7.26400614
 	attPos = 0,0,0
 	attPos0 = 2.14576789E-06,2.36900067,0
 	rot = 0.50000006,0.50000006,-0.50000006,0.50000006
@@ -8702,13 +8897,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.Battery.Tank_4293037210
 	partName = Part
-	persistentId = 2399953138
-	pos = 3.83610106,8.46805763,7.13672495
+	persistentId = 883589991
+	pos = 3.83610201,8.46805763,7.1367259
 	attPos = 0,0,0
 	attPos0 = 0.127278373,0.450001001,-0.119170189
 	rot = 0.50000006,-0.50000006,0.50000006,0.50000006
@@ -8834,6 +9044,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -8850,8 +9075,8 @@ PART
 {
 	part = IR.Segment.TubeSmall.2m50_4293037138
 	partName = Part
-	persistentId = 3306941109
-	pos = 4.64008141,7.89657116,8.39093208
+	persistentId = 868582908
+	pos = 4.64008331,7.89657116,8.39093399
 	attPos = 0.103171825,-0.884575844,-0.0853185654
 	attPos0 = -1.23004401,2.13839936,0.537635803
 	rot = -0.500000417,-0.499999732,-0.50000006,0.50000006
@@ -8981,13 +9206,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = IR.Segment.TubeSmall.2m50_4293037108
 	partName = Part
-	persistentId = 2715918592
-	pos = 7.14042091,7.89657021,8.39091682
+	persistentId = 470892272
+	pos = 7.14042473,7.89657021,8.39091873
 	attPos = -0.00855445862,-0.0482435226,0.672654152
 	attPos0 = 1.51991981E-06,2.50000405,-2.1073491E-07
 	rot = -0.49999997,0.5,0.49999997,0.500000358
@@ -9115,13 +9355,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KAS.PortPylon_4293037078
 	partName = Part
-	persistentId = 3908755368
-	pos = 8.10954666,7.89642334,8.38611603
+	persistentId = 3873600760
+	pos = 8.10955048,7.89642334,8.38611794
 	attPos = -9.53674316E-07,-4.76837158E-06,-0.257945031
 	attPos0 = 0.00480323983,-0.969094038,0.257799119
 	rot = 3.79321676E-07,0.707106709,5.47909053E-07,-0.707107067
@@ -9275,13 +9530,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293037014
 	partName = Part
-	persistentId = 2469087550
-	pos = 8.16595936,8.29137421,8.38611889
+	persistentId = 1678342768
+	pos = 8.16596317,8.29137421,8.3861208
 	attPos = 0,0,0
 	attPos0 = 1.85020929E-06,0.394951046,-0.0564106107
 	rot = 0.00110700727,0.707106352,0.707105875,0.00111797452
@@ -9510,13 +9780,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036954
 	partName = Part
-	persistentId = 3401986237
-	pos = 8.16585732,8.29137421,9.60463524
+	persistentId = 3203533483
+	pos = 8.16586113,8.29137421,9.60463905
 	attPos = 0,0,0
 	attPos0 = -6.61451759E-06,1.21837723,7.26562519E-07
 	rot = -3.7252903E-06,0.707107306,0.707106471,4.55975533E-06
@@ -9743,13 +10028,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036894
 	partName = Part
-	persistentId = 2658106787
-	pos = 8.16592026,8.29137611,10.8232098
+	persistentId = 1236779203
+	pos = 8.16592407,8.29137611,10.8232136
 	attPos = 0,0,0
 	attPos0 = -3.62988021E-06,1.21837831,-8.25735356E-08
 	rot = -3.7252903E-06,0.707107306,0.707106471,4.55975533E-06
@@ -9975,13 +10275,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036834
 	partName = Part
-	persistentId = 3178701147
-	pos = 8.16598415,8.29137421,7.16766882
+	persistentId = 4170534857
+	pos = 8.16598797,8.29137421,7.16766977
 	attPos = 0,0,0
 	attPos0 = -1.01483772E-06,-1.21837473,-7.02559191E-07
 	rot = -3.7252903E-06,0.707107306,0.707106471,4.55975533E-06
@@ -10208,13 +10523,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036774
 	partName = Part
-	persistentId = 759037433
-	pos = 8.16599274,8.29137421,5.94897079
+	persistentId = 1295579512
+	pos = 8.16599751,8.29137421,5.94896984
 	attPos = 0,0,0
 	attPos0 = -3.04582909E-06,-1.21837604,5.27671773E-08
 	rot = -3.7252903E-06,0.707107306,0.707106471,4.55975533E-06
@@ -10440,13 +10770,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KAS.PortPylon_4293036714
 	partName = Part
-	persistentId = 495730224
-	pos = 5.82001495,7.89941978,8.39102173
+	persistentId = 528924148
+	pos = 5.82001686,7.89941978,8.39102364
 	attPos = 3.90871719E-07,1.90734863E-06,-0.25494951
 	attPos0 = 8.92709359E-05,1.17993248,0.257799
 	rot = 2.31807689E-07,0.707106769,2.10734257E-08,-0.707107008
@@ -10600,13 +10945,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036650
 	partName = Part
-	persistentId = 2632543428
-	pos = 5.85379028,8.2944355,8.39102364
+	persistentId = 3878846709
+	pos = 5.85379219,8.2944355,8.39102554
 	attPos = 0,0,0
 	attPos0 = 2.00624913E-06,0.395015836,-0.0337751508
 	rot = 0.00110715628,0.70710659,0.707105339,0.00111949444
@@ -10835,13 +11195,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036590
 	partName = Part
-	persistentId = 922517003
-	pos = 5.85377312,8.29443741,9.60939026
+	persistentId = 1187715720
+	pos = 5.85377502,8.29443741,9.60939217
 	attPos = 0,0,0
 	attPos0 = -6.61451759E-06,1.21837723,7.26562519E-07
 	rot = -5.1856041E-06,0.707107604,0.707106054,4.47034836E-06
@@ -11068,13 +11443,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036530
 	partName = Part
-	persistentId = 1970855024
-	pos = 5.85379219,8.2944355,10.8278828
+	persistentId = 616510821
+	pos = 5.8537941,8.2944355,10.8278866
 	attPos = 0,0,0
 	attPos0 = -3.62988021E-06,1.21837831,-8.25735356E-08
 	rot = -5.1856041E-06,0.707107604,0.707106054,4.47034836E-06
@@ -11300,13 +11690,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036470
 	partName = Part
-	persistentId = 1314774261
-	pos = 5.8538065,8.2944355,7.17261219
+	persistentId = 701290622
+	pos = 5.8538084,8.2944355,7.17261457
 	attPos = 0,0,0
 	attPos0 = -1.01483772E-06,-1.21837473,-7.02559191E-07
 	rot = -5.1856041E-06,0.707107604,0.707106054,4.47034836E-06
@@ -11533,13 +11938,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036410
 	partName = Part
-	persistentId = 343358568
-	pos = 5.85380554,8.2944355,5.95398331
+	persistentId = 1641331871
+	pos = 5.85380745,8.2944355,5.95398331
 	attPos = 0,0,0
 	attPos0 = -3.04582909E-06,-1.21837604,5.27671773E-08
 	rot = -5.1856041E-06,0.707107604,0.707106054,4.47034836E-06
@@ -11765,13 +12185,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = IR.Segment.TubeSmall.2m50_4293036350
 	partName = Part
-	persistentId = 3288875632
-	pos = 5.72713184,7.83981609,6.11581421
+	persistentId = 3514514360
+	pos = 5.72713375,7.83981609,6.11581516
 	attPos = -0.0819096565,0.212633133,-0.0546560287
 	attPos0 = 1.22997868,2.12824178,0.563728333
 	rot = -0.500000358,-0.499999642,-0.5,0.500000298
@@ -11901,13 +12336,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = IR.Segment.TubeSmall.2m50_4293036320
 	partName = Part
-	persistentId = 2460894998
-	pos = 8.22749996,7.83981514,6.11581326
+	persistentId = 3243030971
+	pos = 8.22750378,7.83981514,6.11581469
 	attPos = -0.00855445862,-0.0482435226,0.672654152
 	attPos0 = 1.51991981E-06,2.50000405,-2.1073491E-07
 	rot = -0.499999732,0.49999994,0.500000238,0.500000417
@@ -12035,13 +12485,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KAS.PortPylon_4293036290
 	partName = Part
-	persistentId = 1565986362
-	pos = 9.1965189,7.83966923,6.1110034
+	persistentId = 995367175
+	pos = 9.19652081,7.83966923,6.11100435
 	attPos = -9.53674316E-07,-4.76837158E-06,-0.257945031
 	attPos0 = 0.00480323983,-0.969094038,0.257799119
 	rot = 2.95027974E-07,0.707106829,6.32202784E-07,-0.707107186
@@ -12195,13 +12660,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036226
 	partName = Part
-	persistentId = 1116538259
-	pos = 9.25292873,8.23462009,6.11100531
+	persistentId = 1111214862
+	pos = 9.25293064,8.23462009,6.11100626
 	attPos = 0,0,0
 	attPos0 = 1.85020929E-06,0.394951046,-0.0564106107
 	rot = 0.00110727549,0.707105756,0.707106471,0.00111725926
@@ -12430,13 +12910,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036166
 	partName = Part
-	persistentId = 243288079
-	pos = 9.25296116,8.23461914,7.32959986
+	persistentId = 1118342307
+	pos = 9.25296497,8.23461914,7.32960272
 	attPos = 0,0,0
 	attPos0 = -6.61451759E-06,1.21837723,7.26562519E-07
 	rot = -3.24845314E-06,0.707107246,0.707106829,3.51667404E-06
@@ -12663,13 +13158,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036106
 	partName = Part
-	persistentId = 4251588194
-	pos = 9.25295353,8.23461914,8.54808331
+	persistentId = 3323288532
+	pos = 9.25295734,8.23461914,8.54808712
 	attPos = 0,0,0
 	attPos0 = -3.62988021E-06,1.21837831,-8.25735356E-08
 	rot = -3.24845314E-06,0.707107246,0.707106829,3.51667404E-06
@@ -12895,13 +13405,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293036046
 	partName = Part
-	persistentId = 644483781
-	pos = 9.25295925,8.23462105,4.89249277
+	persistentId = 2339016531
+	pos = 9.25296307,8.23462105,4.89249182
 	attPos = 0,0,0
 	attPos0 = -1.01483772E-06,-1.21837473,-7.02559191E-07
 	rot = -3.24845314E-06,0.707107246,0.707106829,3.51667404E-06
@@ -13128,13 +13653,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035986
 	partName = Part
-	persistentId = 694188702
-	pos = 9.25300598,8.23462105,3.67393255
+	persistentId = 3539576318
+	pos = 9.2530098,8.23462105,3.67392969
 	attPos = 0,0,0
 	attPos0 = -3.04582909E-06,-1.21837604,5.27671773E-08
 	rot = -3.24845314E-06,0.707107246,0.707106829,3.51667404E-06
@@ -13360,13 +13900,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KAS.PortPylon_4293035926
 	partName = Part
-	persistentId = 113900734
-	pos = 6.9070673,7.84266472,6.11590385
+	persistentId = 2926555093
+	pos = 6.90706921,7.84266472,6.11590481
 	attPos = 3.90871719E-07,1.90734863E-06,-0.25494951
 	attPos0 = 8.92709359E-05,1.17993248,0.257799
 	rot = 8.42937027E-08,0.70710665,2.31807689E-07,-0.707107127
@@ -13520,13 +14075,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035862
 	partName = Part
-	persistentId = 4214363139
-	pos = 6.94084358,8.23768044,6.11590672
+	persistentId = 2609184836
+	pos = 6.94084549,8.23768044,6.11590767
 	attPos = 0,0,0
 	attPos0 = 2.00624913E-06,0.395015836,-0.0337751508
 	rot = 0.00110656023,0.707105815,0.707106173,0.00111824274
@@ -13755,16 +14325,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035802
 	partName = Part
-	persistentId = 1961585292
-	pos = 6.94083118,8.23768234,7.33444118
+	persistentId = 585688359
+	pos = 6.94083309,8.23768234,7.33444357
 	attPos = 0,0,0
 	attPos0 = -6.61451759E-06,1.21837723,7.26562519E-07
-	rot = -4.32133675E-06,0.707107186,0.70710659,3.54647636E-06
+	rot = -4.38094139E-06,0.707107246,0.70710659,3.51667404E-06
 	attRot = -0.707106709,0,0,0.707106709
 	attRot0 = 3.27825518E-07,0.00157320476,2.74181343E-06,0.999998748
 	mir = 1,1,1
@@ -13988,16 +14573,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035742
 	partName = Part
-	persistentId = 3549215047
-	pos = 6.94083023,8.23768234,8.5529108
+	persistentId = 1142461299
+	pos = 6.94083214,8.23768234,8.55291271
 	attPos = 0,0,0
 	attPos0 = -3.62988021E-06,1.21837831,-8.25735356E-08
-	rot = -4.32133675E-06,0.707107186,0.70710659,3.54647636E-06
+	rot = -4.38094139E-06,0.707107246,0.70710659,3.51667404E-06
 	attRot = -0.707106709,0,0,0.707106709
 	attRot0 = 0,0,-5.32351873E-14,1
 	mir = 1,1,1
@@ -14220,16 +14820,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035682
 	partName = Part
-	persistentId = 2009140168
-	pos = 6.94086361,8.23768044,4.89741564
+	persistentId = 1313924580
+	pos = 6.94086552,8.23768044,4.89741564
 	attPos = 0,0,0
 	attPos0 = -1.01483772E-06,-1.21837473,-7.02559191E-07
-	rot = -4.32133675E-06,0.707107186,0.70710659,3.54647636E-06
+	rot = -4.38094139E-06,0.707107246,0.70710659,3.51667404E-06
 	attRot = -0.707106709,0,0,0.707106709
 	attRot0 = 3.27825518E-07,0.00157320476,2.74181343E-06,0.999998748
 	mir = 1,1,1
@@ -14453,16 +15068,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = LgRadialSolarPanel_4293035622
 	partName = Part
-	persistentId = 2283877201
-	pos = 6.94084167,8.23767471,3.67888212
+	persistentId = 3253848062
+	pos = 6.94084263,8.23767471,3.67888117
 	attPos = 0,0,0
 	attPos0 = -3.04582909E-06,-1.21837604,5.27671773E-08
-	rot = -4.32133675E-06,0.707107186,0.70710659,3.54647636E-06
+	rot = -4.38094139E-06,0.707107246,0.70710659,3.51667404E-06
 	attRot = -0.707106709,0,0,0.707106709
 	attRot0 = 0,0,-5.32351873E-14,1
 	mir = 1,1,1
@@ -14685,13 +15315,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.adapter.base.to.Size1.g_4293035562
 	partName = Part
-	persistentId = 1870563440
-	pos = 4.78526211,8.3488884,7.26404333
+	persistentId = 63598267
+	pos = 4.78526402,8.3488884,7.26404476
 	attPos = 0,0,0
 	attPos0 = -2.14576812E-06,1.39900184,0
 	rot = 0.50000006,0.50000006,-0.50000006,0.50000006
@@ -14857,13 +15502,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.gangway.end_4293035522
 	partName = Part
-	persistentId = 2925314901
-	pos = 5.13526058,8.3488884,7.26404285
+	persistentId = 2263566140
+	pos = 5.13526249,8.3488884,7.26404524
 	attPos = -2.66415896E-07,-1.58028281,-1.90734909E-06
 	attPos0 = -1.90734909E-06,0.350001812,0
 	rot = 0.50000006,0.50000006,-0.50000006,0.50000006
@@ -14991,13 +15651,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.USI.Recicler.g_4292431618
 	partName = Part
-	persistentId = 500842554
-	pos = 1.01701331,8.3488884,-1.61934233
+	persistentId = 1289729086
+	pos = 1.01701331,8.3488884,-1.6193428
 	attPos = 0,0,0
 	attPos0 = 2.61424947,-0.243080139,-2.38418579E-07
 	rot = 0,-0.707106829,0.707106829,0
@@ -15331,6 +16006,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Waste
@@ -15391,8 +16081,8 @@ PART
 {
 	part = KKAOSS.Storage.mini.g_4292325108
 	partName = Part
-	persistentId = 28560293
-	pos = 1.01701236,8.3488884,-3.02463293
+	persistentId = 2452845397
+	pos = 1.01701236,8.3488884,-3.02463388
 	attPos = 0,0,0
 	attPos0 = 0,1.40525126,0
 	rot = -0.707106829,0,0,-0.707106829
@@ -15509,13 +16199,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.LS.container.kerbalism.small_4292322736
 	partName = Part
-	persistentId = 2460006634
-	pos = 0.889731169,8.46805859,-3.02463341
+	persistentId = 1011129982
+	pos = 0.889731169,8.46805859,-3.02463436
 	attPos = 0,0,0
 	attPos0 = -0.127281234,-4.91738376E-07,-0.119170189
 	rot = -0.707106829,0,0,-0.707106829
@@ -15658,6 +16363,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Water
@@ -15674,8 +16394,8 @@ PART
 {
 	part = KKAOSS.LS.container.kerbalism.small_4292318206
 	partName = Part
-	persistentId = 1429181047
-	pos = 1.14429092,8.46805859,-3.02463341
+	persistentId = 3559384020
+	pos = 1.14429092,8.46805859,-3.02463436
 	attPos = 0,0,0
 	attPos0 = 0.127278849,-4.61936054E-07,-0.119170189
 	rot = 0,0.707106829,-0.707106829,0
@@ -15818,6 +16538,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Food
@@ -15834,8 +16569,8 @@ PART
 {
 	part = KKAOSS.Storage.g_4292764814
 	partName = Part
-	persistentId = 2488648677
-	pos = 1.01701093,8.3488884,-5.20671701
+	persistentId = 2270082336
+	pos = 1.01701093,8.3488884,-5.20671892
 	attPos = 0,0,0
 	attPos0 = -4.76837045E-07,-2.18200111,0
 	rot = 0,0.707106829,-0.707106829,0
@@ -15958,13 +16693,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.LS.container.oxygen.big_4292764746
 	partName = Part
-	persistentId = 2516215197
-	pos = 1.14429069,8.46805954,-5.20671701
+	persistentId = 3971943959
+	pos = 1.14429069,8.46805954,-5.20671892
 	attPos = 0,0,0
 	attPos0 = -0.127279997,0,-0.119170189
 	rot = 0,-0.707106829,0.707106829,0
@@ -16090,6 +16840,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -16106,8 +16871,8 @@ PART
 {
 	part = KKAOSS.LS.container.oxygen.big_4290118864
 	partName = Part
-	persistentId = 3395998488
-	pos = 0.889686346,8.46805954,-4.30653334
+	persistentId = 1475416003
+	pos = 0.889686346,8.46805954,-4.30653429
 	attPos = 0,0,0
 	attPos0 = 0.127279997,-0.899999857,-0.119170189
 	rot = 0.707106829,0,0,0.707106829
@@ -16233,6 +16998,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Oxygen
@@ -16249,8 +17029,8 @@ PART
 {
 	part = KKAOSS.LS.container.nitrogen_4292764666
 	partName = Part
-	persistentId = 1124223760
-	pos = 1.14424396,8.46805954,-6.10677958
+	persistentId = 399639281
+	pos = 1.14424396,8.46805954,-6.10678148
 	attPos = 0,0,0
 	attPos0 = -0.127279997,0.899999857,-0.119170189
 	rot = 0,0.707106829,-0.707106829,0
@@ -16376,6 +17156,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Nitrogen
@@ -16392,8 +17187,8 @@ PART
 {
 	part = KKAOSS.LS.container.nitrogen_4292764620
 	partName = Part
-	persistentId = 1759297541
-	pos = 0.889681101,8.46805954,-6.10677958
+	persistentId = 1260948237
+	pos = 0.889681101,8.46805954,-6.10678148
 	attPos = 0,0,0
 	attPos0 = 0.127279997,0.899999857,-0.119170189
 	rot = 0.707106829,0,0,0.707106829
@@ -16519,6 +17314,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Nitrogen
@@ -16535,8 +17345,8 @@ PART
 {
 	part = KKAOSS.adapter.base.to.Size1.g_4293443218
 	partName = Part
-	persistentId = 877953277
-	pos = 1.01695895,8.3488884,-7.11489725
+	persistentId = 3947264085
+	pos = 1.01695895,8.3488884,-7.11489916
 	attPos = 0,0,0
 	attPos0 = 0,1.90800095,0
 	rot = 0,0.707106829,-0.707106829,0
@@ -16702,13 +17512,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.gangway.end_4292349078
 	partName = Part
-	persistentId = 1466341360
-	pos = 1.01695895,8.3488884,-7.46489954
+	persistentId = 4156395083
+	pos = 1.01695895,8.3488884,-7.46490145
 	attPos = 0,0,0
 	attPos0 = 0,0.350002289,0
 	rot = -0.707106829,0,0,0.707106829
@@ -16836,13 +17661,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.Control.g_4292785438
 	partName = Part
-	persistentId = 2007585757
-	pos = 3.63128018,8.3488884,0.994926155
+	persistentId = 2863488528
+	pos = 3.63128066,8.3488884,0.994926155
 	attPos = 0,0,0
 	attPos0 = 1.1920929E-07,-0.243080139,2.61424971
 	rot = -0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -17943,6 +18783,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -18086,8 +18941,8 @@ PART
 {
 	part = KKAOSS.airlock.end.g_4291200404
 	partName = Part
-	persistentId = 2047148021
-	pos = 4.80350399,8.3488884,0.994925201
+	persistentId = 3789768478
+	pos = 4.80350494,8.3488884,0.994925201
 	attPos = 0,0,0
 	attPos0 = 0,-1.17205131,1.19209304E-07
 	rot = -0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -18724,6 +19579,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Atmosphere
@@ -18817,8 +19687,8 @@ PART
 {
 	part = KKAOSS.Battery.Tank_4293468430
 	partName = Part
-	persistentId = 1913714862
-	pos = 3.8361001,8.46805859,7.39128828
+	persistentId = 3015382587
+	pos = 3.83610106,8.46805859,7.39128923
 	attPos = 0,0,0
 	attPos0 = -0.127282187,0.450000763,-0.119170189
 	rot = -0.50000006,-0.50000006,0.50000006,-0.50000006
@@ -18944,6 +19814,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -18960,8 +19845,8 @@ PART
 {
 	part = ReleaseValve_4290611296
 	partName = Part
-	persistentId = 1548232320
-	pos = -0.182994843,8.39196873,0.994924963
+	persistentId = 4282592887
+	pos = -0.182995081,8.39196873,0.994924963
 	attPos = 2.38418636E-07,0.0644445419,0.619642735
 	attPos0 = -1.19209346E-07,-0.264444351,-1.81964338
 	rot = 2.08910751E-06,0.707107246,-2.08911024E-06,0.707106411
@@ -19147,13 +20032,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = ReleaseValveExhaust_4293382152
 	partName = Part
-	persistentId = 222962355
-	pos = -0.0469348431,10.6363468,0.994924963
+	persistentId = 1958164526
+	pos = -0.0469350815,10.6363468,0.994924963
 	attPos = 0,0,0
 	attPos0 = 5.96046377E-08,2.04437828,-1.06394136
 	rot = 0.422076911,0.567319274,-0.422076911,0.567319274
@@ -19339,13 +20239,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = ReleaseValveExhaust_4290611730
 	partName = Part
-	persistentId = 4182448399
-	pos = -0.67736721,7.84301949,0.994924963
+	persistentId = 916668724
+	pos = -0.677367687,7.84301949,0.994924963
 	attPos = 5.96046448E-08,-0.0196280479,0.125323176
 	attPos0 = 1.78813934E-07,-0.729321003,-1.81969202
 	rot = 0.183014616,0.683012605,-0.183014885,0.68301177
@@ -19531,13 +20446,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.adapter.base.to.Size1.g_4290827662
 	partName = Part
-	persistentId = 311368534
-	pos = -1.1659987,8.3488884,0.994925201
+	persistentId = 506617538
+	pos = -1.16599917,8.3488884,0.994925201
 	attPos = 0,0,0
 	attPos0 = -2.84217094E-14,-0.243080139,-2.18300033
 	rot = -0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -19703,13 +20633,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Decoupler.1_4293622536
 	partName = Part
-	persistentId = 2231987960
-	pos = -1.50531363,8.3488884,0.994925201
+	persistentId = 283669602
+	pos = -1.50531459,8.3488884,0.994925201
 	attPos = 0,-0.0607252419,2.98023259E-08
 	attPos0 = 0,0.400000483,-5.96046519E-08
 	rot = 0.50000006,-0.50000006,-0.50000006,-0.50000006
@@ -19959,13 +20904,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.gangway.2.adapter_4289789896
 	partName = Part
-	persistentId = 3487952269
-	pos = -2.24291968,8.3488884,0.994926393
+	persistentId = 114935268
+	pos = -2.24292254,8.3488884,0.994926393
 	attPos = 0,0,0
 	attPos0 = -2.38418608E-07,0.737501144,8.94069814E-08
 	rot = 0.50000006,-0.50000006,0.50000006,0.50000006
@@ -20135,13 +21095,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KKAOSS.gangway.airlock_4290312384
 	partName = Part
-	persistentId = 3644249223
-	pos = -3.27423358,8.34888649,0.994925916
+	persistentId = 2036024998
+	pos = -3.27423644,8.34888649,0.994925916
 	attPos = 0,0,0
 	attPos0 = 0,1.03125131,-1.19209304E-07
 	rot = 0.50000006,-0.50000006,0.50000006,0.50000006
@@ -20757,6 +21732,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Atmosphere
@@ -20850,8 +21840,8 @@ PART
 {
 	part = seatExternalCmd_4291381182
 	partName = Part
-	persistentId = 1872142503
-	pos = -3.27162337,8.12384987,0.931559503
+	persistentId = 3538804905
+	pos = -3.27162623,8.12384987,0.931559503
 	attPos = 0,-0.32676661,0
 	attPos0 = -0.063366428,0.324154973,0.225034744
 	rot = 0.500000596,-0.500000119,0.5,0.499999553
@@ -21056,6 +22046,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	VESSELNAMING
 	{
 		name = The Hab
@@ -21068,7 +22073,7 @@ PART
 	part = KAS.RTS1_4293018042
 	partName = Part
 	persistentId = 3659652738
-	pos = -2.22562337,8.10630703,0.71228832
+	pos = -2.22562623,8.10630703,0.712288082
 	attPos = 0.360242844,-0.000365257263,0.00359350443
 	attPos0 = -0.64287132,-0.0169341564,0.238987893
 	rot = 0.469215363,-0.529415965,0.473138839,-0.52506721
@@ -21247,13 +22252,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KAS.RTS1_4292970054
 	partName = Part
 	persistentId = 2631470367
-	pos = -2.22562194,8.10630703,1.27756429
+	pos = -2.2256248,8.10630703,1.27756453
 	attPos = -0.360243499,-0.000365680084,0.00359345973
 	attPos0 = 0.642872095,-0.0169336796,0.238987893
 	rot = 0.489303708,0.506176949,0.452333331,0.547504902
@@ -21432,13 +22452,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SolarPanelRackContainer_4293612006
 	partName = Part
-	persistentId = 152416727
-	pos = 2.93610239,8.46805859,7.88071203
+	persistentId = 1717647841
+	pos = 2.93610334,8.46805859,7.88071299
 	attPos = -0.100623131,9.53674316E-07,0
 	attPos0 = -0.516081989,-0.449998617,-0.119170189
 	rot = 0,0.707106888,0,-0.707106888
@@ -21587,13 +22622,28 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SolarPanelRackContainer_4293537090
 	partName = Part
-	persistentId = 2129461123
-	pos = 2.93610144,8.46805859,6.64097643
+	persistentId = 1322598896
+	pos = 2.93610239,8.46805859,6.64097738
 	attPos = 0.106948853,9.53674316E-07,0
 	attPos0 = 0.516080081,-0.449998617,-0.119170189
 	rot = 0,0.707106888,0,-0.707106888
@@ -21730,6 +22780,21 @@ PART
 	MODULE
 	{
 		name = ModulePartInfoInPAW
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleIRMovedPartEditor2
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
