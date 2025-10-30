@@ -2,7 +2,7 @@ print "Welcome Pathfinder".
 print "Initializing RemoteTech communications module...".
 Wait Until SHIP:connection:isconnected. Wait 2.
 
-CORE:DOEVENT("Open Terminal"). // TESTING
+//CORE:DOEVENT("Open Terminal"). // TESTING
 CLEARVECDRAWS().
 
 IF ADDONS:available("RT") {
@@ -124,7 +124,7 @@ function rcvMessage {
         Wait Until kuniverse:timewarp:issettled.
     }
     getvoice(0):PLAY( LIST(NOTE(440, 0.35),NOTE(440, 0.25),NOTE(240, 0.5))).
-    SET RECEIVED TO SHIP:MESSAGES:POP.
+    SET RECEIVED TO SHIP:MESSAGES:PEEK.
     HUDTEXT("Receiving Message.... \n" + RECEIVED:CONTENT:Length + " bytes", 10, 1, 32, yellow, false). 
     return RECEIVED.
 }
@@ -149,11 +149,21 @@ function ascii2servo {
         SET hex1 TO FLOOR(ch/16). SET pos1 TO hex1 * div.
         SET hex2 TO MOD(ch,16). SET pos2 TO hex2 * div.
         IF servo = "Pitch" { SET pos1 TO pos1 - 60. SET pos2 TO pos2 - 60. }
-        print s+" > CharCode="+ch+" > Hex="+hex1+":"+hex2+" > position="+pos1+","+pos2.  // TESTING
+        //print s + " > CharCode="+ch+" > Hex="+hex1+":"+hex2+" > position="+pos1+","+pos2.  // TESTING
         posList:add(pos1). posList:add(pos2).
     }
     posList:add(0.46).
     return posList.
+}
+
+function warpInterrupt {
+    IF kuniverse:timewarp:RATE > 1 {
+        print "Warping to " + kuniverse:timewarp:RATE + "x Speed".
+        Wait Until kuniverse:timewarp:RATE = 1.
+        Wait Until kuniverse:timewarp:issettled.
+        print "Timewarp Settled".
+        return true.
+    }
 }
 
 function moveServos {
@@ -166,8 +176,8 @@ function moveServos {
     FOR val IN positionList {
         SET tp TO val:TONUMBER(0).
         moveServo:setfield("target position", tp).
-        LOCK cp TO moveServo:getfield("current position").
-        wait until drawPointer() AND cp < tp + 0.1 AND cp > tp - 0.1.
+        LOCK cp TO moveServo:getfield("current position").  
+        Wait until warpInterrupt() OR (drawPointer() AND cp < tp + 0.1 AND cp > tp - 0.1).
         Wait 2.
     }
     IF BODY:name = "Mars" AND servo = "Pitch" AND positionList:length >= 2 {
@@ -220,15 +230,6 @@ function takePhoto {
     cameraControl:TRANSMIT.
 }
 
-function highlightConsole {
-    IF SHIP:parts:tostring:contains("RTShortAntenna1") {
-        SET COM_Terminal TO SHIP:partsnamedpattern("RTShortAntenna1")[0].
-        SET highlightCOM TO HIGHLIGHT(COM_Terminal, YELLOW). highlightCOM. 
-        SET moduleCOM TO COM_Terminal:getmodule("ModuleRTAntenna").
-        SET highlightCOM:ENABLED TO True.
-    }
-}
-
 SET fw_file TO "1:firmware_rover_v0.1.42.bin".
 SET fw_oldline1 TO "00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |192.168.0.105".
 SET fw_oldline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005".
@@ -260,7 +261,7 @@ function loadFirmware {
 }
 
 function rawComm {
-    parameter doHighlight.
+    parameter fwUpdate.
     loadFirmware().
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
@@ -277,18 +278,20 @@ function rawComm {
                 moveServos(RECEIVED:CONTENT).
             } 
             IF RECEIVED:CONTENT:tostring():contains("file_attachment") {
-                print "Received compressed file".
-                contractParameter("kOSparam_Pathfinder3","COMPLETE").
+                HUDTEXT("Receiving compressed file...", 10, 1, 22, yellow, true). 
                 SET CORE:volume:name TO "PCS_2M_4575".
-                SET doHighlight TO True.
+                SET fwUpdate TO True.
+                SHIP:MESSAGES:POP. Reboot.
             }
+            SHIP:MESSAGES:POP.
         }
-        IF doHighlight { 
-            highlightConsole().
-            IF moduleCOM:getfield("status") <> "Off" {
-                EDIT fw_file.
-                moduleCOM:doevent("Deactivate").
-                SET highlightCOM:ENABLED TO False.
+        IF fwUpdate { 
+            FOR COM_Terminal IN SHIP:partsnamedpattern("Ares-Cockpit") {
+                SET moduleCOMM TO COM_Terminal:getmodule("ModuleResourceConverter").
+                IF moduleCOMM:getfield("Communications Terminal") <> "Inactive" {
+                    Wait 2. moduleCOMM:doevent("Stop Comm System").
+                    EDIT fw_file.
+                }
             }
         }
         IF cameraControl:HASDATA {
@@ -302,10 +305,9 @@ function rawComm {
 
 function PCSTerminal {
     parameter show.
+    CLEARGUIS().
     SET chatGUI TO GUI(800,440).
-    chatGUI:HIDE().
-    highlightConsole().
-
+    
     SET title TO chatGUI:addlabel("<b><color=black><size=30>
         Pathfinder Communications Subsystem        
         </size></color></b>"). title.
@@ -323,27 +325,43 @@ function PCSTerminal {
     outputBox:addlabel("").
     SET outputBox:position TO V(0,999999,0).
 
-    SET inputField TO chatGUI:addtextfield("").
     SET hbox2 TO chatGUI:addhbox().
-    SET getImageButton TO hbox2:ADDBUTTON("Capture Image").
+    SET hbox3 TO chatGUI:addhbox().
+    SET getImageButton TO hbox2:ADDBUTTON("Auto Capture Remote Image (sec)").
+    SET getImageButton:style:width TO 255.
     IF show >= 1 {
-        SET convertButton TO hbox2:ADDBUTTON("Convert >>").
         SET selector TO hbox2:addpopupmenu(). selector.
+        SET selector:text TO "Convert to list of servo positions >".
         SET selector:options TO LIST("None", "Rotate", "Pitch", "Extend").
-        SET testButton TO hbox2:ADDBUTTON("Localhost Test").
+        SET selector:style:width TO 255.
+        SET convertButton TO hbox2:ADDBUTTON(" >> ").
+        SET convertButton:style:width TO 30.
+        set selector:ONCHANGE to {
+            parameter choice. choice.
+            SET convertButton:PRESSED TO true.  
+        }.
     }
-    SET sendButton TO hbox2:ADDBUTTON("<color=orange><b>SEND</b></color>").
-    SET closeButton TO hbox2:ADDBUTTON(" X"). SET closeButton:style:width TO 20.
+    SET inputField TO hbox3:addtextfield("").
+    SET testButton TO hbox3:ADDBUTTON("Localhost Test").
+    SET testButton:style:width TO 150.
+    SET sendButton TO hbox3:ADDBUTTON("<color=red><b>SEND TO REMOTE</b></color>").
+    SET sendButton:style:width TO 160.
+    SET closeButton TO hbox3:ADDBUTTON(" X"). SET closeButton:style:width TO 26.
     IF show >= 2 {
-        SET sendfwUpdButton TO chatGUI:ADDBUTTON("<color=red><b>SEND firmware update instructions</b></color>").
+        SET sendfwUpdButton TO hbox2:ADDBUTTON("<color=red><b>SEND firmware update instructions</b></color>").
+        SET sendfwUpdButton:style:width TO 260.
     }
+    chatGUI:SHOW().
     
     UNTIL False {
         //CORE:DOEVENT("Close Terminal").
-        IF moduleCOM:getfield("status") <> "Off" {
-            chatGUI:SHOW().
-            moduleCOM:doevent("Deactivate").
-            SET highlightCOM:ENABLED TO False.
+        FOR COM_Terminal IN SHIP:partsnamedpattern("probeCoreOcto2.v2") {
+            SET moduleCOMM TO COM_Terminal:getmodule("ModuleResourceConverter").
+            IF moduleCOMM:getfield("Communications Terminal") <> "Operational" {
+                CLEARGUIS().
+                Wait 1. moduleCOMM:doevent("Start Comm System").
+                Reboot.
+            }
         }
         IF NOT SHIP:messages:empty
         {
@@ -356,11 +374,19 @@ function PCSTerminal {
             outputBox:addlabel(output).
             SET outputBox:position TO V(0,999999,0).       
             IF RECEIVED:CONTENT:tostring():contains(".jpg") AND BODY:name = "Earth" {
-                /// CONTRACT PARAMETER COMPLETE, Are you receiving me?
-                contractParameter("kOSparam_Pathfinder1","COMPLETE").
-                IF show = 0 { SET CORE:volume:name TO "PCS_2E_1665". }
-                IF show = 1 { SET CORE:volume:name TO "PCS_3E_4571". SET show TO 2. }
+                IF RECEIVED:CONTENT:tostring():contains("Are you receiving me") {
+                    /// CONTRACT PARAMETER COMPLETE, Are you receiving me?
+                    contractParameter("kOSparam_Pathfinder1","COMPLETE").
+                    IF show = 0 { SET CORE:volume:name TO "PCS_2E_1665". }
+                    SHIP:MESSAGES:POP. Reboot.
+                } ELSE IF show = 1 {
+                    SET CORE:volume:name TO "PCS_3E_4571". 
+                    SET show TO 2.
+                    contractParameter("kOSparam_Pathfinder3","COMPLETE").
+                    SHIP:MESSAGES:POP. Reboot. 
+                }
             }
+            SHIP:MESSAGES:POP.
         }
         IF getImageButton:PRESSED {
             getImageButton:TAKEPRESS.
@@ -368,7 +394,10 @@ function PCSTerminal {
         }
         IF show >= 1 AND convertButton:PRESSED {
             convertButton:TAKEPRESS.
-            IF NOT inputField:text:contains("::") AND selector:value:tostring() <> "None" {
+            IF NOT inputField:text:contains("::") 
+            AND inputField:text <> ""
+            AND selector:value:tostring() <> "None" 
+             {
                 outputBox:addlabel("Converted '" + inputField:text + "' to " + selector:value + " format").
                 SET inputField:text TO selector:value + "::" + ascii2servo(inputField:text, selector:value):join(",").
             }  
@@ -377,8 +406,11 @@ function PCSTerminal {
             testButton:TAKEPRESS.
             IF inputField:text:contains("CaptureImage") {
                 takePhoto(inputField:text:split("::")[1]).
-            } ELSE {
+            } ELSE IF inputField:text:contains("::") {
                 moveServos(inputField:text).
+            } ELSE {
+                outputBox:addlabel("ERROR - incorrect format").
+                SET outputBox:position TO V(0,999999,0).
             }
         }
         IF  show >= 2 AND sendfwUpdButton:PRESSED {
@@ -406,11 +438,9 @@ function PCSTerminal {
         IF closeButton:PRESSED {
             chatGUI:HIDE().
             closeButton:TAKEPRESS.
-            SET highlightCOM:ENABLED TO True.
         }
         wait 1. 
     }
-    chatGUI:HIDE().
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
