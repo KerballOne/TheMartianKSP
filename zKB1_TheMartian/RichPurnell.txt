@@ -1,0 +1,30 @@
+Earth (@250km) -> Mars (@0km)
+Depart at:      8 Jan 2037, 00:00:00
+       UT:      2714601600
+   Travel:      180 days , 14:55:40
+       UT:      15605740
+Arrive at:      7 Jul 2037, 14:55:40
+       UT:      2730207340
+Phase Angle:    43.71°
+Ejection Angle: 135.70°
+Ejection Inc.:  11.67°
+Ejection LAN:   298.78°
+Ejection Δv:    4254 m/s
+Insertion Inc.: 0.00°
+Insertion Δv:   0 m/s
+Total Δv:       4254 m/s
+
+%Epoch = -2001049400
+
+ORBIT
+{
+	SMA = 212915394786.74783
+	ECC = 0.41279173690207771
+	INC = 25.089797764109065
+	LPE = 312.61305527766632
+	LAN = 11.8397038975437
+	MNA = 1.4497058399566392
+	EPH = 2677896226.7056575
+	REF = 0
+	IDENT = Sun
+}
