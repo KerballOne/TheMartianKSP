@@ -1,2 +1,2 @@
-
-
+Set Hab solar panel charge rates to 4.0 (1.5 EC/s)
+Disable reliability alert warp stops on MAV Descent Stage
