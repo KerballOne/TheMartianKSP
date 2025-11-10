@@ -1,2 +1,33 @@
-Set Hab solar panel charge rates to 4.0 (1.5 EC/s)
-Disable reliability alert warp stops on MAV Descent Stage
+Act 1:
+The Hab
+    Set solar panel charge rates to 4.0 (1.5 EC/s)
+MAV Descent Stage
+    Disable reliability alert warp stops on 
+    Change vessel type to Debris
+
+Act 2:
+Pathfinder
+    Set Connectivity Manager to RT
+The Hab
+    New behaviour on HasFood to instruct Mark to perform maintenance on Airlock 1
+    HasFood validate quantity
+
+Act 3:
+Iris
+    Validate parameters trigger for launch new vessels both times
+    + kOS script to destroy probe on first launch only
+    ?? Should CC handle destroying the vessel at altitude?
+Hermes
+    Validate docking parameters
+    Test if approach after spawn can be much slower
+    Parameter for Cmdr Lewis maneuver
+Rover
+    Test MAV spawning at Schiaparelli
+MAV
+    New parameter for reducing mass
+    Remove Food and Water storage
+    See if Mark's G-Force tolerance can be reduced for passing out
+
+Create all Act 3 behavior dialog boxes
+Hide waypoints
+
