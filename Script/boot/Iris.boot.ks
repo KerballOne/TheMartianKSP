@@ -32,13 +32,8 @@ Wait until SHIP:altitude > 42000.
 IF contractParameter("IrisDestroyed","getState") = "Incomplete" {
     print "Payload unbalanced...".
     HUDTEXT("DANGER! \n Guidance system failure", 10, 1, 32, red, false).
+    LOCK STEERING TO UP + R(500,500,500). Wait 3.
     HUDTEXT("Payload Sensors: CoM reading out of bounds. \n Payload is unbalanced", 10, 1, 32, yellow, false).
-    SET int TO 0.
-    LOCK STEERING TO UP + R(500,500,500).
-    Until int > 12 {
-        SET int TO int + 1.
-        Wait 1.
-    }
-    UNLOCK STEERING.
+    Wait 12.
     SHIP:partsnamed("IRIS")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
 }
