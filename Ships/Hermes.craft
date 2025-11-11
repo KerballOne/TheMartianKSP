@@ -26040,8 +26040,8 @@ PART
 	RESOURCE
 	{
 		name = LqdOxygen
-		amount = 400
-		maxAmount = 800
+		amount = 876
+		maxAmount = 1200
 		flowState = True
 		isTweakable = True
 		hideFlow = False
