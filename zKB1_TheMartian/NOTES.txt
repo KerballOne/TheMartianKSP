@@ -1,33 +1,39 @@
 Act 1:
 The Hab
-    Set solar panel charge rates to 4.0 (1.5 EC/s)
+    + Set solar panel charge rates to 4.0 (1.5 EC/s)
 MAV Descent Stage
-    Disable reliability alert warp stops on 
-    Change vessel type to Debris
+    + Disable reliability alert warp stops on 
+    + Change vessel type to Debris
 
 Act 2:
-Pathfinder
-    Set Connectivity Manager to RT
 The Hab
-    New behaviour on HasFood to instruct Mark to perform maintenance on Airlock 1
-    HasFood validate quantity
+    + New behaviour on HasFood to instruct Mark to perform maintenance on Airlock 1
+    TEST HasFood quantity
 
 Act 3:
 Iris
-    Validate parameters trigger for launch new vessels both times
+    TEST new launch parameters trigger for both Iris I and Iris II
     + kOS script to destroy probe on first launch only
-    ?? Should CC handle destroying the vessel at altitude?
 Hermes
-    Validate docking parameters
-    Test if approach after spawn can be much slower
-    Parameter for Cmdr Lewis maneuver
+    + Add more LqdOxygen
+    TEST docking parameters
+    kOS Parameter trigger for Cmdr Lewis maneuver
 Rover
-    Test MAV spawning at Schiaparelli
+    + Set lat/lon of Schiaparelli Crater biome, spawn point and instructions
+    TEST MAV spawning at Schiaparelli
 MAV
     New parameter for reducing mass
-    Remove Food and Water storage
-    See if Mark's G-Force tolerance can be reduced for passing out
+    TEST LqdMethane loss from crossfeed or boiloff
+    + Remove Food and Water storage
+    TEST G-Force tolerance can be reduced for passing out
 
-Create all Act 3 behavior dialog boxes
-Hide waypoints
+CONTRACT
+    Create all Act 3 behavior dialog boxes
+    Resize all images
+    Add more flavor text for dialog boxes
+    Hide waypoints
+    Change all CHANGE ME
 
+MISC
+    TEST RCS fx plume direction
+    Set Connectivity Manager to RT
