@@ -20,20 +20,27 @@ Hermes
     kOS Parameter trigger for Cmdr Lewis maneuver
 Rover
     + Set lat/lon of Schiaparelli Crater biome, spawn point and instructions
-    TEST MAV spawning at Schiaparelli
+    + MAV spawning at Schiaparelli
 MAV
-    New parameter for reducing mass
-    TEST LqdMethane loss from crossfeed or boiloff
+    + New parameter for reducing mass
+    + LqdMethane loss from crossfeed or boiloff
     + Remove Food and Water storage
-    TEST G-Force tolerance can be reduced for passing out
+    + G-Force tolerance can be reduced for passing out
 
 CONTRACT
     Create all Act 3 behavior dialog boxes
     Resize all images
     Add more flavor text for dialog boxes
     Hide waypoints
-    Change all CHANGE ME
 
 MISC
-    TEST RCS fx plume direction
+    + RCS fx plume direction
+
+INITIAL CONDITIONS:
+    gExperienced = 1000
+    outDueToG = True
+    Oxygen to 0.1
+    Fall down
+    Move solar panels
     Set Connectivity Manager to RT
+    Change Prologue Dialog timer
