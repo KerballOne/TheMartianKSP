@@ -1,6 +1,6 @@
 <img width="2019" height="1140" alt="Screenshot 2025-11-22 194005" src="https://github.com/user-attachments/assets/7b4b4dc1-e004-478d-b4bc-2fd1f3c9adb9" />
 
-# 10 years go... and somehow, also 10 years from now... 
+# 10 years ago... and somehow, also 10 years from now... 
 ## Mark Watney, astronaut, is stranded on Mars.  Abandoned, presumed dead by his crew, Mark must survive.
 ### First, Mark must find suitable dirt and create an organic compost using the crew's biological waste.
 ### Next comes creating water from left over hydrazine fuel.  Then Mark must grow food in a converted hab to survive until the next phase of the plan.
