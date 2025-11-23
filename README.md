@@ -7,7 +7,7 @@
 ### Communication with NASA is a must if he hopes to be rescued.  Find the old Pathfinder probe that landed on Mars in the 1990's.  
 ### In order to make the journey, increase the range of the one working rover and find an alternative source of cabin heat.
 ### Once Pathfinder is found and brought back to the hab, use the antenna to establish a comm link to Earth and connect to NASA's Jet Propulsion Laboratory.
-### JPL will have a Pathfinder of their own to test.  Communcate using the Martian probe's camera and robotic mast.
+### JPL will have a Pathfinder of their own to test.  Communicate using the Martian probe's camera and robotic mast.
 ### Decode rotational angles into hexadecimals and then into ASCII text.  Decipher instructions to hack the rover's firmware and to send text messages back and forth.
 ### Back at NASA, launch a resupply probe on the Iris booster rocket and send it direct to Mars.
 ### Meanwhile, in interplanetary space, the Hermes carries the Ares III crew back to Earth.  Find a faster path to rescue Mark with a slingshot manuever that will intercept with the resupply probe.  
