@@ -15,4 +15,43 @@
 ### The MAV will need to lose quite a bit of weight in order to make intercept velocity.  Rendezvous with the Hermes and use a tether to attach to Mark as he goes EVA from the MAV capsule.  Reunite the Ares III crew.
 ### Return to Earth orbit with the Hermes and a full crew complement.
 
+# Installation
+### Recommended to start from a fresh, stock instance of KSP.
+### 1. Unzip files into the KSP root director.
+### 2. Install the following prerequisite mods:
+- BonVoyage
+- ContractConfigurator
+- CryoTanks
+- FreeIva
+- HabTechProps
+- InfernalRoboticsNext ==3.1.10
+- Kaboom
+- Kerbalism
+- KAS
+- KerbalConstructionTime
+- KerbalJointReinforcementContinued
+- KerbalPlanetaryBaseSystems
+- Kopernicus
+- kOS
+- kOS-Career
+- KSPCommunityFixes
+- ModuleManager
+- NearFutureProps
+- ParkingBrake
+- PhoenixIndustriesEVASuit
+- PortraitStats
+- ProceduralParts
+- RationalResourcesKerbalismRF
+- RationalResourcesParts
+- RealFuels
+- RealSolarSystem
+- RemoteTech
+- StationPartsExpansionRedux
+- TheMartianforKSP
+### 3. Recommended mods
+- MechJeb2
+- TransferWindowPlannerFork
+- WaypointManager
+- ThroughTheEyesOfaKerbal
+
 [![Watch the video](https://img.youtube.com/vi/rw6Kb1yK1GY/0.jpg)](https://www.youtube.com/watch?v=rw6Kb1yK1GY)
