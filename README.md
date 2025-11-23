@@ -57,4 +57,5 @@
 # Start the Game
 ### Main Menu > Start new game > Scenarios > The Martian > Start
 
+The video teaser trailer for the modpack, inspired by the original Dunatian mission mod, based on the motion picture, based on the best-selling book.
 [![Watch the video](https://img.youtube.com/vi/rw6Kb1yK1GY/0.jpg)](https://www.youtube.com/watch?v=rw6Kb1yK1GY)
