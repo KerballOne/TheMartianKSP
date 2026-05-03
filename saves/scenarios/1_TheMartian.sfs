@@ -8545,6 +8545,7 @@ GAME
 					hidden = True
 					define = Iris
 					duration = 0
+					disableOnStateChange = False
 					trackedVessel = 032dd0ae-f0ef-4431-a1e9-5f73716251c3
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = False
