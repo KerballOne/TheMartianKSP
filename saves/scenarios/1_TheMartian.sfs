@@ -7644,7 +7644,7 @@ GAME
 						}
 						TextSection
 						{
-							text = Old maps show that the last known location of Pathfinder was (41.429N, 46.964E)
+							text = Old maps show that the last known location of Pathfinder was (38.921 N, 46.964 E)
 							textColor = #FFCCCCCC
 							fontSize = 28
 						}
@@ -9500,7 +9500,7 @@ GAME
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
 							title = Search for the old Pathfinder probe
-							notes = Old maps show that the last known location of Pathfinder was (41.429N, 46.964E)
+							notes = Old maps show that the last known location of Pathfinder was (38.921 N, 46.964 E)
 							completedMessage = 
 							hidden = True
 							hideChildren = True
