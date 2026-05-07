@@ -2392,34 +2392,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -2625,34 +2598,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -2858,34 +2804,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -3091,34 +3010,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -3324,34 +3216,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -3557,34 +3422,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -3790,34 +3628,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -4628,34 +4439,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -4861,34 +4645,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -5094,34 +4851,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -5327,34 +5057,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -5560,34 +5263,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -5793,34 +5469,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -6026,34 +5675,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -6862,34 +6484,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -7095,34 +6690,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -7328,34 +6896,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -7561,34 +7102,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -7794,34 +7308,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -8027,34 +7514,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
@@ -8260,34 +7720,7 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = Reliability
-		isEnabled = True
-		type = SolarPanelFixer
-		broken = False
-		critical = False
-		quality = False
-		last = 0
-		next = 0
-		last_inspection = 0
-		needMaintenance = False
-		enforce_breakdown = False
-		running = False
-		operation_duration = 0
-		fail_duration = 0
-		ignitions = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
+	
 	MODULE
 	{
 		name = KOSNameTag
