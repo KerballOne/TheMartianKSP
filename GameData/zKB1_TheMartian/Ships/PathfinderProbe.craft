@@ -4472,7 +4472,7 @@ PART
 		name = ModuleIRServo_v3
 		isEnabled = True
 		swap = False
-		commandedPosition = -22.331955
+		commandedPosition = 22.331955
 		correction_0 = 0
 		correction_1 = 0
 		presetsS = -180|-90|0|90|180|
@@ -4493,12 +4493,12 @@ PART
 		forceLimit = 1
 		accelerationLimit = 4
 		defaultSpeed = 0
-		speedLimit = 1
+		speedLimit = 10
 		jointSpring = 1.00000002E+20
 		jointDamping = 5
 		motorSizeFactor = 100
-		hasPositionLimit = False
-		_minPositionLimit = -360
+		hasPositionLimit = True
+		_minPositionLimit = 0
 		_maxPositionLimit = 360
 		forwardKey = 
 		reverseKey = 

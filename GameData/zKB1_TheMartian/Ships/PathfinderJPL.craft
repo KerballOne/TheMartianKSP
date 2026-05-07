@@ -12785,12 +12785,12 @@ PART
 		forceLimit = 1
 		accelerationLimit = 4
 		defaultSpeed = 0
-		speedLimit = 1
+		speedLimit = 10
 		jointSpring = 1.00000002E+20
 		jointDamping = 5
 		motorSizeFactor = 100
-		hasPositionLimit = False
-		_minPositionLimit = -360
+		hasPositionLimit = True
+		_minPositionLimit = 0
 		_maxPositionLimit = 360
 		forwardKey = 
 		reverseKey = 
