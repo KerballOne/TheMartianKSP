@@ -116,10 +116,8 @@ function analyzingData {
 }
 function analyzedData {
     FOR hdd IN SHIP:modulesnamed("HardDrive") {
-        FOR evtname IN hdd:alleventnames {
-            IF evtname:length > 22 {
-                return evtname:substring(13,6):tonumber(0).
-            }
+        IF hdd:part:tostring:contains("Control") AND hdd:alleventnames[0]:tostring:contains("mb") {
+            return hdd:alleventnames[0]:split(" ")[1]:tonumber(0).
         }
     }
     return 0.

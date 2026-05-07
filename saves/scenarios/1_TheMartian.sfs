@@ -8760,7 +8760,7 @@ GAME
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
 							title = Analyze regolith samples
-							notes = The Hab has dirt samples that need to be analyzed.  The resultant data will show the lowest concentration of perchlorates and the source location of each sample.
+							notes = The Command Module has dirt samples that need to be analyzed in the Central Hub Science Lab.  The resultant 850Mb of data must be transferred back to the Command Module and will display the lowest concentration of perchlorates and the source location of each sample.
 							completedMessage = 
 							count = 99
 						}
@@ -11849,7 +11849,7 @@ GAME
 						{
 							name = K&K Planetary Command Module
 							is_private = False
-							dataCapacity = 0.5
+							dataCapacity = 1000
 							sampleCapacity = 1
 							sendFileNames = 
 							files
@@ -22924,7 +22924,7 @@ GAME
 							file
 							{
 								filename = Hab.boot.ks
-								binary = H4sIAB7dImkA,7VZe2,iRhD,n0+xt38ZHXUMCbkrak4i4DToAo6w765SW6HF3oCLH8g2ydGK796Z9fsBJFfV0l3w8pvZec,s8sLsiOy8yHZIuLa3g523ZeaGW3LLdDgLQjPg3JNbFxcjba4Oxpr6VZ0ZEtW23CMGD1zbYw5ty+Tighiqbkxmv7a2ge1FhN7c3JBhwEMymUzIPVvaEYvIlHlsxV0OAH0fRtwlz4rcla8JoKnc0lWD6PeTx0G033JiaITespDDF62nnWdGtu8R0,eigJnRIwuYyyMekH9aBJ5t9i4+zeClQ5igkQVgckdmmkGG47E20wfsmdkOWzpcoqPhXFXntJ0wwuf+y9hQfwM91flcm78jf3hko+mDEQNrBIRZFgji7sKILDmxvTBijgMmAxjtkK4C,zrkstchAbc65Ik5IW,LGe+AR7vAi5fj1YP4,06bZ8qRySwVNJZuMBwZk6,qSJsZc,ioS0VpkVIojWQpi8HjcD6cqoY6L4MTUwj8YDImN7m9KqgEGdsQcHTFIx2cyGkDsKBZzDpEpFzDHYj6oKtHGMBuNfdKuTtzAdrkl0+pYM2sspAYjO7VobGAyFroxtBQpZisLR8ly5yvfxmNVF0X7teWf3EgfOaEkvdFFeGNVv2+wqSpe,6kvcAVwKnKvZn40Dq,IhJbkXtlDjku,nQgrUMhucDAcx76u8DktbSCVI55YZLCy9D1oW5gkipyFsBBSm17cSKnC2HBT+DmdHkwgxiF2ApKgMZdMhImluSqJq2CSTNC+Zh6c3Rdg4odEm6Zlytqe7bYvUAqAQwq3jc0cA5OdpaqQPKT4NEmFwm4KJC5Zt6Kp,g7x39pkik2IEiWR0TV1k1mTspClPkCX6pmTkGLIjdcaPRc+thPZaKBh+XjJhepOSnRoGU67mENttDCxwrG6fgtmdOyQ6gfHiRqIkBSU3HFD7A65nZAia0ti8DGnkTnhl5qAA,aaPhAXN,aOWCRMGcyAP,GyxL9PNQfbG+Tum+UYmgh5yHWY,gAe8QzND7cOBxgnWPQOiRq8YiZ63wHWq3WCb3lC,Imgmou4JPkf,8toji+uXmDIFW4fNI5PowMX4EuLPgmNXASoPFr7BqJTsVbat1xADKWRErECXn0ZHMHCCyEkAAbRIf0lII8R6CwjFAj2PGz4DKurJrp+CFXv68ZjgSxgN,yuapYEegQoifcrnkgmhjp5umMNm0IUYhNDpNYyL8y5zndpGQHzKpYZvU7JhIyKoZpox2r6qrfGxS+KzSwisZrbm5Ga9uxHrHCNIxgIEQHYIDIiylq9Si+QjmP5GJM2,5d+TMmvLiIB8qcOLeZ4C9qHBguBwzEOnwqWCllQ,EFu2xGW8qQbFWUtDw3xHo1IZKaH0FcnI79ZcAhZWEIThjkhUpKzFvvBJJjh5BkWrBinm2GtENHvrv1wfmdYhR16DcGg3QxrjpCooRxlnbpTsLsMBwa+vjL7a06hph86Co9ihbHsJmWwmbMTX+3dYAr5L2aFqB0LeaYlJruUf52IEqF1iMG8zbZTuUA,cyWvu8W99mIlXe4DVgzMyYcIZz937a3GrOIJQbF6AqjQBwZwl3wxKAHhcwFIYnkwjGGOMyzoM8w07aYYzOyhQU7slmbZqeDhhL0ABJAPfGDPcgVge0hhFZSOw8LWCkGRS0gDnXBuVWQG4N4bVlZ3pe3v2eBNQ5g6KTVcZ8,i+KNdEBeLuj1YT9BDxzuraI1+UR6vYYOnQifgsPdMtG3e9m5RvW9nbuEgVxpn5kpi,OQcnQCGzE4adrR,uygmQH,51GzuE9GZCaL58bNUYY7NGp7bLbLNX0CBFi7ouXJAe7tw9uJwY2UgMPZ+MioVg+civTpx,dpd3tVoCRUcr3N3O+hH0G+Q+uyt8n24NdSW0WMv+I4IHyCbZVYGVSiXo74d7BLuNCg5KUZcUO6xYZ6iuTttStXtUlqoZkQWxHyNmRIRT0l060SX1VcOQ8kvP0o922YLeZYkeFQbW5+ZWG314euTwMzxNUpnFtoO2MBsdbEoQgG2g0PllBgQ,cnALq2yRystDCwVHvn0YaXG6VT0Kf5NN1wT5ORkzC+YPL8KL+jgXE1CKDtOnu8rSEjkPER5Ytvc2ACwckaAi,yt8R,KjCLQMcOeVnb8H0zFuxHdGgVbBWjw8J30ZrjFZgs5lJxTYB,Gq+HGi9IXj1ouDjWZiki7uyefWfnZolOJ9D2FJqFUKmZli6KknFpmALIFPxtM6x2K9+xIWvKjTakuWhYEWqbY2++H94uutNFt9fr0UpmNAlbhFdEjtuohIH+8epn+eea5BUYXq5Mb9EZNT1SZEGB+jUU3Wi6qNwLcGQXpzFt+vigGmpxlj6pd2+66F9dv1rvFF7O4npFrN3unZG9d0T2s,JfgkCXVz3a3ApPaJISkqbChRcxEsywICftXCuicMkKPv2CXud0Yj,ikKvponfZv3ytQ1J4oxoSvfN9S9TdvqK8XvLLHxG8P118uP54,VrBU3ilKZoBf8lHQqUyV5huNnYgsD5Umm46UVHIqA2ceCOP76ngD9+JMSRiK,w+PQB0m26Okzoz2psOVpkcW78Lyo5RUnr,1pNLh2+p4bZV4C7lc464OpEWZx1yjaFx9bEi8iH5+9Z8Sbll7qr23PRQFmDH,fx5qOm6DKfE1Qvby9yzaEMZT3+AWftwJAo5g174riDuf76MwefoxcldtcdlnzInnnZO,0ey5EPJKYf8WqZfurFNfoiBLnpx+mm1jvgMovq4JHG,lWH,xl836GPgO,5qh9NO4ecN0ahNH,uq+L3lNfxjT1dBcHYu3EXhfIBJ8i8jY31D9xsAAA==
+								binary = H4sIAIql,GkA,7VZe2,iSBL,n0,R038ZLesACdlZdFmJgLNBE3CEPTMn3Z1QY3fAix,INslwJ777VbVf7QeQzOkszQQ3v6qud1U3b8yJyd6PHZdEG2c33Ps7Zm25rbYsl7MwskLOfbV1dTXWF9pwomvftLmpUH3HfWLy0HN85tK2Sq6uiKkZ5nT+Z2sXOn5M6N3dHRmFPCLT6ZQ8spUTs5jMmM,W3OMAMA5RzD3y2lV76i0BNFVbhmYS43H6PIwPO05MndB7FnH4ovWy963YCXxiBX4cMit+ZiHzeMxD8p8WgWeXv4tPc3jpECZoVAGYPpC5bpLRZKLPjSF7ZY7LVi5X6Hi00LQFbaeM8Hn8OjG1v4Oe2mKhLz6Rf,pkqxvDMQNrhITZNgji7aOYrDhx,ChmrgsmAxjtkF4X,nXIdb9DQm53yAtzI95Wc94hj,ehnywnq0fx,4O+yJUj03kmaCLdcDQ2p9+0sT43F,DRUGRpkVIojWQZi+HzaDGaaaa2KINTUwj8cDohd4W9KqgUmdgQcHTNYwOcyGkDUNIsYR0hUq3hjkR7MrQTDGC3mnuVwp2FAG3ytz8ywZpZ5SExHD9qI3MJkbU0zJGpKQlZWz1Jljvf+Doea4Yh3K+v,uJA+MoJJb,IKsIbrfp9jUlT9,xZe4ErgFOVezPxsXV5RSR2V+2XORS45NORtI5ScoGBFzwK9qHFa2kFqZzwwiSFl5EXQN3AJO2qeQCHGbXjJ4mcLUSSn8DN2fJwDjEKsRWWAI275CRMLKlVTVqSSXNC9ZR6C3Rdg4odEu2YXyjq+I7YXSJVAAYV7zsauACnOytVIPlV8GiTqxQsC2RtmL,mGf7BDd6aZEoMCJIVEVG1dZOZ07IQ577Al6qZM9BS5oYLjZ7LHuelTDT0sXzcFSI1JyUatEzHfazBNlr4VME4H78lc9pOBPXDh0RNBUhrKq4EIVbHwg4osb1jMdjYV+jCNEoN4Ekfj56IF9h7FywSFUyG4N9kWaFfRsaT428z940zDJVyHmI9gQ+xR7xC48ONoyHWOQatQ6E2j5m1KXag1Wqd0tuBIG8iqOYCPmn+Dz4iihtY2w8IUoWrZ50TwMjwDegiyTeZgdMATV4T1yh0Jt4y605CkLEkUipOxOMXh7tAYCOEhNggOqTfleQ5AYVlhJrhnl8El3Fl1Sw3iLj2Y8NwJEgE,F7MVXJFoCOInmi34aFoYqRXpDPatCFEITY5TGIR,8bc12yTkh0wqxKZtR+YSMhIDtNGO1bV1X40KPwgNbCKxhtubccbx7WfscI0jGAgRAdggCiKKWr1LL5COU,kYkLb,kf3Xwnh1VUyUBbEhc0Ef1HjwHAFYCjW4ZNkpYwNxRfssjltKUPyVVHSitwQ69WESGt+DHFxPvZXIYeUhSE4ZVAUKiU1b70TKK4TQZLp4Zr5jhXRDh0H3i4A53fkKOrQ7wwGaTmuOkKilHGedtlOwuwwHJrG5Ov9vTaBmHzqdfsULY5hMyuFzYRbwX7nAlfIey0rQNlawjEtNb2T,J1QlAq9T0zmb,OdygH6ha2CwJP32YqVT7gNWDM3Jhwh3MO,HX89YTFLDYrRFcWhODJE+,CFQQ+KmAdCEsWDYwxxmW9Dn2GWYzPXYWQHC07ssDbNTwcNJegJJIB6EoQHkCsG20MIrZV2ERawIgdFLSCOdcG5LcmNQbyx7Tzvy9s,stCehDB0lvIdRAUSkTm5TFIRH+MEHcChjIzmE4EslXu0fQOVt6InoruRQ7RzHfAQAV,2kJ+,91Ywq3fbZ8ey7slxbMzg2OnEh4tTZw78P8+d8j45kZUuXpo9xznu2KjtqUGv0PQFEOCgipZnp7mPT3JnpjhSAmIgNc9t9TmvIn328Zes1ZUtd8KGKZVa7zmPB2hOkPzQx5xduj34tdRjEROsOU4Lf8C23UQZVKJem,gPsEu01KH+DV3ur+MNGKAnd9dzJB8vZIWqTVILzYTYXSFvQ4ZU1OvmulXiq4or54GCVyHlJg6DxgLLM5ywre2fLOr1BzAC0NCKcHUGhxjazllArDVxkMFAu+XhCqpt5P0KQM+xmItlF6aXaqk52f0Ko3QkfZqP1g2XNjk5iZLbJj+IiwsbmF3DEHqwe8CrGzIGGZ9RvuRqB8YRHLMh8OJgR4IXiVkMOnbI28aB75uxYD9iQN9g6wQdSd,FG473YaoYUsWdAf5pvCtqvC1599Th4Yybp4i4wHsN3L2XJzqdQg,s0jyESp21dGuUzk6jDEBm4G+HYbVbB9AKNqTcdSNaiIYVobY5NurH0f2yN1v2+v0+rWRGk7AyvCJy0lMVDPTPN7+rv9ckr8DwpmV2j86o6ZEhJQXqd1J0qxuici,BkT0czfTZ85NmavJgfVbv,mw5uLl9t94ZvJzF9YpYu+q7IHv,hOwX5b8Gga5v+rS5FZ7RJCMkTYULb2UUGGhBTtq57YrCpXbxGUh6XdKJ,YxDbmbL,vXg+r0OyeCNaij0IQhsUXcH3e77Jb,+GcEHs+Vvt59v3yt4Bq80RSvkb1kDLHcLcc7y8rEDgfXrZMvLJioKGbWF42,s8wMV,OG7ZFZla,w+Ow30mq6R0zozPlguVpkCW78Yys9USnYZ11dLJ3Gl4epV4K7VS464OZMWFx1yi6Fx87ki8jH9+9F8ybjl7qr23OyEFmLH,fJlpBuGCkfG9Rs7qNy3aUMZz36N2QRwPoo4g174SRL3f76ZwefkLcpDtcfln3InnnfO4Gey5LeSU47FHc2gdH2b,ioDXfTq,NNqnfAZRPVpSZJ+q8L+jT910Gc4uAXrPU470m8dolFbAfZV8ePLe,gnnq6C4CAtXUzhfIBJ8l9laJ2QBBwAAA==
 							}
 						}
 					}
@@ -38100,7 +38100,7 @@ GAME
 					name = HardDrive
 					isEnabled = True
 					hdId = 2346354255
-					effectiveDataCapacity = 0.5
+					effectiveDataCapacity = 1000
 					effectiveSampleCapacity = 1
 					stagingEnabled = True
 					EVENTS
@@ -38580,27 +38580,6 @@ GAME
 					}
 					ACTIONS
 					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = Laboratory
-					isEnabled = True
-					running = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						Action
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
 					}
 					UPGRADESAPPLIED
 					{
