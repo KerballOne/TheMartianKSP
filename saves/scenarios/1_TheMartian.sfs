@@ -7045,30 +7045,6 @@ GAME
 					}
 					VESSEL_DETAIL
 					{
-						name = JPL Pathfinder
-						craftURL = zKB1_TheMartian/Ships/PathfinderJPL.craft
-						vesselType = Base
-						body = Earth
-						lat = 28.606211464146124
-						lon = -80.606972465670509
-						heading = 0
-						pitch = 0
-						roll = 0
-						orbiting = False
-						owned = True
-					}
-				}
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.SpawnVessel
-					vesselsCreated = False
-					CONDITION
-					{
-						condition = PARAMETER_COMPLETED
-						parameter = SpawnPathfinder
-					}
-					VESSEL_DETAIL
-					{
 						name = Pathfinder Probe
 						craftURL = zKB1_TheMartian/Ships/PathfinderProbe.craft
 						vesselType = Probe
@@ -7080,6 +7056,30 @@ GAME
 						roll = 0
 						orbiting = False
 						owned = False
+					}
+				}
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.SpawnVessel
+					vesselsCreated = False
+					CONDITION
+					{
+						condition = PARAMETER_COMPLETED
+						parameter = SpawnPathfinderJPL
+					}
+					VESSEL_DETAIL
+					{
+						name = JPL Pathfinder
+						craftURL = zKB1_TheMartian/Ships/PathfinderJPL.craft
+						vesselType = Base
+						body = Earth
+						lat = 28.606211464146124
+						lon = -80.606972465670509
+						heading = 0
+						pitch = 0
+						roll = 0
+						orbiting = False
+						owned = True
 					}
 				}
 				BEHAVIOUR
@@ -7672,6 +7672,22 @@ GAME
 							showName = False
 							textColor = #FFB9DA54
 							imageURL = zKB1_TheMartian/images/PathfinderFound
+						}
+					}
+					DIALOG_BOX
+					{
+						condition = PARAMETER_COMPLETED
+						position = LEFT
+						width = 0.400000006
+						height = 0
+						title = Special Delivery from Pasadena
+						parameter = SpawnPathfinderJPL
+						titleColor = #FF1B0602
+						TextSection
+						{
+							text = There is a very large package sent from the Jet Propulsion Laboratory waiting for Kapoor at the NASA R&D loading dock. Go sign for it.
+							textColor = #FFCCCCCC
+							fontSize = 20
 						}
 					}
 					DIALOG_BOX
@@ -9473,6 +9489,7 @@ GAME
 						hidden = True
 						hiddenParameter = PFSearchVPG
 						hiddenParameter = SpawnPathfinder
+						hiddenParameter = SpawnPathfinderJPL
 						failWhenCompleteOutOfOrder = False
 						PARAM
 						{
@@ -9614,8 +9631,28 @@ GAME
 							completedMessage = 
 							hidden = True
 							duration = 60
-							waitingText = Spawning Pathfinders
-							completionText = Pathfinder probes spawned
+							waitingText = Spawning Pathfinder
+							completionText = Pathfinder probe spawned
+							endTime = 0
+							startCriteria = PARAMETER_COMPLETION
+							parameter = PFtimer
+							triggered = False
+						}
+						PARAM
+						{
+							name = Duration
+							id = SpawnPathfinderJPL
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = NASA.TheMartian
+							title = 
+							notes = 
+							completedMessage = 
+							hidden = True
+							duration = 3600
+							waitingText = Delivering Pathfinder mockup to JPL
+							completionText = Pathfinder probe spawned
 							endTime = 0
 							startCriteria = PARAMETER_COMPLETION
 							parameter = PFtimer
@@ -9648,7 +9685,7 @@ GAME
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
 							title = Are you receiving me?
-							notes = Place a sign in front of the camera with the site_name called, "Are you receiving me?"
+							notes = Send a capture command from Earth's Pathfinder mockup at JPL, as Mark places a sign in front of the camera with the site_name called, "Are you receiving me?"
 							completedMessage = 
 							count = 99
 						}
