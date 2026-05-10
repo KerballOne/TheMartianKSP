@@ -1,7 +1,7 @@
 wait until ship:unpacked.
 clearscreen.
 //CORE:DOEVENT("Open Terminal"). // TESTING
-print "=== Ares III Habitat Management System v0.1.6 ===".
+print "=== Ares III Habitat Management System v0.1.7 ===".
 SET SHIP:type TO "Base".
 
 function contractParameter {
@@ -58,19 +58,6 @@ function changeResourceFlow {
     }
 }
 
-function disconnect {
-    FOR connector IN SHIP:partsnamedpattern("RTS") {
-        LOCAL module is connector:getmodule("KASLinkResourceConnector").
-        IF module:alleventnames:contains("detach connector") {
-            module:doevent("detach connector").
-        }
-        wait 0.5.
-        IF module:alleventnames:contains("lock connector") {
-            module:doevent("lock connector").
-        }
-    }
-}
-
 function openVents {
     FOR module in SHIP:modulesnamed("ModuleResourceDrain") {
         module:setfield("drain rate", 20).
@@ -100,7 +87,6 @@ function checkChildPart {
 }
 
 function breachHab {
-    disconnect().
     changeResourceFlow(list("Organics","Compost","Atmosphere","WasteAtmosphere"), true).
     openVents().
     SHIP:PARTSDUBBED("AL102")[0]:getModule("ModuleDecouple"):doEvent("decouple").
@@ -165,7 +151,7 @@ function checkHydrazineDrip {
 }
 
 function main {
-    IF CORE:volume:name = "Init0"
+    IF CORE:volume:name = "Init0" 
     AND analyzingData() {
         print "Analyzing Martian regolith surface samples".
         SET CORE:volume:name TO "HAB_1M_1222".
@@ -174,32 +160,27 @@ function main {
     AND analyzedData() > 849.9 {
         print analyzedData() + " MB of Martian regolith analyzed".
         contractParameter("kOSparam_Hab1","COMPLETE").
-        SET CORE:volume:name TO "HAB_2M_5462".
     }
     IF CORE:volume:name = "HAB_2M_5462" {
         IF checkHydrazineDrip() {
             contractParameter("kOSparam_Hab2","COMPLETE").
-            SET CORE:volume:name TO "HAB_3M_5342".
         }
     }
     IF CORE:volume:name = "HAB_3M_5342" 
     AND getResourceRate("Water",60) > 0.000005 {
         contractParameter("kOSparam_Hab2a","COMPLETE").
-        SET CORE:volume:name TO "HAB_4M_2353".
     }
     IF CORE:volume:name = "HAB_4M_2353" 
     AND getResource("Food") > 500 {
         contractParameter("kOSparam_Hab3","COMPLETE").
-        SET CORE:volume:name TO "HAB_5M_7686".
     }
-    IF CORE:volume:name = "HAB_5M_7686" 
-    AND SHIP:crew:length > 0 {
+    IF CORE:volume:name = "HAB_5M_7686"
+    AND SHIP:crew:length > 0 AND KUNIVERSE:ACTIVEVESSEL:NAME = "The Hab" {
         FOR cm in SHIP:crew {
             IF cm:NAME = "Mark Watney" AND cm:part:tag = "Airlock 1" {
                 print "Cycling Airlock 1".
-                breachHab(). Wait 2. closeExhaust().
-                Wait 3. contractParameter("kOSparam_Hab4","COMPLETE").
-                SET CORE:volume:name TO "HAB_6M_2348".
+                breachHab(). Wait 2. closeExhaust(). Wait 3. 
+                contractParameter("kOSparam_Hab4","COMPLETE").
             }       
         }
     }
@@ -210,16 +191,22 @@ function main {
             module:setfield("drain", False).
         }
         Wait 2. contractParameter("kOSparam_Hab5","COMPLETE").
-        SET CORE:volume:name TO "HAB_7M_2348".
     }
     Wait 5.
+    IF contractParameter("Prologue","getState") = "Incomplete" { SET CORE:volume:name TO "Init0". }
+    IF contractParameter("kOSparam_Hab1","getState") = "Complete" { SET CORE:volume:name TO "HAB_2M_5462". }
+    IF contractParameter("kOSparam_Hab2","getState") = "Complete" { SET CORE:volume:name TO "HAB_3M_5342". }
+    IF contractParameter("kOSparam_Hab2a","getState") = "Complete" { SET CORE:volume:name TO "HAB_4M_2353". }
+    IF contractParameter("HasFoodVPG","getState") = "Complete" { SET CORE:volume:name TO "HAB_5M_7686". }
+    IF contractParameter("kOSparam_Hab4","getState") = "Complete" { SET CORE:volume:name TO "HAB_6M_2348". }
+    IF contractParameter("kOSparam_Hab5","getState") = "Complete" { SET CORE:volume:name TO "HAB_7M_2348". }
     return false.
 }
 
 ///////////////////////////////
 
 IF CORE:volume:name = "" { SET CORE:volume:name TO "Init0". }
-IF contractParameter("Prologue","getState") = "Incomplete" { SET CORE:volume:name TO "Init0". }
+
 print CORE:volume:name.
 
 Wait until main().
