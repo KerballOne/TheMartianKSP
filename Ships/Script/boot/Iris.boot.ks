@@ -34,5 +34,5 @@ IF contractParameter("IrisDestroyed","getState") = "Incomplete" {
     LOCK STEERING TO UP + R(500,500,500). Wait 3.
     HUDTEXT("Payload Sensors: CoM reading out of bounds. \n Payload is unbalanced", 10, 1, 32, yellow, false).
     Wait 12.
-    SHIP:partsnamed("IRIS")[0]:getmodule("ModuleKaboom"):doEvent("kaboom!").
+    FOR km IN SHIP:modulesnamed("ModuleKaboom") { km:doEvent("kaboom!"). }
 }
