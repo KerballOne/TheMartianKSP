@@ -9755,8 +9755,12 @@ GAME
 						completedMessage = 
 						completeInSequence = True
 						hidden = True
-						hideChildren = True
 						failWhenCompleteOutOfOrder = False
+						hiddenParameter = HasFoodVPG
+						hiddenParameter = AirlockVPG
+						hiddenParameter = kOSparam_Hab4
+						hiddenParameter = kOSparam_Hab5
+						disableOnStateChange = True
 						PARAM
 						{
 							name = VesselParameterGroup
@@ -9764,15 +9768,18 @@ GAME
 							state = Incomplete
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
-							title = 
-							notes = 
+							title = Harvest moar taters
+							notes = Harvest at least 500 potatoes.  Boil em', mash em', stick em' in a stew
 							completedMessage = 
-							hidden = True
+							hidden = False
 							vessel = Hab
 							duration = 0
+							trackedVessel = 0ffa8099-faa2-4c65-b55c-002675c0b905
 							dissassociateVesselsOnContractFailure = True
 							dissassociateVesselsOnContractCompletion = False
 							resetChildrenWhenVesselDestroyed = False
+							hideVesselName = True
+							hideChildren = True
 							PARAM
 							{
 								name = ParameterDelegate`1
@@ -9781,9 +9788,10 @@ GAME
 								disableOnStateChange = False
 								values = 0,0,0,0,0
 								ContractIdentifier = NASA.TheMartian
-								title = Vessel: Hab (TBD)
+								title = 
 								notes = 
 								completedMessage = 
+								hidden = True
 							}
 							PARAM
 							{
@@ -9793,8 +9801,8 @@ GAME
 								disableOnStateChange = False
 								values = 0,0,0,0,0
 								ContractIdentifier = NASA.TheMartian
-								title = Harvest moar taters
-								notes = Boil em', mash em', stick em' in a stew
+								title = 
+								notes = 
 								completedMessage = 
 								allowStateReset = True
 								updateFrequency = 0.25
