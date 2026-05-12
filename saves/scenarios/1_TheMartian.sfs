@@ -7962,14 +7962,6 @@ GAME
 				}
 				BEHAVIOUR
 				{
-					type = ContractConfigurator.Behaviour.CopyCraftFile
-					onState = PARAMETER_COMPLETED
-					parameter = GreenhouseSequence
-					url = zKB1_TheMartian/Ships/ResupplyProbe.craft
-					craftType = VAB
-				}
-				BEHAVIOUR
-				{
 					type = ContractConfigurator.Behaviour.WaypointGenerator
 					WAYPOINT
 					{
