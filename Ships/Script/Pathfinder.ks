@@ -235,7 +235,7 @@ SET fw_oldline1 TO "00000D00  31 39 32 2E 31 36 38 2E 30 2E 31 30 35 22 3B 0A  |
 SET fw_newline1 TO "00000D00  31 39 32 2E 31 36 38 2E 31 2E 32 35 35 22 3B 0A  |192.168.1.255".
 SET fw_oldline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 35 30 30 35  |.ServPort = 5005".
 SET fw_newline2 TO "00000D10  09 53 65 72 76 50 6F 72 74 20 3D 20 32 36 30 30  |.ServPort = 2600".
-SET fw_instructions TO "D00:IP>1.255,D10:Port>2600".
+SET fw_instructions TO "CF0: IP>1.255, Port>2600".
 
 function loadFirmware {
     IF CORE:volume:name <> "PCS_2M_4575" AND CORE:volume:name <> "PCS_3M_9766"
