@@ -7894,6 +7894,15 @@ GAME
 							textColor = #FFB9DA54
 							imageURL = zKB1_TheMartian/images/ducttapehab
 						}
+						BreakSection
+						{
+						}
+						TextSection
+						{
+							text = The crops are dead... &br; Mood is somber. &br; Complete loss of pressure boiled off most of the water. &br; Any bacteria that survived, died in the sub-zero temperatures when exposed to Mars’ atmosphere.
+							textColor = #FFCCCCCC
+							fontSize = 22
+						}
 					}
 					DIALOG_BOX
 					{
