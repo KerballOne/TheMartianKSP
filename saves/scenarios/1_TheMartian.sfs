@@ -9444,7 +9444,7 @@ GAME
 					title = Act 2: Not so alone
 					notes = 
 					completedMessage = 
-					completeInSequence = True
+					completeInSequence = False
 					hiddenParameter = PathfinderSequence
 					hiddenParameter = CommunicationSequence
 					hiddenParameter = GreenhouseSequence
@@ -9936,7 +9936,7 @@ GAME
 						values = 0,0,0,0,0
 						ContractIdentifier = NASA.TheMartian
 						title = Launch Iris resupply probe
-						notes = Build a launch vehicle capable of reaching Mars and launch the Iris resupply probe
+						notes = Build a launch vehicle capable of reaching Mars and launch the Iris resupply payload. Use the pre-built Northrop-Kermann Resupply Payload found in Subassemblies.
 						completedMessage = 
 						hidden = True
 						hideChildren = True
@@ -10105,7 +10105,7 @@ GAME
 						hidden = True
 						duration = 60
 						waitingText = Spawning Hermes
-						completionText = Hermes spawned
+						completionText = Hermes on return trajectory
 						endTime = 0
 						startCriteria = PARAMETER_COMPLETION
 						parameter = LaunchIris1VPG
