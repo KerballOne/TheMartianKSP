@@ -9930,8 +9930,8 @@ GAME
 							state = Incomplete
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
-							title = Patched the big hole in the Hab!
-							notes = 
+							title = Patch the big hole in the Hab!
+							notes = Use some hab canvas to patch the big hole in the hab
 							completedMessage = 
 							hidden = True
 							count = 99
