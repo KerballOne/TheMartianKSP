@@ -10385,7 +10385,7 @@ GAME
 							hidden = True
 							allowStateReset = False
 							vessel = Hermes
-							vessel = Iris
+							vessel = Iris2
 						}
 					}
 					PARAM
