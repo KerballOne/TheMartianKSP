@@ -7,7 +7,7 @@ steamPublishedFileId = 0
 persistentId = 1432449352
 rot = 0,0,0,1
 missionFlag = Squad/FlagsAgency/NASA
-vesselType = Debris
+vesselType = Ship
 OverrideDefault = False,False,False,False
 OverrideActionControl = 0,0,0,0
 OverrideAxisControl = 0,0,0,0
@@ -98,6 +98,12 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	VESSELNAMING
+	{
+		name = Hermes
+		type = Ship
+		priority = 20
 	}
 	MODULE
 	{
