@@ -8490,69 +8490,6 @@ GAME
 				PARAM
 				{
 					name = VesselParameterGroup
-					id = DefineHermesVPG
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = NASA.TheMartian
-					title = 
-					notes = 
-					completedMessage = 
-					hidden = True
-					define = Hermes
-					duration = 0
-					disableOnStateChange = False
-					trackedVessel = 032dd0ae-f0ef-4431-a1e9-5f73716251c3
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					resetChildrenWhenVesselDestroyed = False
-					hideVesselName = True
-					PARAM
-					{
-						name = PartValidation
-						id = PartValidation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = NASA.TheMartian
-						title = 
-						notes = 
-						completedMessage = 
-						hidden = True
-						allowStateReset = True
-						minCount = 1
-						maxCount = 2147483647
-						FILTER
-						{
-							type = FILTER
-							part = hermesCockpit
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							state = Failed
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = NASA.TheMartian
-							title = With type: Hermes Cockpit
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = CountParameterDelegate`1
-							state = Failed
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = NASA.TheMartian
-							title = Count: At least one
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
 					id = DefineIrisVPG
 					state = Incomplete
 					values = 0,0,0,0,0
@@ -8597,6 +8534,132 @@ GAME
 							values = 0,0,0,0,0
 							ContractIdentifier = NASA.TheMartian
 							title = With type: Hermes resupply craft
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Failed
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = NASA.TheMartian
+							title = Count: At least one
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = DefineIris2VPG
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = NASA.TheMartian
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					define = Iris2
+					duration = 0
+					disableOnStateChange = False
+					trackedVessel = 032dd0ae-f0ef-4431-a1e9-5f73716251c3
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					resetChildrenWhenVesselDestroyed = False
+					hideVesselName = True
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = NASA.TheMartian
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						minCount = 1
+						maxCount = 2147483647
+						FILTER
+						{
+							type = FILTER
+							part = IRIS
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							state = Failed
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = NASA.TheMartian
+							title = With type: Hermes resupply craft
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Failed
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = NASA.TheMartian
+							title = Count: At least one
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = DefineHermesVPG
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = NASA.TheMartian
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					define = Hermes
+					duration = 0
+					disableOnStateChange = False
+					trackedVessel = 032dd0ae-f0ef-4431-a1e9-5f73716251c3
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					resetChildrenWhenVesselDestroyed = False
+					hideVesselName = True
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = NASA.TheMartian
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						minCount = 1
+						maxCount = 2147483647
+						FILTER
+						{
+							type = FILTER
+							part = hermesCockpit
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							state = Failed
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = NASA.TheMartian
+							title = With type: Hermes Cockpit
 							notes = 
 							completedMessage = 
 						}
@@ -10166,7 +10229,7 @@ GAME
 							completedMessage = 
 							hidden = True
 							hideChildren = True
-							vessel = Iris
+							vessel = Iris2
 							duration = 0
 							dissassociateVesselsOnContractFailure = True
 							dissassociateVesselsOnContractCompletion = False
